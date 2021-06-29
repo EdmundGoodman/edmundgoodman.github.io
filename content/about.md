@@ -1,9 +1,9 @@
 +++
 title = "About"
-date = "2014-04-09"
-aliases = ["about-us","about-hugo","contact"]
+date = "2021-06-29"
+aliases = ["about-me"]
 [ author ]
-  name = "Hugo Authors"
+  name = "Edmund Goodman"
 +++
 
 Hugo is the **world’s fastest framework for building websites**. It is written in Go.
