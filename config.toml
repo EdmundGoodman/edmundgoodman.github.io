@@ -1,6 +1,6 @@
-baseURL = "https://example.com"
+baseURL = "https://edmundgoodman.github.io"
 title   = "Hello Friend NG"
-languageCode = "en-us"
+languageCode = "en-uk"
 theme = "hugo-website-theme"
 
 PygmentsCodeFences = true
@@ -37,7 +37,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "Edmund Goodman"
 
 [blackfriday]
   hrefTargetBlank = true
