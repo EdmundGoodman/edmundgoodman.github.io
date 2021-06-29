@@ -50,44 +50,30 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
-  # Metadata mostly used in document's head
-  #
   description = "Website for Edmund Goodman"
   keywords = ""
   images = [""]
 
-  # Home subtitle of the index page.
-  #
-  homeSubtitle = "Subtitle"
+  homeSubtitle = "Computer Scientist // University of Warwick"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  #
   disableReadOtherPosts = false
 
-  # Enable theme toggle
-  #
-  # This options enables the theme toggle for the theme.
-  # Per default, this option is off.
-  # The theme is respecting the prefers-color-scheme of the operating systeme.
-  # With this option on, the page user is able to set the scheme he wants.
-  enableThemeToggle = false
+
+  enableThemeToggle = true
+  defaultTheme = "light"
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  #
   customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
-  # Custom footer
-  # If you want, you can easily override the default footer with your own content.
-  #
   [params.footer]
     trademark = true
     copyright = true
@@ -100,7 +86,6 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     ]
 
   # Colors for favicons
-  #
   [params.favicon.color]
     mask = "#1b1c1d"
     msapplication = "#1b1c1d"
@@ -115,12 +100,11 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     # Set to a valid CSS color to change the cursor in the logo.
     logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
+    logoCursorAnimate  = "2s"
 
   # Uncomment this if you want a portrait on your start page
-  #
   # [params.portrait]
-  #   path     = "/img/image.jpg"
+  #   path     = "./img/image.jpg"
   #   alt      = "Portrait"
   #   maxWidth = "50px"
 
