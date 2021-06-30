@@ -6,14 +6,14 @@ aliases = ["about-me"]
   name = "Edmund Goodman"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
 
-It makes use of a variety of open source projects including:
+Hello there! Welcome to my corner of the internet.
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+I'm Edmund Goodman, and I currently study at the University of Warwick pursuing
+an MEng in Computer Science. In my free time, I enjoy playing the trumpet, rock
+climbing, and working on various side projects -- some of which I finish!
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+I use Git for almost all programming I do, and generally publish source code for
+anything which isn't assessed for university or paid work. Below is my GitHub
+contribution history:
+{{< image src="https://ghchart.rshah.org/EdmundGoodman" alt="My GitHub contributions" >}}
