@@ -7,13 +7,9 @@ aliases = ["about-me"]
 +++
 
 
+
 Hello there! Welcome to my corner of the internet.
 
 I'm Edmund Goodman, and I currently study at the University of Warwick pursuing
 an MEng in Computer Science. In my free time, I enjoy playing the trumpet, rock
 climbing, and working on various side projects -- some of which I finish!
-
-I use Git for almost all programming I do, and generally publish source code for
-anything which isn't assessed for university or paid work. Below is my GitHub
-contribution history:
-{{< image src="https://ghchart.rshah.org/EdmundGoodman" alt="My GitHub contributions" >}}
