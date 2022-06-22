@@ -1,0 +1,56 @@
+#index-splash-background {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  background-color: $background-colour;
+  background-image: url("/images/light-background.jpg");
+  [data-theme="dark"] & {
+    background-color: $dark-background-colour;
+    background-image: url("/images/dark-background.jpg");
+  }
+}
+
+#index-splash-title {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+
+  text-align: center;
+}
+
+#index-splash-title > img {
+  max-width: 5em;
+  border-radius: 100%;
+  font-size: 2em;
+  margin-bottom: -10px;
+}
+
+#index-splash-title > h1 {
+  font-size: 2em;
+  margin-bottom: -10px;
+}
+
+#index-splash-icons i {
+  color: $text-colour !important;
+  [data-theme="dark"] & {
+    color: $dark-text-colour !important;
+  }
+  font-size: 1.5em;
+  padding: 0 5px;
+}
+
+#page-flex-wrapper {
+  flex: 1 0 auto;
+}

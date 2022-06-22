@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head.html" .}}
+</head>
+
+<body>
+    
+    
+    <div id="index-splash-background">
+        {{- partial "navbar.html" . -}}
+        <div id="page-flex-wrapper">
+
+            <div id="index-splash-title">
+                <img src="{{ .Site.Params.author_image }}" alt="A photo of {{ .Site.Params.author | markdownify }}">
+                <h1>{{ .Site.Params.author | markdownify }}</h1>
+                <p class="separated-items">
+                    <!-- Needs to be all on one line to prevent weird whitespace stuff-->
+                    {{ range .Site.Params.home.subtitles }}<span class="separated-item">{{- . | markdownify -}}</span>{{ end }}
+                </p>
+                <p id="index-splash-icons">
+                    {{ range .Site.Params.social }}
+                    <a href="{{ .url | safeURL }}"><i class="{{ .icon | safeHTML }}"></i></a>
+                    {{ end }}
+                </p>
+
+            </div>
+
+        </div>
+        {{- partial "footer.html" . -}}
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!--
+- Add parallax scroll on main page
+- Make about page on scroll
+- Add GitHub stats to about page
+- Remove contact page
+- Add side pips for scroll indication
+- Look at fonts/colour schemes
+- Look at night mode
+
+- Look at timeline for posts list (posts+projects)
+- Look at grid for projects list (just projects)
+
+- Add images/heroes & summaries to blog/project pages?
+-->

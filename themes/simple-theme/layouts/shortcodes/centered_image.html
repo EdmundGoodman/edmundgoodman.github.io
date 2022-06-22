@@ -1,0 +1,9 @@
+<div class="text-center">
+    {{ $src := .Get "src" }}
+    {{ $alt := .Get "alt" }}
+    <img src="{{ $src }}" alt="{{ $alt }}" class="centered-image" decoding="async"/>
+    {{ $caption := .Get "caption" }}
+    {{ with $caption }}
+        <p class="hugo-figure-caption">{{ . | markdownify }}</p>
+    {{ end }}
+</div>

@@ -1,0 +1,56 @@
+header > h1 {
+  font-family: $soft-font-family;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.highlight > div {
+  border-radius: 5px;
+}
+
+// At the top of a post
+header > .post-meta {
+  margin: -15px 0 50px 0;
+}
+
+.post-list {
+    margin-left: -2em;
+}
+
+.post-list > hr {
+    border: 1px dashed;
+    margin-top: -1em;
+}
+
+.post-list .separated-items {
+  font-size: 0.8em;
+}
+
+ul > .post-meta {
+  margin: -1em 0 0.5em 0;
+}
+
+ul .pagination {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+ul .pagination > li {
+  padding: 0 8px;
+  display: inline-block;
+}
+
+article.dropcap > p:first-child {
+    min-height: 4em;
+  }
+
+article.dropcap > p:first-child:first-letter {
+    float: left;
+    font-family: kanzlei;
+    font-size: 75px;
+    line-height: 60px;
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-left: 3px;
+  }

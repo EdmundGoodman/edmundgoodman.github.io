@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head.html" .}}
+</head>
+
+<body>
+    {{- partial "navbar.html" . -}}
+    <section id="page-content">
+        {{- block "main" . }}{{- end }}
+    </section>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>
