@@ -29,10 +29,21 @@ body {
   }
 }
 
+// a {
+//     color: $text-colour;
+//     [data-theme="dark"] & {
+//       color: $dark-text-colour;
+//     }
+// }
+
+a,
 a:visited,
 a:hover,
 a:active {
   color: $text-colour-mid;
+  [data-theme="dark"] & {
+    color: $dark-text-colour-mid;
+  }
 }
 
 h1,
