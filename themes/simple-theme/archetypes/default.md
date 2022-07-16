@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | humanize | title }}"
+author: "{{ .Site.Params.author | markdownify }}"
 date: {{ .Date }}
 draft: false
 ---
