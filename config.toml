@@ -56,10 +56,10 @@ pygmentsStyle = "monokai"
 
   [[params.social]]
     name = "github"
-    icon = "fab fa-github"
+    icon = "bi bi-github"
     url  = "https://github.com/EdmundGoodman"
 
   [[params.social]]
     name = "linkedin"
-    icon = "fab fa-linkedin"
+    icon = "bi bi-linkedin"
     url  = "https://www.linkedin.com/EdmundGoodman"

@@ -5,13 +5,13 @@
     <div class="separated-items">
         {{- if not .Date.IsZero -}}
             <span class="separated-item">
-                <i class="far fa-calendar"></i>
+                <i class="bi bi-calendar"></i>
                 <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
             </span>
         {{- end -}}
         {{- if or (not (isset .Params "show_reading_time")) .Params.show_reading_time -}}
             {{ $reading_time := math.Ceil (div (countwords .Content) 220.0) }}
-            <span class="separated-item"><i class="far fa-clock"></i>{{ $reading_time }} minute{{ if (ne $reading_time 1.0) }}s{{ end }}</span>
+            <span class="separated-item"><i class="bi bi-clock"></i>{{ $reading_time }} minute{{ if (ne $reading_time 1.0) }}s{{ end }}</span>
         {{- end -}}
     </div>
 
