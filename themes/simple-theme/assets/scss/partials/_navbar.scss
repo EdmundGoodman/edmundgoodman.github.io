@@ -45,10 +45,6 @@
 // Navigation links
 .nav-link {
   color: $text-colour !important;
-  [data-theme="dark"] & {
-    color: $dark-text-colour !important;
-  }
-
   font-weight: bolder !important;
   text-decoration: none;
   width: 100%;
@@ -72,39 +68,6 @@
 .nav-link:hover {
   //   background-size: 0 0.15em, 100% 0.15em;
   text-decoration: underline;
-}
-
-.dark-mode-toggle {
-  // https://codepen.io/mrozilla/pen/OJJNjRb
-  --size: 1.5rem;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 999px;
-  transition: none; // Set to `all 500ms` by JS
-  // Day
-  --ray-size: calc(var(--size) * -0.4);
-  --offset-orthogonal: calc(var(--size) * 0.65);
-  --offset-diagonal: calc(var(--size) * 0.45);
-  transform: scale(0.75);
-  color: #ddaa00; //#ffaa00;
-  box-shadow: inset 0 0 0 var(--size),
-    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
-    var(--offset-orthogonal) 0 0 var(--ray-size),
-    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
-    0 var(--offset-orthogonal) 0 var(--ray-size),
-    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
-      var(--ray-size),
-    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
-    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
-    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
-  // Night
-  &:checked {
-    color: #dcdcdc;
-    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
-  }
 }
 
 .nav-normal {
@@ -153,10 +116,6 @@
   top: 0;
   left: 0;
   background-color: $background-colour;
-  [data-theme="dark"] & {
-    color: $dark-text-colour;
-    background-color: $dark-background-colour;
-  }
   overflow-x: hidden;
   transition: 0.5s;
   white-space: nowrap;
@@ -194,9 +153,6 @@
   width: 100%;
   border-radius: 10px;
   background: $text-colour;
-  [data-theme="dark"] & {
-    background: $dark-text-colour;
-  }
 }
 
 .hamburger-container .hamburger-lines .line1 {

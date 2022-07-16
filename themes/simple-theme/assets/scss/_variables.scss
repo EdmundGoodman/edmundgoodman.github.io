@@ -6,11 +6,6 @@ $text-colour-mid: #999;
 $background-colour: #fff;
 $background-colour-contrast: #333;
 
-$dark-text-colour: #dcdcdc;
-$dark-text-colour-mid:  #a9a9b3;
-$dark-background-colour: #232425;
-$dark-background-colour-contrast: #3b3d42;
-
 $soft-font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto",
   "Segoe UI", Helvetica, Arial, sans-serif;
 
@@ -23,6 +18,11 @@ $media-size-tablet: "(max-width: 900px)";
 
 
 /*
+$dark-text-colour: #dcdcdc;
+$dark-text-colour-mid:  #a9a9b3;
+$dark-background-colour: #232425;
+$dark-background-colour-contrast: #3b3d42;
+
 $light-background: #fff;
 $light-background-secondary: #eaeaea;
 $light-background-header: #fafafa;
