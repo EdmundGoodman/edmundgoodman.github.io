@@ -9,7 +9,7 @@ draft: false
 
 This is a test of all the items which can be embedded in a blog post. If I broke
 something in the server side rendering it will be messed up here, like a canary
-in a mine.
+in a coal mine.
 
 <!--more-->
 
@@ -39,9 +39,16 @@ This is some more text, after a line break.
     alt="A photo of me sitting on a pillar in Paris."
     caption="A photo of me sitting on a pillar in Paris." >}}
 
-### Internal links
+### Internal references
 
 [Hello there post]({{< ref "posts/hello_there.md" >}})
+
+### Custom fonts
+
+{{< raw_html >}}
+
+<p style="font-family: kanzlei;  font-size: 32px;">Content in a decorative font</p>
+{{< /raw_html >}}
 
 ### Admonitions
 
