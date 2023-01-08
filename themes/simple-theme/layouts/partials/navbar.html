@@ -1,53 +1,63 @@
 {{ block "header" . }}
 
-
 <!-- https://dev.to/gautamtiwari/how-to-make-a-responsive-hamburger-menu-using-css-only-3pg5 -->
 <section id="top-nav">
-    <nav>
-        <span class="nav-item nav-logo">
-            <a href="{{ .Site.BaseURL | relLangURL }}" class="nav-link">Home</a>
-        </span>
+  <nav>
+    <span class="nav-item nav-logo">
+      <a href="{{ .Site.BaseURL | relLangURL }}" class="nav-link">Home</a>
+    </span>
 
-        <ul class="nav-menu">
-            <!-- Traditional menu -->
-            {{- range .Site.Menus.main -}}
-            <li class="nav-item nav-normal">
-                <a href="{{ .URL | relLangURL }}" class="nav-link">{{- .Name -}}</a>
-            </li>
-            {{ end }}
+    <ul class="nav-menu">
+      <!-- Traditional menu -->
+      {{- range .Site.Menus.main -}}
+      <li class="nav-item nav-normal">
+        <a href="{{ .URL | relLangURL }}" class="nav-link">{{- .Name -}}</a>
+      </li>
+      {{ end }}
 
-            <!-- Hamburger menu -->
-            <li class="nav-item hamburger-container">
-                <input id="popout-nav-toggle" name="popout-nav-toggle" class="popout-nav-toggle" type="checkbox"
-                    onclick="changeNav()">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
+      <!-- Hamburger menu -->
+      <li class="nav-item hamburger-container">
+        <input
+          id="popout-nav-toggle"
+          name="popout-nav-toggle"
+          class="popout-nav-toggle"
+          type="checkbox"
+          onclick="changeNav()"
+        />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </li>
+    </ul>
+  </nav>
 </section>
 
 <div id="popout-nav" class="overlay">
-    <div class="overlay-content">
-        <span><a href="{{ .Site.BaseURL | relLangURL }}" class="nav-link">Home</a></span>
-        {{- range .Site.Menus.main -}}
-        <span><a href="{{ .URL | relLangURL }}" class="nav-link">{{- .Name -}}</a></span>
-        {{ end }}
-    </div>
+  <div class="overlay-content">
+    <span
+      ><a href="{{ .Site.BaseURL | relLangURL }}" class="nav-link"
+        >Home</a
+      ></span
+    >
+    {{- range .Site.Menus.main -}}
+    <span
+      ><a href="{{ .URL | relLangURL }}" class="nav-link"
+        >{{- .Name -}}</a
+      ></span
+    >
+    {{ end }}
+  </div>
 </div>
 <script>
-    function changeNav() {
-        if (document.querySelector("input[name=popout-nav-toggle]").checked) {
-            document.getElementById("popout-nav").style.width = "100%";
-        } else {
-            document.getElementById("popout-nav").style.width = "0%";
-        }
+  function changeNav() {
+    if (document.querySelector("input[name=popout-nav-toggle]").checked) {
+      document.getElementById("popout-nav").style.width = "100%";
+    } else {
+      document.getElementById("popout-nav").style.width = "0%";
     }
+  }
 </script>
-
 
 {{ end }}

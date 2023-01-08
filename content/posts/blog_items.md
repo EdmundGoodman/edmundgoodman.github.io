@@ -32,9 +32,27 @@ This is some text.
 
 This is some more text, after a line break.
 
-### Centered images
+### Figures
 
-{{< centered_image
+{{< figure
     src="/images/france_photo_squared.jpg"
     alt="A photo of me sitting on a pillar in Paris."
     caption="A photo of me sitting on a pillar in Paris." >}}
+
+### Internal links
+
+[Hello there post]({{< ref "posts/hello_there.md" >}})
+
+### Admonitions
+
+{{< note >}}
+This is a note admonition using the default `title`.
+{{< /note >}}
+
+{{< warning title="Custom warning title" >}}
+This is a note admonition using a custom `title`.
+{{< /warning >}}
+
+{{< error >}}
+This is an error admonition.
+{{< /error >}}

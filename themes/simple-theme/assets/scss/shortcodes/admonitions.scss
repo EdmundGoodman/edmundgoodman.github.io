@@ -1,0 +1,28 @@
+// https: //codepen.io/haishanh/pen/zqqbmq
+
+.admonition {
+    line-height: 18px;
+    overflow: hidden;
+    padding: 12px;
+    margin-bottom: 1em;
+}
+
+.admonition-title {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.note {
+    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+}
+
+.warning {
+    background-color: #fffeec;
+    border-left: solid 4px orange;
+}
+
+.error {
+    background-color: #fffbfb;
+    border-left: solid 4px red;
+}

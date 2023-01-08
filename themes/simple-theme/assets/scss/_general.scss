@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   font-family: $soft-font-family;
   font-size: 18px;
-
   color: $text-colour;
   background-color: $background-colour;
 }
@@ -67,6 +66,12 @@ img {
   }
 }
 
+// A class which makes a list of items separated by the '•' character, which
+// wraps based on screen size. For example:
+//      "item • item • item"
+// is rendered on narrow screens as:
+//      "item • item
+//          item"
 .separated-items .separated-item:not(:last-child)::after {
   content: "•";
   padding: 0 5px;
@@ -83,9 +88,22 @@ img {
   padding: 0 5px;
 }
 
+// Improve the code blocks
 div.highlight pre {
   white-space: pre-wrap;
   word-break: break-word;
   border-radius: 5px;
   padding: 10px;
+}
+
+
+// Centre figures and figure captions
+figcaption {
+    padding-top: 5px;
+    text-align: center;
+}
+
+figure {
+    max-width: 90%;
+    min-width: 50%;
 }
