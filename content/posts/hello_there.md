@@ -10,5 +10,5 @@ the enemy of good and having nothing to show for it, but no more!
 
 <!--more-->
 
-I built this website to host a portfolio of my work, and *possibly* to blog - so
-stick around to see whether I ever get around to adding either of those things.
+I built this website to host a portfolio of my work, and _possibly_ to blog - so
+stick around to see whether I ever start adding either of those things.
