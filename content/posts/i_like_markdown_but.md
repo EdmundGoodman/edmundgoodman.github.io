@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | humanize | title }}"
-author: "{{ .Site.Params.author | markdownify }}"
-date: {{ .Date }}
+title: "I Like Markdown But"
+author: "Edmund Goodman"
+date: 2023-01-14T21:56:57Z
 draft: true
 ---
 

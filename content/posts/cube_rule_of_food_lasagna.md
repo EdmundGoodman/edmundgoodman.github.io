@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | humanize | title }}"
-author: "{{ .Site.Params.author | markdownify }}"
-date: {{ .Date }}
+title: "Cube Rule of Food Lasagna"
+author: "Edmund Goodman"
+date: 2023-01-22T12:44:05Z
 draft: true
 ---
 
