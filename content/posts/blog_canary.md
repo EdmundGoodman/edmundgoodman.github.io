@@ -1,13 +1,20 @@
 ---
-title: "Blog Items"
+title: "Blog Canary"
 author: "Edmund Goodman"
 date: 2023-01-08T14:12:29Z
 draft: false
 ---
 
-## Blog items
+## Blog Canary
 
-This is a test of all the items which can be embedded in a blog post. If I broke
+In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
+commonly canaries, into mines to detect high levels of carbon monoxide. This
+worked because they would become sick (and stop singing) before the miners did.
+Because of this, "Canary in a coal mine" is commonly used as an idiom for
+something which warns people of danger.
+
+This blog post is (in a very convoluted sense) a canary for my website, as it
+exercises the elements which can be embedded in a blog post. If I broke
 something in the server side rendering it will be messed up here, like a canary
 in a coal mine.
 
@@ -43,7 +50,7 @@ This is some more text, after a line break.
 
 [Hello there post]({{< ref "posts/hello_there.md" >}})
 
-### Custom fonts
+### Inline HTML
 
 {{< raw_html >}}
 
@@ -53,7 +60,7 @@ This is some more text, after a line break.
 ### Admonitions
 
 {{< note >}}
-This is a note admonition using the default `title`.
+This is a note admonition.
 {{< /note >}}
 
 {{< warning title="Custom warning title" >}}
