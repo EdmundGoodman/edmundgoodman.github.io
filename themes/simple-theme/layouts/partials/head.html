@@ -2,16 +2,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>
-  {{- block "title" . -}} {{ .Title}}{{ if ne .Title .Site.Title }} | {{
-  .Site.Title }}{{ end }} {{- end -}}
+    {{- block "title" . -}}
+        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+    {{- end -}}
 </title>
 
 <!-- Description of author from config.toml and favicon-->
 {{ with .Site.Params.author }}
-<meta name="author" content="{{ . }}" />{{ end }} {{ with
-.Site.Params.description }} <meta name="description" content="{{ . }}" />{{ end
-}} {{ with .Site.LanguageCode }}
-<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+    <meta name="author" content="{{ . }}" />
+{{ end }}
+{{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}" />
+{{ end }}
+{{ with .Site.LanguageCode }}
+    <meta http-equiv="content-language" content="{{ . }}" />
+{{ end }}
 <link rel="icon" href="/images/favicon.ico" sizes="any" type="image/x-icon" />
 
 <!--
@@ -19,20 +24,13 @@ Load stylesheets:
 - https://icons.getbootstrap.com/
 - https://github.com/necolas/normalize.css
 -->
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.min.css"
-/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.min.css" />
 
 <!-- Preprocess the scss for the main stylesheet-->
-{{ $options := (dict "targetPath" "css/styles.css") }} {{ $scss := resources.Get
-"scss/main.scss" }} {{ $style := $scss | resources.ToCSS $options }}
-<!--| resources.Minify }}-->
+{{ $options := (dict "targetPath" "css/styles.css") }}
+{{ $scss := resources.Get "scss/main.scss" }}
+{{ $style := $scss | resources.ToCSS $options }} <!--| resources.Minify }}-->
 <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" />
 
 <!--

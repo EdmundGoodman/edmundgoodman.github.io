@@ -4,6 +4,7 @@ languageCode = "en-uk"
 
 # Theme to use
 theme = "simple-theme"
+enableEmoji = true
 
 # Pagination
 paginate = 7
@@ -15,51 +16,53 @@ pygmentsCodeFencesGuessSyntax = true
 pygmentsoptions = "linenos=inline"
 pygmentsStyle = "monokai"
 
+
 # Taxonomies
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+tag = "tags"
+category = "categories"
+
 
 # Menu
 [menu]
-  # Header
-  [[menu.main]]
-    url = "/about"
-    name = "About"
-    weight = 1
-  [[menu.main]]
-    url = "/posts/"
-    name = "Blog"
-    weight = 2
+# Header
+[[menu.main]]
+url = "/about"
+name = "About"
+weight = 1
+[[menu.main]]
+url = "/posts/"
+name = "Blog"
+weight = 2
+
 
 # Links format
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+posts = "/posts/:year/:month/:title/"
 
+
+# Meta
 [params]
-  # Meta
-  author = "Edmund Goodman"
-  author_url = "https://github.com/EdmundGoodman"
-  author_image = "/images/france_photo_squared.jpg"
+author = "Edmund Goodman"
+author_url = "https://github.com/EdmundGoodman"
+author_image = "/images/france_photo_squared.jpg"
+license = "CC BY-NC 4.0"
+license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
+description = "The personal website for Edmund Goodman"
 
-  license = "<a href='https://creativecommons.org/licenses/by-nc/4.0/' target='_blank' rel='noopener'>CC BY-NC 4.0</a>"
-  license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
+[params.home]
+subtitles = ["Computer Scientist", "University of Warwick"]
 
-  description = "The personal website for Edmund Goodman"
+[params.footer]
+author = true
+license = true
 
-  [params.home]
-    subtitles = ["Computer Scientist", "University of Warwick"]
+[[params.social]]
+name = "github"
+icon = "bi bi-github"
+url = "https://github.com/EdmundGoodman"
 
-  [params.footer]
-    author  = true
-    license = true
-
-  [[params.social]]
-    name = "github"
-    icon = "bi bi-github"
-    url  = "https://github.com/EdmundGoodman"
-
-  [[params.social]]
-    name = "linkedin"
-    icon = "bi bi-linkedin"
-    url  = "https://www.linkedin.com/in/edmundgoodman/"
+[[params.social]]
+name = "linkedin"
+icon = "bi bi-linkedin"
+url = "https://www.linkedin.com/in/edmundgoodman/"
