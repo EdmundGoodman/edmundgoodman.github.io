@@ -1,8 +1,8 @@
 ---
-title: "Example Three"
+title: "iGEM Modelling"
 author: "Edmund Goodman"
-date: 2023-08-18T16:01:19+01:00
-hero_image: "https://picsum.photos/500/300/?image=11"
+date: 2023-08-19T13:07:44+01:00
+card_image: "https://picsum.photos/500/300/?image=10"
 draft: true
 ---
 

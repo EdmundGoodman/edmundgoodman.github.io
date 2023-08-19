@@ -10,13 +10,13 @@
     <h1>Projects</h1>
 </header>
 
-
+<!-- Derived from https://codepen.io/mahmudulhrabby/pen/GGqdvr -->
 <section id="projects-grid">
     <ul class="projects-cards">
         {{ range (where .Site.RegularPages "Type" "in" (slice "projects")) }}
             <li><a href="{{ .RelPermalink }}" class="disguised">
                 <div class="project-card">
-                    <img src="{{ .Params.hero_image }}">
+                    <img src="{{ .Params.card_image }}">
                     <div class="project-card-content">
                         <h3>{{- .Title | markdownify }}</h3>
                     </div>
@@ -24,8 +24,7 @@
             </a></li>
         {{ end }}
     <ul>
-<section/>
-
+</section>
 
 
 {{ end }}

@@ -1,8 +1,8 @@
 ---
-title: "Example One"
+title: "Rouse Research"
 author: "Edmund Goodman"
-date: 2023-08-18T15:54:26+01:00
-hero_image: "https://picsum.photos/500/300/?image=10"
+date: 2023-08-19T13:08:12+01:00
+card_image: "https://picsum.photos/500/300/?image=11"
 draft: true
 ---
 

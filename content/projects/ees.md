@@ -1,8 +1,8 @@
 ---
-title: "Example Four"
+title: "EES"
 author: "Edmund Goodman"
-date: 2023-08-18T16:01:23+01:00
-hero_image: "https://picsum.photos/500/300/?image=14"
+date: 2023-08-19T13:07:53+01:00
+card_image: "https://picsum.photos/500/300/?image=14"
 draft: true
 ---
 

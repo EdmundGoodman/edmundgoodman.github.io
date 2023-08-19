@@ -1,8 +1,8 @@
 ---
-title: "Example Five"
+title: "iGEM Wiki"
 author: "Edmund Goodman"
-date: 2023-08-18T16:01:25+01:00
-hero_image: "https://picsum.photos/500/300/?image=17"
+date: 2023-08-19T13:07:39+01:00
+card_image: "https://picsum.photos/500/300/?image=5"
 draft: true
 ---
 
