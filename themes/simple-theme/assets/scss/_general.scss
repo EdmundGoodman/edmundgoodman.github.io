@@ -23,9 +23,10 @@ body {
   background-color: $background-colour;
 }
 
-// a {
-//     color: $text-colour;
-// }
+a.disguised{
+    color: $text-colour !important;
+    text-decoration: none;
+}
 
 a,
 a:visited,

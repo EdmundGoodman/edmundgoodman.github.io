@@ -5,6 +5,7 @@ $text-colour: #222;
 $text-colour-mid: #999;
 $background-colour: #fff;
 $background-colour-contrast: #333;
+$box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 
 $soft-font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto",
   "Segoe UI", Helvetica, Arial, sans-serif;
@@ -28,6 +29,7 @@ $media-size-tablet: "(max-width: 900px)";
 #2C3B44 , #B9C9DA , #91ACC1 , #7A96AB
 #0A0708 , #444444 , #747474 , #B1B1B1
 
+background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 
 */
 

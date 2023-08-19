@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<!-- Display _index.md if available -->
+{{ if .Content }}
+{{ partial "single" . }}
+{{ end }}
+
+<!-- List all pages -->
+<header>
+    <h1>Projects</h1>
+</header>
+
+
+<section id="projects-grid">
+    <ul class="projects-cards">
+        {{ range (where .Site.RegularPages "Type" "in" (slice "projects")) }}
+            <li><a href="{{ .RelPermalink }}" class="disguised">
+                <div class="project-card">
+                    <img src="{{ .Params.hero_image }}">
+                    <div class="project-card-content">
+                        <h3>{{- .Title | markdownify }}</h3>
+                    </div>
+                </div>
+            </a></li>
+        {{ end }}
+    <ul>
+<section/>
+
+
+
+{{ end }}
