@@ -1,6 +1,19 @@
 @charset "UTF-8";
 /* Setup */
 /*
+
+
+#61758C , #A2C5E5 , #CFE2EF , #1C1D26
+#4A4E4B , #D3D6D0 , #A8AEA7 , #9EA2A4
+#E6E6E6 , #343434 , #949494 , #8C8C8C
+#3E4749 , #BCB4AB , #9A9C97 , #929394
+#2C3B44 , #B9C9DA , #91ACC1 , #7A96AB
+#0A0708 , #444444 , #747474 , #B1B1B1
+
+background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+
+*/
+/*
 $dark-text-colour: #dcdcdc;
 $dark-text-colour-mid:  #a9a9b3;
 $dark-background-colour: #232425;
@@ -43,6 +56,10 @@ body {
   font-size: 18px;
   color: #222;
   background-color: #fff; }
+
+a.disguised {
+  color: #222 !important;
+  text-decoration: none; }
 
 a,
 a:visited,
@@ -88,7 +105,26 @@ img {
 div.highlight pre {
   white-space: pre-wrap;
   word-break: break-word;
-  border-radius: 5px; }
+  border-radius: 4px;
+  padding: 10px; }
+
+figcaption {
+  padding-top: 5px;
+  text-align: center; }
+
+figure {
+  max-width: 90%;
+  min-width: 50%; }
+
+figure > img {
+  border-radius: 4px; }
+
+@font-face {
+  font-family: "kanzlei";
+  /* font-style: normal;
+    font-weight: normal;
+    font-display: auto; */
+  src: url("../fonts/decorative/kanzlei.ttf") format("truetype"); }
 
 #top-nav {
   width: 100%; }
@@ -321,9 +357,49 @@ article.dropcap > p:first-child:first-letter {
   margin-right: 8px;
   margin-left: 3px; }
 
-.hugo-figure-caption {
-  padding-top: 5px; }
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
-.centered-image {
-  max-width: 90%;
-  min-width: 50%; }
+.projects-cards > li {
+  display: flex;
+  margin: 0 auto 1em auto; }
+  @media (min-width: 750px) {
+    .projects-cards > li {
+      width: 50%;
+      padding-right: 1em; } }
+.project-card {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.project-card-content > h3 {
+  margin: 1em; }
+
+.admonition {
+  line-height: 18px;
+  overflow: hidden;
+  padding: 12px;
+  margin-bottom: 1em; }
+
+.admonition-title {
+  font-weight: bold;
+  padding-bottom: 0.5em; }
+
+.note {
+  background-color: #f0f7fb;
+  border-left: solid 4px #3498db; }
+
+.warning {
+  background-color: #fffeec;
+  border-left: solid 4px orange; }
+
+.error {
+  background-color: #fffbfb;
+  border-left: solid 4px red; }
