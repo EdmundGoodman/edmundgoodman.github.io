@@ -5,8 +5,6 @@ date: 2023-01-08T14:12:29Z
 draft: false
 ---
 
-## Blog Canary
-
 In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
 commonly canaries, into mines to detect high levels of carbon monoxide. This
 worked because they would become sick (and stop singing) before the miners did.

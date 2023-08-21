@@ -2,23 +2,15 @@
 title: "Rouse Research"
 author: "Edmund Goodman"
 date: 2023-08-19T13:08:12+01:00
-card_image: "https://picsum.photos/500/300/?image=11"
+card_image: "/images/projects/rouse_research.png"
 draft: true
 ---
 
-## Lorem Ipsum
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+In Sixth Form, I completed a research project titled "How effective are machine
+learning algorithms compared with traditional analytical techniques, with
+respect to playing abstract games".
 
 <!--more-->
 
-Cras volutpat malesuada dapibus. Integer aliquam eget risus a ornare. Sed rutrum
-felis ut eros varius, sit amet placerat metus dignissim. Cras non mauris
-ultricies, pulvinar tellus nec, suscipit tortor. Donec cursus euismod tellus,
-vitae pulvinar est faucibus et. Suspendisse fringilla aliquet porta. Fusce nec
-tortor eget ante vehicula placerat. Nulla dignissim quam nibh, ac tincidunt
-metus convallis eu. Sed nec tellus lacinia, elementum libero a, iaculis justo.
-Proin interdum placerat elit, et consectetur lectus feugiat non. In iaculis eros
-sit amet dui lobortis, eu consectetur sapien vestibulum. In urna elit, semper
-non maximus ut, tempor non diam. Nulla sodales lacus non dui mollis, vitae
-imperdiet magna pellentesque. Pellentesque non hendrerit nisl.
+You can view the
+[full essay here](https://github.com/EdmundGoodman/rouse-research/blob/master/Rouse%20Essay.pdf).

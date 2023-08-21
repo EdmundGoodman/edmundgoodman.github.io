@@ -18,7 +18,13 @@
                 <div class="project-card">
                     <img src="{{ .Params.card_image }}">
                     <div class="project-card-content">
-                        <h3>{{- .Title | markdownify }}</h3>
+                        <div class="project-card-title">{{- .Title | markdownify }}</div>
+                        {{- if not .Date.IsZero -}}
+                        <div class="project-card-date">
+                            {{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "datefmt") }}
+                            <time datetime='{{ .Date.Format " 2006-01-02" }}'>{{ .Date.Format $dateFormat }}</time>
+                        </div>
+                        {{- end -}}
                     </div>
                 </div>
             </a></li>
