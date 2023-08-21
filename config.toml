@@ -18,9 +18,9 @@ pygmentsStyle = "monokai"
 
 
 # Taxonomies
-[taxonomies]
-tag = "tags"
-category = "categories"
+# [taxonomies]
+# tag = "tags"
+# category = "categories"
 
 
 # Menu
