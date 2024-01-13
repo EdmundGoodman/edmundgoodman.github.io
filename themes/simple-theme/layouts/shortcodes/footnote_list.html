@@ -2,7 +2,7 @@
 {{ $list := .Page.Store.Get "footnotes"}}
 <ul>
     {{ range $key, $value := $list }}
-        <li><span id="footnote--{{ $key }}">[{{ $key }}]<span/>: {{ $value }}</li>
+        <li><span id="footnote--{{ $key }}">[{{ $key }}]<span/>: {{ $value | markdownify }}</li>
     {{end}}
 </ul>
 {{ .Page.Scratch.Delete "footnotes" }}
