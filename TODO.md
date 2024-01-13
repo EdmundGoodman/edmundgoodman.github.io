@@ -13,3 +13,10 @@
 - [ ] Add CSS/JS minification
 
 - [ ] Add side pips for scroll indication
+
+- [ ] search engine optimisation
+  - <https://moonbooth.com/hugo/seo/>
+  - <https://djangocas.dev/blog/hugo/tips-on-hugo-seo/>
+  - <https://www.webpagetest.org/>
+  - robots.txt
+  - compress images/remove big splash screen? and fonts?

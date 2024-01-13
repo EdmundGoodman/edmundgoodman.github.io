@@ -14,6 +14,14 @@
 {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}" />
 {{ end }}
+{{/*  {{ if .Params.Description }}
+    <meta name="description" content="{{ trim .Params.Description '\n' }}">
+{{else if .Site.Params.Description}}
+    <meta name="description" content="{{ trim .Site.Params.Description '\n' }}">
+{{ end }}
+{{ if .Params.Keywords }}
+    <meta name="keywords" content="{{ delimit .Params.Keywords ' , '' }}}">
+{{ end }}  */}}
 {{ with .Site.LanguageCode }}
     <meta http-equiv="content-language" content="{{ . }}" />
 {{ end }}

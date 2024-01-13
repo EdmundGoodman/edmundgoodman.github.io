@@ -24,7 +24,7 @@ Then, boot the computer from this live USB stick. This normally involves a proce
 
 This should drop you into a working EndeavourOS operating system, from which you can run the steps to fix the broken one on the computer. All the next steps are commands to run in a terminal, which can be opened with `ctrl+alt+t`.
 
-Additionally, you should connect to a WiFi network on the live boot, as this make copy-pasting commands from the internet easier :sweat_smile:, and allows downloading/completing updates to the computer.
+Additionally, you should connect to a WiFi network on the live boot, as this makes copy-pasting commands from the internet easier :sweat_smile:, and allows downloading/completing updates to the broken boot device.
 
 ### 2) Decrypt and mount the encrypted and boot disk partitions
 
