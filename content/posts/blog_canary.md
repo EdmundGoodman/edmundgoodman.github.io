@@ -48,6 +48,10 @@ This is some more text, after a line break.
 
 [Hello there post]({{< ref "posts/hello_there.md" >}})
 
+### Footnotes
+
+This sentence has a footnote {{< footnote "1" "This is a footnote" >}}.
+
 ### Inline HTML
 
 {{< raw_html >}}
@@ -68,3 +72,7 @@ This is a note admonition using a custom `title`.
 {{< error >}}
 This is an error admonition.
 {{< /error >}}
+
+### References
+
+{{< footnote_list >}}

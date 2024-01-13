@@ -1,0 +1,8 @@
+<!--Derived from: https://github.com/gj52/HugoSample/blob/master/themes/photon/layouts/shortcodes/footnotelist.html -->
+{{ $list := .Page.Store.Get "footnotes"}}
+<ul>
+    {{ range $key, $value := $list }}
+        <li><span id="footnote--{{ $key }}">[{{ $key }}]<span/>: {{ $value }}</li>
+    {{end}}
+</ul>
+{{ .Page.Scratch.Delete "footnotes" }}
