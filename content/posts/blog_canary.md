@@ -6,8 +6,9 @@ draft: false
 ---
 
 In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
-commonly canaries, into mines to detect high levels of carbon monoxide. This
-worked because they would become sick (and stop singing) before the miners did.
+commonly canaries, into mines to detect high levels of carbon monoxide
+{{< footnote "1" "Haldane J. The Action of Carbonic Oxide on Man. The Journal of Physiology. 1895 Nov 16; 18(5-6):430-62." >}}.
+This worked because they would become sick (and stop singing) before the miners did.
 Because of this, "Canary in a coal mine" is commonly used as an idiom for
 something which warns people of danger.
 
@@ -18,7 +19,7 @@ in a coal mine.
 
 <!--more-->
 
-### Inline code
+## Inline code
 
 ```python
 def inc(x: int) -> int:
@@ -29,7 +30,7 @@ assert inc(0) == 1
 
 ```
 
-### Line breaks
+## Line breaks
 
 This is some text.
 
@@ -37,29 +38,29 @@ This is some text.
 
 This is some more text, after a line break.
 
-### Figures
+## Figures
 
 {{< figure
     src="/images/france_photo_squared.jpg"
     alt="A photo of me sitting on a pillar in Paris."
     caption="A photo of me sitting on a pillar in Paris." >}}
 
-### Internal references
+## Internal references
 
 [Hello there post]({{< ref "posts/hello_there.md" >}})
 
-### Footnotes
+## Footnotes
 
-This sentence has a footnote {{< footnote "1" "This is a footnote" >}}.
+This sentence has a footnote {{< footnote "2" "This is a footnote" >}}.
 
-### Inline HTML
+## Inline HTML
 
 {{< raw_html >}}
 
 <p style="font-family: kanzlei;  font-size: 32px;">Content in a decorative font</p>
 {{< /raw_html >}}
 
-### Admonitions
+## Admonitions
 
 {{< note >}}
 This is a note admonition.
@@ -73,6 +74,6 @@ This is a note admonition using a custom `title`.
 This is an error admonition.
 {{< /error >}}
 
-### References
+## References
 
 {{< footnote_list >}}

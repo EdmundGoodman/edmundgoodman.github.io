@@ -1,5 +1,5 @@
 ---
-title: "Fixing EndeavourOS boot failures"
+title: "Fixing EndeavourOS Boot Failures"
 author: "Edmund Goodman"
 date: 2024-01-13T15:07:51Z
 draft: false

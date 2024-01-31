@@ -2,6 +2,7 @@
 {{ $list := .Page.Store.Get "footnotes"}}
 <ul>
     {{ range $key, $value := $list }}
+        <!-- TODO: Add back-link to the footnote in the text -->
         <li><span id="footnote--{{ $key }}">[{{ $key }}]<span/>: {{ $value | markdownify }}</li>
     {{end}}
 </ul>
