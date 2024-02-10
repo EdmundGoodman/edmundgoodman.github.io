@@ -89,16 +89,13 @@ You can also read a different set of instructions for this process
 ## How do I use it on my computer?
 
 Once you have generated a token, you need to add it to the machine you intend to use it
-on. There are various ways to do this, and which way depends on what your threat vectors
-are, and how much setup you are willing to do.
-
-In this tutorial, we will use the git credential `store` helper. This stores the token
-in a plaintext format in your home directory. This is not an ideal solution, but since
-the file permissions are set to only be readable to your user account, and tokens can
-easily be revoked if compromised, it is probably an acceptable amount of risk for
-personal systems. Depending on your threat vectors and the type of system being used, this
-may be an unacceptable level of risk, in which case you should investigate a different
-storage strategy.
+on. There are various ways to do this, but in this tutorial we will use the git credential
+`store` helper. This stores the token in a plaintext format in your home directory.
+This is not an ideal solution, but since the file permissions are set to only be
+readable to your user account, and tokens can easily be revoked if compromised, it is
+probably an acceptable amount of risk for personal systems. Depending on your threat
+vectors and the type of system being used, this may be an unacceptable level of risk,
+in which case you should investigate a different storage strategy.
 
 To store your token, in a terminal type {{< footnote "4" "<https://stackoverflow.com/a/64632086>" >}}:
 

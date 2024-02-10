@@ -13,8 +13,8 @@ You can watch the recording of the [full lecture here](https://www.youtube.com/w
 
 ## What does CS260 mean?
 
-At the University of Warwick, CS260 is the module code for the "Algorithms" module
-on the Computer Science course {{< footnote "1" "<https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs260/>" >}}. It is described on the module page as follows:
+At the University of Warwick, CS260 is the module code for the "Algorithms" class
+on the Computer Science course {{< footnote "1" "<https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs260/>" >}}. It is described on the module web-page as follows:
 
 > Data structures and algorithms are fundamental to programming and to understand computation. The purpose of this module is to provide students with a coherent introduction to techniques for using data structures and some basic algorithms, and with the tools for applying these techniques to computational problems.
 
@@ -30,8 +30,6 @@ As part of my role as an academic officer for the University of Warwick Computin
 In total, around 80 people attended the lecture (about 1/3rd of the students taking the module), which is a great success given that it was a student-lead event with minimal advertising! On top of this, the lecture seemed broadly well-received as helpful by those who attended.
 
 Personally, I found giving the lecture very fulfilling - it is really cool (if a little intimidating) to give a technical lecture to a moderately large group of people. If given the opportunity I would definitely do it again, but I fear my career is likely to be in the direction of industry rather than academia, so I am unlikely to be giving many such lectures on the future.
-
-<!-- TODO: Add more personal reflection (My take-aways from giving the lecture) -->
 
 ## References
 

@@ -6,7 +6,7 @@
 - [ ] Review CSS, try to simplify
 - [ ] Switch from bootstrap to tablr icons
 
-- [ ] Add hugo shortcode for references in blogs
+- [x] Add hugo shortcode for references in blogs
 - [ ] Look at night mode toggler
 - [ ] Look at fonts/colour schemes
 - [ ] Add images/heroes & summaries to blog/project pages
@@ -21,4 +21,4 @@
   - robots.txt
   - compress images/remove big splash screen? and fonts?
 
-- Switch to inbuilt reading time and make it configurable, e.g. for videos embedded
+- [ ] Switch to inbuilt reading time and make it configurable, e.g. for videos embedded

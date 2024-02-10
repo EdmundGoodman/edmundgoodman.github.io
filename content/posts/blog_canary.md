@@ -49,15 +49,10 @@ This is some more text, after a line break.
 
 [Hello there post]({{< ref "posts/hello_there.md" >}})
 
-## Footnotes
-
-This sentence has a footnote {{< footnote "2" "This is a footnote" >}}.
-
 ## Inline HTML
 
 {{< raw_html >}}
-
-<p style="font-family: kanzlei;  font-size: 32px;">Content in a decorative font</p>
+<span style="color: red;">This is some text styled through raw HTML.</span>
 {{< /raw_html >}}
 
 ## Admonitions
