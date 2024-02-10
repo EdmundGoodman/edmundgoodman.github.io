@@ -7,7 +7,9 @@ draft: false
 
 ## Where can I find the lecture?
 
-You can watch the recording of the [full lecture here](https://www.youtube.com/watch?v=o1bSND4SSLM).
+You can watch the recording of the full lecture on YouTube:
+
+{{< youtube o1bSND4SSLM >}}
 
 <!--more-->
 

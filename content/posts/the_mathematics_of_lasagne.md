@@ -9,9 +9,11 @@ draft: false
 
 ## Watch it on YouTube
 
+{{< youtube 9l9hcSIAAtM >}}
+
 <!--more-->
 
-[![The Mathematics of Lasagne YouTube video thumbnail with controls](/images/posts/the_mathematics_of_lasagne/youtube_thumbnail_controls.png)](https://youtu.be/9l9hcSIAAtM)
+The slides for the talk can be found [on my GitHub](https://github.com/EdmundGoodman/The-Mathematics-of-Lasagne).
 
 ## Abstract
 
