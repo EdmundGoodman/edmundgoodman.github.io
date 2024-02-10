@@ -20,3 +20,5 @@
   - <https://www.webpagetest.org/>
   - robots.txt
   - compress images/remove big splash screen? and fonts?
+
+- Switch to inbuilt reading time and make it configurable, e.g. for videos embedded
