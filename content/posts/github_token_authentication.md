@@ -70,8 +70,11 @@ bottom of the page. After the button is pressed a screen like this should be sho
     alt="Screenshot of the screen once a new token is created."
     caption="Screenshot of the screen once a new token is created." >}}
 
-The generated token should start with a `ghp_` prefix. **You must copy this token now!
-You won't be able to see it once the page closes.**
+The generated token should start with a `ghp_` prefix.
+
+{{< note >}}
+**You must copy this token now!** You'll never be able to see it again once the page closes.
+{{< /note >}}
 
 {{< warning >}}
 **This token acts like a password! You shouldn't show anyone it, and should revoke
