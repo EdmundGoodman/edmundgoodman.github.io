@@ -56,6 +56,10 @@ Personally, I found giving the lecture very fulfilling - it is really cool (if a
     alt="A photo of me explaining the Master Theorem using a blackboard." >}}
 
 {{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/gesticulating_2.jpg"
+    alt="A photo of me explaining Dynamic Programming using a Beamer slide." >}}
+
+{{< figure
     src="/images/posts/cs260_algorithms_revision_lecture/photo_from_back.jpg"
     alt="A photo from the back of the lecture theatre." >}}
 
