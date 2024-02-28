@@ -29,10 +29,34 @@ As part of my role as an academic officer for the University of Warwick Computin
 
 ## How did the lecture go?
 
-In total, around 80 people attended the lecture (about 1/3rd of the students taking the module), which is a great success given that it was a student-lead event with minimal advertising! On top of this, the lecture seemed broadly well-received as helpful by those who attended.
+In total, around 80 people attended the lecture (about 1/3rd of the students taking the module -- slightly visible in the last photo in the gallery), which is pretty successful given that it was a student-lead event with minimal advertising! On top of this, the lecture seemed broadly well-received as helpful by those who attended.
 
 Personally, I found giving the lecture very fulfilling - it is really cool (if a little intimidating) to give a technical lecture to a moderately large group of people. If given the opportunity I would definitely do it again, but I fear my career is likely to be in the direction of industry rather than academia, so I am unlikely to be giving many such lectures on the future.
 
 ## References
 
 {{< footnote_list >}}
+
+## Gallery
+
+{{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/thinking_1.jpg"
+    alt="A photo of me thinking in front of a blackboard." >}}
+
+{{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/pointing_1.jpg"
+    alt="A photo of me pointing at a blackboard." >}}
+
+{{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/blackboard_4.jpg"
+    alt="A photo of me writing a Bellman-Ford equation on a blackboard." >}}
+
+{{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/blackboard_3.jpg"
+    alt="A photo of me explaining the Master Theorem using a blackboard." >}}
+
+{{< figure
+    src="/images/posts/cs260_algorithms_revision_lecture/photo_from_back.jpg"
+    alt="A photo from the back of the lecture theatre." >}}
+
+Thanks to [Dewi Jones](https://github.com/dewigjones) and the UWCS publicity team for taking these photos!
