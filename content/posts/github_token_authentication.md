@@ -36,7 +36,7 @@ create an "authentication token".
 >
 > -- Twilio {{< footnote "2" "<https://www.twilio.com/docs/glossary/what-is-an-authentication-token>" >}}
 
-There are a number of different types of authentication tokeb, including personal access tokens and SSH keys
+There are a number of different types of authentication tokens, including personal access tokens and SSH keys.
 
 ##  Using SSH keys
 
@@ -147,7 +147,7 @@ The generated token should start with a `ghp_` prefix.
 
 {{< warning >}}
 **This token acts like a password! You shouldn't show anyone it, and should revoke
-it if anyone sees it**. To delete a token, click the delete button on the tokens page.
+it if anyone sees it**. To revoke a token, click the delete button on the tokens page.
 {{< /warning >}}
 
 {{< figure
