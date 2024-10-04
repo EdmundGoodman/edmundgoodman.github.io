@@ -43,7 +43,7 @@ This will list the available devices, from which you need to identify your boot 
 Next, use `cryptsetup` to decrypt the LUKS encrypted drive {{< footnote "3" "<https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#1---open-the-encrypted-disk>" >}}:
 
 ```bash
-sudo cryptsetup open /dev/mapper/nvme0n1p2 luks_root
+sudo cryptsetup open /dev/nvme0n1p2 luks_root
 ```
 
 Then, mount the newly decrypted partition and then the boot drive into the `/boot/` folder within it {{< footnote "4" "<https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#2---mount-all-the-partitions>" >}}:
@@ -60,7 +60,7 @@ sudo mount /dev/nvme0n1p1 /mnt/boot
 Next, use `arch-chroot` to root into the newly mounted broken system {{< footnote "6" "<https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#3---root-into-the-new-system>" >}}:
 
 ```bash
-arch-chroot /mnt
+sudo arch-chroot /mnt
 ```
 
 ### 4) Debugging WiFi inside `arch-chroot`
@@ -100,6 +100,12 @@ grub install --target=x86_54-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+If `pacman` reports '"Failed to commit transaction (conflicting files)" error' whilst you re-attempt the update, a nuclear option is to reinstall all packages, overwriting existing installations in the file system {{< footnote "10" "<https://forum.endeavouros.com/t/multiple-issues-including-booting-problem-seemingly-broken-file-and-fatal-library-error/51906/3>" >}}, with the following command:
+
+```bash
+pacman -Syu $(pacman -Qnq) --overwrite "*"
+```
+
 It is possible something else is wrong, but this time is when you should largely be running commands to fix it!
 
 Then, disconnect from the `arch-chroot` as follows:
@@ -110,7 +116,7 @@ exit
 
 ### 6) Clean up and try to boot
 
-Before restarting, it is good practice to unmount both the boot and decrypted partitions, then close the decrypted partition {{< footnote "10" "<https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#4---unmount-and-exit>" >}}.
+Before restarting, it is good practice to unmount both the boot and decrypted partitions, then close the decrypted partition {{< footnote "11" "<https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#4---unmount-and-exit>" >}}.
 
 ```bash
 sudo umount /mnt/boot/

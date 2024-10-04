@@ -5,11 +5,11 @@ date: {{ .Date }}
 draft: true
 ---
 
-## Lorem Ipsum
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Short summary of/introduction to the post
 
 <!--more-->
+
+## Lorem Ipsum
 
 Cras volutpat malesuada dapibus. Integer aliquam eget risus a ornare. Sed rutrum
 felis ut eros varius, sit amet placerat metus dignissim. Cras non mauris
