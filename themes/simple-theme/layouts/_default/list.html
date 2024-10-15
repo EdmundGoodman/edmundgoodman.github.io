@@ -6,10 +6,9 @@
 {{ end }}
 
 <!-- List all pages -->
-<header>
-    <h1>Posts</h1>
-</header>
-<ul class="post-list">
+<h1>Posts</h1>
+
+<ul id="post-list">
     {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
     <h2>{{ .Key }}</h2>
     <hr>

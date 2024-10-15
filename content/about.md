@@ -3,7 +3,6 @@ title: About
 author: Edmund Goodman
 date: '2023-06-29'
 hide_post_meta: true
-dropcap: false
 aliases:
 - about-me
 ---
@@ -19,4 +18,3 @@ In my free time, I sing in the [Peterhouse Chapel Choir](https://www.pet.cam.ac.
 always try to commute by bicycle instead of walking (irrespective of how short the journey is),
 and occasionally rock climb. When I have the time and opportunity, I also work on various side
 projects -- some of which I finish!
-

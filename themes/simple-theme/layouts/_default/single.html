@@ -1,5 +1,17 @@
 {{ define "main" }}
 
-{{ partial "single" . }}
+{{ if (or (not (isset .Params "show_title")) (eq .Params.show_title true)) }}
+<h1>
+    {{- .Title | markdownify -}}
+</h1>
+{{ end }}
+
+<header>
+    {{ if (or (not (isset .Params "hide_post_meta")) (eq .Params.hide_post_meta false)) }}
+        {{ partial "post_meta.html" . }}
+    {{ end }}
+</header>
+
+{{ .Content }}
 
 {{ end }}

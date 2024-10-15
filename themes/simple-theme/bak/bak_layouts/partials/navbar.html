@@ -1,0 +1,31 @@
+{{ block "header" . }}
+
+<!-- https://dev.to/gautamtiwari/how-to-make-a-responsive-hamburger-menu-using-css-only-3pg5 -->
+<section id="top-nav">
+  <nav>
+    <span class="nav-item nav-logo">
+      <a href="{{ .Site.BaseURL | relLangURL }}" class="nav-link">Home</a>
+    </span>
+
+    <ul class="nav-menu">
+      <!-- Traditional menu -->
+      {{- range .Site.Menus.main -}}
+      <li class="nav-item nav-normal">
+        <a href="{{ .URL | relLangURL }}" class="nav-link">{{- .Name -}}</a>
+      </li>
+      {{ end }}
+
+      <!-- Hamburger menu -->
+      <li class="nav-item hamburger-container">
+        <!-- TODO: Static link to index page -->>
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+{{ end }}

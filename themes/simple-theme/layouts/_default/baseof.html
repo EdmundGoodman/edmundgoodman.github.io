@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode }}">
 
 <head>
     {{ partial "head.html" .}}
 </head>
 
 <body>
-    {{- partial "navbar.html" . -}}
-    <section id="page-content">
+    <div id="navbar">
+        {{- partial "navbar.html" . -}}
+    </div>
+
+    <article id="page-content">
         {{- block "main" . }}{{- end }}
-    </section>
-    {{- partial "footer.html" . -}}
+    </article>
+
+    <div id="footer">
+        {{- partial "footer.html" . -}}
+    </div>
 </body>
 
 </html>

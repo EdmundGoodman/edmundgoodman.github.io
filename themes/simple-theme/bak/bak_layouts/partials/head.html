@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>
+    {{- block "title" . -}}
+        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+    {{- end -}}
+</title>
+
+<!-- Description of author from config.toml and favicon-->
+{{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}" />
+{{ end }}
+{{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}" />
+{{ end }}
+{{/*  {{ if .Params.Description }}
+    <meta name="description" content="{{ trim .Params.Description '\n' }}">
+{{else if .Site.Params.Description}}
+    <meta name="description" content="{{ trim .Site.Params.Description '\n' }}">
+{{ end }}
+{{ if .Params.Keywords }}
+    <meta name="keywords" content="{{ delimit .Params.Keywords ' , '' }}}">
+{{ end }}  */}}
+{{ with .Site.LanguageCode }}
+    <meta http-equiv="content-language" content="{{ . }}" />
+{{ end }}
+<link rel="icon" href="/images/favicon.ico" sizes="any" type="image/x-icon" />
+
+<!-- Preprocess the scss for the main stylesheet-->
+{{ $options := (dict "targetPath" "css/styles.css") }}
+{{ $scss := resources.Get "scss/main.scss" }}
+{{ $style := $scss | css.Sass $options | resources.Minify }}
+<link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" />
