@@ -1,7 +1,6 @@
 The MIT License (MIT)
 
-Original work copyright (c) 2019 Mihail Cristian Dumitru
-Modified work Copyright (c) 2021 Edmund Goodman
+Original work copyright (c) 2024 Edmund Goodman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
