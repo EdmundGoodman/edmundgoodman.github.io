@@ -10,7 +10,7 @@ aliases:
 
 Hello there :wave: ! Welcome to my corner of the internet.
 
-I'm currently studying at the University of Cambridge for an MPhil in Computer Science.
+I'm currently studying at the University of Cambridge for an MPhil in Advanced Computer Science.
 I previously studied at the University of Warwick, and have spent some time as an academic
 officer at the [University of Warwick Computing Society](https://uwcs.co.uk/) and as a
 CAD Design Verification intern at [Apple](https://www.apple.com/).
