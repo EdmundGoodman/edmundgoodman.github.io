@@ -45,7 +45,7 @@ posts = "/posts/:year/:month/:title/"
 [params]
 author = "Edmund Goodman"
 author_url = "https://github.com/EdmundGoodman"
-author_image = "/images/france_photo_squared.jpg"
+author_image = "/images/me.jpeg"
 license = "CC BY-NC 4.0"
 license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
 description = "The personal website for Edmund Goodman"
