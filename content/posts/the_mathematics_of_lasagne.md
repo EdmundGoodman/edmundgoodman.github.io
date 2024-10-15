@@ -23,6 +23,12 @@ As part of my role as an academic officer for the [University of Warwick Computi
 
 I wrote and delivered this talk as one of the Lightning Talks in the Michaelmas term of 2023. The slides and source code for this talk are available on GitHub {{< footnote "2" "<https://github.com/EdmundGoodman/The-Mathematics-of-Lasagne>" >}}.
 
+<!-- ## Slides
+
+{{< raw_html >}}
+<object data="/files/posts/the_mathematics_of_lasagne/The_Mathematics_of_Lasagne.pdf" width="100%" height="500vh"></object>
+{{< /raw_html >}} -->
+
 ## References
 
 {{< footnote_list >}}
