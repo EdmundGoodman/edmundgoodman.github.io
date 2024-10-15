@@ -5,4 +5,5 @@ clean:
 
 .PHONY: run
 run:
-	@open http://localhost:1313/ && hugo server run
+	@hugo server run
+# @open http://localhost:1313/ && hugo server run

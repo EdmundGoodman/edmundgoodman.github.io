@@ -1,6 +1,6 @@
 baseurl = "https://edmundgoodman.github.io"
 title = "Edmund Goodman"
-languageCode = "en-uk"
+languageCode = "en-gb"
 
 # Theme to use
 theme = "simple-theme"
@@ -44,18 +44,13 @@ posts = "/posts/:year/:month/:title/"
 # Meta
 [params]
 author = "Edmund Goodman"
-author_url = "https://github.com/EdmundGoodman"
-author_image = "/images/me.jpeg"
-license = "CC BY-NC 4.0"
-license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
+subtitle = "Computer Scientist"
 description = "The personal website for Edmund Goodman"
 
-[params.home]
-subtitles = ["Computer Scientist", "University of Cambridge"]
-
-[params.footer]
-author = true
-license = true
+[[params.footer]]
+repository = "https://github.com/EdmundGoodman/edmundgoodman.github.io"
+license = "CC BY-NC 4.0"
+license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
 
 [[params.social]]
 name = "github"
