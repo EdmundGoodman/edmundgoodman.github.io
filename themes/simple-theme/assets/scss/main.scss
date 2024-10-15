@@ -1,13 +1,11 @@
 /* Setup */
-@import "variables";
+@import "theme";
 @import "general";
-@import "fonts";
 
 @import "partials/navbar";
 @import "partials/footer";
 
 @import "pages/index";
 @import "pages/blog";
-@import "pages/projects";
 
 @import "shortcodes/admonitions";
