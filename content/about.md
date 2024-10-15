@@ -8,9 +8,15 @@ aliases:
 - about-me
 ---
 
-Hello there! Welcome to my corner of the internet.
+Hello there :wave: ! Welcome to my corner of the internet.
 
-I'm Edmund Goodman, a Computer Science undergraduate in my 3rd year
-at the University of Warwick following my year in industry as a CAD design
-verification intern at Apple. In my free time, I enjoy choral singing, rock
-climbing, and working on various side projects -- some of which I finish!
+I'm currently studying at the University of Cambridge for an MPhil in Computer Science.
+I previously studied at the University of Warwick, and have spent some time as an academic
+officer at the [University of Warwick Computing Society](https://uwcs.co.uk/) and as a
+CAD Design Verification intern at [Apple](https://www.apple.com/).
+
+In my free time, I sing in the [Peterhouse Chapel Choir](https://www.pet.cam.ac.uk/chapel-choir),
+always try to commute by bicycle instead of walking (irrespective of how short the journey is),
+and occasionally rock climb. When I have the time and opportunity, I also work on various side
+projects -- some of which I finish!
+
