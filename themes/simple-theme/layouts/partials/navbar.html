@@ -4,10 +4,11 @@
 
 <ul class="nav-menu">
     {{- range .Site.Menus.main -}}
-    <li class="nav-item nav-elided">
-      <a href="{{ .URL | relLangURL }}"
-      >{{- .Name -}}</a>
-    </li>
+        {{ if (le .Weight 2)}}
+            <li class="nav-item nav-elided">
+                <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
+            </li>
+        {{ end }}
     {{ end }}
 
     <li class="nav-item">
