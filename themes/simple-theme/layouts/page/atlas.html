@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    {{ partial "head.html" .}}
+</head>
+
+<body>
+    <main>
+        <ul class="atlas-menu">
+            <li>
+                <h3><a href="{{ .Site.BaseURL | relLangURL }}">Home</a></h3>
+            </li>
+            {{- range .Site.Menus.main -}}
+            <li>
+                <h3><a href="{{ .URL | relLangURL }}">{{- .Name -}}</a></h3>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
+
+    <footer>
+        {{- partial "footer.html" . -}}
+    <footer/>
+</body>
+
+</html>
