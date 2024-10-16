@@ -1,0 +1,18 @@
+<span class="nav-item">
+    <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
+</span>
+
+<ul class="nav-menu">
+    {{- range .Site.Menus.main -}}
+    <li class="nav-item nav-elided">
+      <a href="{{ .URL | relLangURL }}"
+      >{{- .Name -}}</a>
+    </li>
+    {{ end }}
+
+    <li class="nav-item">
+        {{- with (index (.Site.Menus.footer) 0) -}}
+            <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
+        {{ end }}
+    </li>
+</ul>

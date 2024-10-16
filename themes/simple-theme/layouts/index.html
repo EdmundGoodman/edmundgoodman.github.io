@@ -1,5 +1,6 @@
 {{ define "main" }}
-    <!-- TODO: Center text -->
-    <h1>{{ .Site.Params.author | markdownify }}</h1>
-    <h2>{{ .Site.Params.subtitle | markdownify }}</h2>
+    <div id="splash">
+        <h1>{{ .Site.Params.author | markdownify }}</h1>
+        <h3>{{ .Site.Params.subtitle | markdownify }}</h3>
+    </div>
 {{ end }}

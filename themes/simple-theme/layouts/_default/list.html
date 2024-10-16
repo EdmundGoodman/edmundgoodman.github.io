@@ -1,26 +1,32 @@
 {{ define "main" }}
 
-<!-- Display _index.md if available -->
-{{ if .Content }}
-    {{ partial "single" . }}
+{{ if (not (eq .Params.hide_title true))}}
+    {{ if (isset .Params "title" ) }}
+        <h1>{{- .Title | markdownify -}}</h1>
+    {{ else }}
+        <h1>{{- .Section | title -}}</h1>
+    {{ end }}
 {{ end }}
 
-<!-- List all pages -->
-<h1>Posts</h1>
+{{ .Content }}
 
-<ul id="post-list">
+<ul>
     {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
-    <h2>{{ .Key }}</h2>
-    <hr>
-    <ul>
-      {{ range .Pages }}
-        <h3><a href="{{ .RelPermalink }}">
-            {{- .Title | markdownify }}
-        </a></h3>
-        {{ partial "post_meta.html" . }}
-      {{ end }}
-    </ul>
-    {{ end }}
+    <li>
+        <h2>{{ .Key }}</h2>
+        <hr>
+        <ul>
+        {{ range .Pages }}
+            <li>
+                <h3>
+                    <a href="{{ .RelPermalink }}">{{- .Title | markdownify }}</a>
+                </h3>
+                {{ partial "post_meta.html" . }}
+            </li>
+        {{ end }}
+        </ul>
+        {{ end }}
+    </li>
 </ul>
 
 {{ end }}

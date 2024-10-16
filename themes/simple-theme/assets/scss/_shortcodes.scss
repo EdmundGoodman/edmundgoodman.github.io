@@ -1,0 +1,52 @@
+// Improve the code blocks
+div.highlight pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+// Centre figures and figure captions
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure > img {
+    border-radius: 5px;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+
+// https: //www.madcapsoftware.com/blog/css-tip-creating-styled-boxes-notes-warnings-examples-tips/
+// https://boundedinfinity.github.io/2017/09/admonitions-in-css/
+.admonition {
+    line-height: 18px;
+    overflow: hidden;
+    padding: 12px;
+    margin-bottom: 1em;
+}
+
+.admonition-title {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.note {
+    background-color: #f0f7fb;
+    border-left: solid 4px #3498db;
+}
+
+.warning {
+    background-color: #fffeec;
+    border-left: solid 4px orange;
+}
+
+.error {
+    background-color: #fffbfb;
+    border-left: solid 4px red;
+}
+
+// quote version in grey?

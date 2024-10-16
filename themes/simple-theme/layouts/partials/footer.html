@@ -1,0 +1,5 @@
+<p>
+    © {{ dateFormat "2006" now }} {{ .Site.Params.author | markdownify }} |
+    <a href="{{ .Site.Params.footer.repository_url | safeURL }}">Source</a> |
+    <a href="{{ .Site.Params.footer.license_url | safeURL }}">License</a>
+</p>

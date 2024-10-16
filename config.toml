@@ -34,7 +34,11 @@ weight = 1
 url = "/posts/"
 name = "Blog"
 weight = 2
-
+# Footer
+[[menu.footer]]
+url = "atlas/"
+name = "Atlas"
+weight = 1
 
 # Links format
 [permalinks]
@@ -47,17 +51,16 @@ author = "Edmund Goodman"
 subtitle = "Computer Scientist"
 description = "The personal website for Edmund Goodman"
 
-[[params.footer]]
-repository = "https://github.com/EdmundGoodman/edmundgoodman.github.io"
-license = "CC BY-NC 4.0"
+[params.footer]
+repository_url = "https://github.com/EdmundGoodman/edmundgoodman.github.io"
 license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
 
-[[params.social]]
-name = "github"
-icon = "bi bi-github"
-url = "https://github.com/EdmundGoodman"
+# [[params.social]]
+# name = "github"
+# icon = "bi bi-github"
+# url = "https://github.com/EdmundGoodman"
 
-[[params.social]]
-name = "linkedin"
-icon = "bi bi-linkedin"
-url = "https://www.linkedin.com/in/edmundgoodman/"
+# [[params.social]]
+# name = "linkedin"
+# icon = "bi bi-linkedin"
+# url = "https://www.linkedin.com/in/edmundgoodman/"
