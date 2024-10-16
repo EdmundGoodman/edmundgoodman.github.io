@@ -9,6 +9,7 @@
             {{ .Title}} {{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
         {{- end -}}
     </title>
-    {{- $css := resources.Get "css/styles.css" -}}
-    {{ $style := $css  | resources.Minify }}
-    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+
+    {{ $scss := resources.Get "scss/main.scss" }}
+    {{ $style := $scss | resources.ToCSS | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">

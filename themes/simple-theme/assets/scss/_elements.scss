@@ -1,0 +1,43 @@
+// main {}
+
+footer, #splash {
+    text-align: center;
+}
+
+// #splash {}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    margin-right: 1em;
+}
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+
+@media (max-width: 650px) {
+    .nav-elided {
+        display: none;
+    }
+}
+
+.nav-item > a {
+    font-weight: bolder !important;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+.nav-item > a:hover {
+    text-decoration: underline;
+}

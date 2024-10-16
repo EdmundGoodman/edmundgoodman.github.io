@@ -6,17 +6,17 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <nav>
         {{- partial "navbar.html" . -}}
-    </div>
+    </nav>
 
-    <article id="page-content">
+    <main>
         {{- block "main" . }}{{- end }}
-    </article>
+    </main>
 
-    <div id="footer">
+    <footer>
         {{- partial "footer.html" . -}}
-    </div>
+    <footer/>
 </body>
 
 </html>

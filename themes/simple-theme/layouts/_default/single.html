@@ -1,16 +1,14 @@
 {{ define "main" }}
 
-{{ if (or (not (isset .Params "show_title")) (eq .Params.show_title true)) }}
-<h1>
-    {{- .Title | markdownify -}}
-</h1>
+{{ if (not (eq .Params.hide_title true))}}
+<h1>{{- .Title | markdownify -}}</h1>
 {{ end }}
 
-<header>
-    {{ if (or (not (isset .Params "hide_post_meta")) (eq .Params.hide_post_meta false)) }}
+{{ if (not (eq .Params.hide_post_meta true))}}
+    <header>
         {{ partial "post_meta.html" . }}
-    {{ end }}
-</header>
+    </header>
+{{ end }}
 
 {{ .Content }}
 
