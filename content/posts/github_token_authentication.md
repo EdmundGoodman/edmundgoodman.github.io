@@ -55,7 +55,7 @@ On MacOS, the SSH key password can be added to the user keychain, significantly
 reducing the friction when interacting with the remote. This step is listed in
 the GitHub docs for MacOS, first updating the SSH config file as follows:
 
-```
+```text
 Host github.com
   AddKeysToAgent yes
   UseKeychain yes
@@ -201,7 +201,7 @@ ls -alFh | grep credentials
 
 Which should print something similar to:
 
-```
+```text
 -rw-------  1 <username> <username>   85 <date> .git-credentials
 ```
 
