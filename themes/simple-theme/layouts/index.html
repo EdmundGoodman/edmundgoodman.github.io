@@ -2,5 +2,10 @@
     <div id="splash">
         <h1>{{ .Site.Params.author | markdownify }}</h1>
         <h3>{{ .Site.Params.subtitle | markdownify }}</h3>
+        <h5>
+            {{ range .Site.Params.social }}
+                <a href="{{ .url | safeURL }}">{{ .name | safeHTML }}</a>
+            {{ end }}
+        </h5>
     </div>
 {{ end }}

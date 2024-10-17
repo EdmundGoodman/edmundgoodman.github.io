@@ -55,12 +55,10 @@ description = "The personal website for Edmund Goodman"
 repository_url = "https://github.com/EdmundGoodman/edmundgoodman.github.io"
 license_url = "https://creativecommons.org/licenses/by-nc/4.0/"
 
-# [[params.social]]
-# name = "github"
-# icon = "bi bi-github"
-# url = "https://github.com/EdmundGoodman"
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/EdmundGoodman"
 
-# [[params.social]]
-# name = "linkedin"
-# icon = "bi bi-linkedin"
-# url = "https://www.linkedin.com/in/edmundgoodman/"
+[[params.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/edmundgoodman/"

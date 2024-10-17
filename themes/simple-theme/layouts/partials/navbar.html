@@ -1,8 +1,8 @@
-<span class="nav-item">
-    <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
-</span>
-
 <ul class="nav-menu">
+    <li class="nav-item">
+        <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
+    </li>
+
     {{- range .Site.Menus.main -}}
         {{ if (le .Weight 2)}}
             <li class="nav-item nav-elided">
