@@ -1,18 +1,18 @@
-// main {}
-
-footer, #splash {
-    text-align: center;
-}
-
-// #splash {}
-
-// nav {}
-
+#splash,
 .atlas-menu {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 3em;
+    height: 100%;
 }
+.atlas-menu {
+    line-height: 3em;
+    list-style: none;
+    padding-left: 0;
+}
+
 
 .nav-menu {
     display: flex;
