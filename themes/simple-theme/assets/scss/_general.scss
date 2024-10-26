@@ -7,6 +7,7 @@ body {
     max-width: 650px;
     margin: 0 auto;
     overflow-y: auto; /* Allows scrolling if content overflows */
+    padding-left: calc(100vw - 100%); /* Don't shift layout due to scrollbar (https://dev.to/rashidshamloo/preventing-the-layout-shift-caused-by-scrollbars-2flp) */
 }
 
 nav, main, footer {
