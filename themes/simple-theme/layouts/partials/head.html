@@ -11,5 +11,5 @@
     </title>
 
     {{ $scss := resources.Get "scss/main.scss" }}
-    {{ $style := $scss | css.Sass | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $style := $scss | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
