@@ -1,21 +1,23 @@
 {{ define "main" }}
 
 {{ if (not (eq .Params.hide_title true))}}
+    <header>
     {{ if (isset .Params "title" ) }}
         <h1>{{- .Title | markdownify -}}</h1>
     {{ else }}
         <h1>{{- .Section | title -}}</h1>
     {{ end }}
+    </header>
 {{ end }}
 
 {{ .Content }}
 
-<ul>
+<ul class="post-list">
     {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
     <li>
         <h2>{{ .Key }}</h2>
         <hr>
-        <ul>
+        <ul class="post-year-list">
         {{ range .Pages }}
             <li>
                 <h3>

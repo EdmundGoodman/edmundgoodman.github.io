@@ -9,12 +9,11 @@
 }
 #splash {
     > h1 {
-        margin-bottom: 0;
+        margin: 0;
     }
     * a {
         text-decoration: none;
     }
-
 }
 .atlas-menu {
     line-height: 3em;
@@ -22,6 +21,24 @@
     padding-left: 0;
 }
 
+header > h1 {
+    font-size: 3em;
+}
+
+.post-list {
+    list-style: none;
+    padding-left: 0;
+    * hr {
+        margin-top: -0.75em;
+        border: 1px dashed;
+    }
+}
+.post-year-list {
+    list-style: none;
+    * h3 {
+        margin-bottom: 0.25em;
+    }
+}
 
 .nav-menu {
     display: flex;
@@ -54,7 +71,7 @@
     text-decoration: underline;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 450px) {
     .nav-elided {
         display: none;
     }

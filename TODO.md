@@ -5,7 +5,7 @@
 
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
-- [ ] Look at fonts/colour schemes (incl. admonitions)
+- [ ] Look at fonts/colour schemes
 
 - [ ] Choose whether to load shortcode css/js dependent on whether page type uses it (or better specific page uses it)
 - [ ] Gwern-style sidenote admonitions
