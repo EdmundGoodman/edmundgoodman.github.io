@@ -74,13 +74,13 @@ An easy point of confusion when using SSH keys is that different remotes are
 required than when authenticating over HTTPS. For HTTPS, remotes tend to look
 like:
 
-```
+```text
 https://github.com/<USERNAME>/<REPOSITORY>
 ```
 
 But when using SSH keys, remotes must be of the following format:
 
-```
+```text
 git@github.com:<USERNAME>/<REPOSITORY>
 ```
 

@@ -3,7 +3,7 @@ title = "Edmund Goodman"
 languageCode = "en-gb"
 
 # Theme to use
-theme = "simple-theme"
+theme = "minimal-theme"
 enableEmoji = true
 
 # Pagination
