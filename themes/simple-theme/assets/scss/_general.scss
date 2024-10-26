@@ -4,9 +4,10 @@ body {
 
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
     max-width: 650px;
     margin: 0 auto;
+
+    height: 100vh; /* Full viewport height */
     overflow-y: auto; /* Allows scrolling if content overflows */
     padding-left: calc(100vw - 100%); /* Don't shift layout due to scrollbar (https://dev.to/rashidshamloo/preventing-the-layout-shift-caused-by-scrollbars-2flp) */
 }
@@ -16,11 +17,9 @@ body {
         color: #c9d1d9;
         background: #0d1117;
     }
-
     a:link {
         color: #58a6ff;
     }
-
     a:visited {
         color: #8e96f0;
     }
@@ -40,4 +39,12 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
+}
+header {
+    > h1 {
+        font-size: 3em;
+    }
+    > .post-meta {
+        margin-top: -1.5em;
+    }
 }
