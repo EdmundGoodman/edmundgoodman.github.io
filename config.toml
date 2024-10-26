@@ -48,7 +48,8 @@ posts = "/posts/:year/:month/:title/"
 # Meta
 [params]
 author = "Edmund Goodman"
-subtitle = "Computer Scientist"
+# subtitle = "Computer Scientist"
+# image = ""
 description = "The personal website for Edmund Goodman"
 
 [params.footer]
