@@ -41,9 +41,9 @@ This is some more text, after a line break.
 ## Figures
 
 {{< figure
-    src="/images/france_photo_squared.jpg"
-    alt="A photo of me sitting on a pillar in Paris."
-    caption="A photo of me sitting on a pillar in Paris." >}}
+    src="https://picsum.photos/800/600"
+    alt="A randomly generated photo from Lorem Picsum"
+    caption="A randomly generated photo from [Lorem Picsum](https://picsum.photos/)." >}}
 
 ## Internal references
 
