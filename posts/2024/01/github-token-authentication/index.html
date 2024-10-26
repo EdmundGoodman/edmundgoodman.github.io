@@ -27,9 +27,9 @@ the GitHub docs for MacOS, first updating the SSH config file as follows:</p><di
 </span></span></code></pre></div><p>Then, using the following command when adding the SSH key:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 </span></span></code></pre></div><h4 id=correctly-configuring-remotes>Correctly configuring remotes</h4><p>An easy point of confusion when using SSH keys is that different remotes are
 required than when authenticating over HTTPS. For HTTPS, remotes tend to look
-like:</p><pre tabindex=0><code>https://github.com/&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
-</code></pre><p>But when using SSH keys, remotes must be of the following format:</p><pre tabindex=0><code>git@github.com:&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
-</code></pre><p>As such, you may need to modify some repository remotes if switching from HTTPS
+like:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>https://github.com/&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
+</span></span></code></pre></div><p>But when using SSH keys, remotes must be of the following format:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>git@github.com:&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
+</span></span></code></pre></div><p>As such, you may need to modify some repository remotes if switching from HTTPS
 to SSH authentication. This can be done as follows, for the example of the <code>origin</code> remote:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git remote remove origin
 </span></span><span style=display:flex><span>git remote add origin git@github.com:&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
 </span></span></code></pre></div><h2 id=using-personal-access-tokens>Using personal access tokens</h2><p>Personal access tokens are randomly generated strings which can be used in
