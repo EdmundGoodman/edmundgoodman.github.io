@@ -9,11 +9,11 @@
     <main>
         <ul class="atlas-menu">
             <li>
-                <h3><a href="{{ .Site.BaseURL | relLangURL }}">Home</a></h3>
+                <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
             </li>
             {{- range .Site.Menus.main -}}
             <li>
-                <h3><a href="{{ .URL | relLangURL }}">{{- .Name -}}</a></h3>
+                <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
             </li>
             {{ end }}
         </ul>
