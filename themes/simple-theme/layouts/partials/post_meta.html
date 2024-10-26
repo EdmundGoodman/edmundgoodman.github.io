@@ -7,7 +7,8 @@
     <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format $dateFormat }}</time>
 {{- end -}}
 
-&ensp;
+<!-- &ensp; -->
+&nbsp;&bull;&nbsp;
 
 <!-- Display the reading time by estimation -->
 {{- if or (not (isset .Params "show_reading_time")) .Params.show_reading_time -}}
@@ -17,7 +18,9 @@
 {{- end -}}
 
 <!-- Display taxonomies -->
-<!--&ensp;
+<!--
+&ensp;
+&nbsp;&bull;&nbsp;
 {{- range $taxo, $taxonomy := .Site.Taxonomies }}
     {{- $elems := $.Param $taxo }}
     {{- if $elems }}
