@@ -8,11 +8,14 @@
     height: 100%;
 }
 #splash {
-    > h1 {
-        margin: 0;
+    > * {
+        margin: 0.5rem;
     }
     * a {
         text-decoration: none;
+    }
+    * span {
+        display: inline-block;
     }
 }
 .atlas-menu {
