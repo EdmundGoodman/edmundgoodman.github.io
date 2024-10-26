@@ -1,7 +1,9 @@
 {{ define "main" }}
     <div id="splash">
         <h1>{{ .Site.Params.author | markdownify }}</h1>
-        <h3>{{ .Site.Params.subtitle | markdownify }}</h3>
+        {{- if isset .Site.Params "subtitle" -}}
+            <h3>{{ .Site.Params.subtitle | markdownify }}</h3>
+        {{- end -}}
         <h5>
             {{ range .Site.Params.social }}
                 <a href="{{ .url | safeURL }}">{{ .name | safeHTML }}</a>
