@@ -22,6 +22,7 @@ figure > img {
 
 // https: //www.madcapsoftware.com/blog/css-tip-creating-styled-boxes-notes-warnings-examples-tips/
 // https://boundedinfinity.github.io/2017/09/admonitions-in-css/
+// https://pinetools.com/darken-color
 .admonition {
     line-height: 18px;
     overflow: hidden;
@@ -35,18 +36,27 @@ figure > img {
 }
 
 .note {
-    background-color: #f0f7fb;
     border-left: solid 4px #3498db;
+    background-color: #f0f7fb;
+    @media (prefers-color-scheme: dark) {
+        background-color: #14384d;
+    }
 }
 
 .warning {
-    background-color: #fffeec;
     border-left: solid 4px orange;
+    background-color: #fffeec;
+    @media (prefers-color-scheme: dark) {
+        background-color: #625d00;
+    }
 }
 
 .error {
-    background-color: #fffbfb;
     border-left: solid 4px red;
+    background-color: #fffbfb;
+    @media (prefers-color-scheme: dark) {
+        background-color: #650000;
+    }
 }
 
 // quote version in grey?
