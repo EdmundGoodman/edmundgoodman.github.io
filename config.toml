@@ -47,9 +47,12 @@ posts = "/posts/:year/:month/:title/"
 
 # Meta
 [params]
-# image = ""
 author = "Edmund Goodman"
+# author_image = ""
 description = "The personal website for Edmund Goodman"
+
+[params.home]
+subtitles = ["Computer Scientist", "University of Cambridge"]
 
 [params.footer]
 repository_url = "https://github.com/EdmundGoodman/edmundgoodman.github.io"

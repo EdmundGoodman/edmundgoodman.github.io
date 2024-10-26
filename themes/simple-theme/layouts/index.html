@@ -2,9 +2,13 @@
     <div id="splash">
         <h1>{{ .Site.Params.author | markdownify }}</h1>
         <p>
-            <span>Computer Scientist</span>
-            &bull;
-            <span>University of Cambridge</span>
+            {{- with (index .Site.Params.home.subtitles 0) -}}
+                <span>{{ . | markdownify }}</span>
+            {{ end }}
+            &bull;&nbsp;
+            {{- with (index .Site.Params.home.subtitles 1) -}}
+                <span>{{ . | markdownify }}</span>
+            {{ end }}
         </p>
         <h2>
         {{ range .Site.Params.social }}
