@@ -3,6 +3,7 @@
   - As a result of scrollbar appearing/disappearing
 - [x] Switch from bootstrap to tablr icons
 
+- [ ] Formatting for hook lines and show in post list?
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
 - [ ] Look at fonts/colour schemes
