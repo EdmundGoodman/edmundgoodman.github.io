@@ -4,7 +4,7 @@ author: "Edmund Goodman"
 date: 2024-10-27T11:08:46Z
 ---
 
-UV is great! But it is not supported by Dependabot yet. I built a
+`uv` is great! But it is not supported by Dependabot yet. I built a
 simple GitHub Actions workflow to act as a stop-gap until support is added.
 
 <!--more-->
@@ -26,7 +26,7 @@ which helps manage dependencies, with a focus on avoiding known security
 vulnerabilities. It can provide alerts and raise pull requests against
 repositories to ensure its dependencies are up-to-date and secure.
 
-However, at time of writing (23rd October 2024), Dependabot does not support
+However, at time of writing (27th October 2024), Dependabot does not support
 `uv` as a package ecosystem. However, the behaviour of PRs to version bump
 dependencies, especially relating to security vulnerabilities, is still very
 desirable.
