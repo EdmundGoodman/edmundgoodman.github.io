@@ -7,6 +7,8 @@ draft: false
 
 This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available [as a gist](https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f).
 
+<!--more-->
+
 Specifically, this set of steps fixed the boot process on a HP-Envy laptop running EndeavourOS with an ext4 file system. The issue normally occurs after an interrupted update using `pacman -Syu`, which then causes the system to be unable to boot after the next restart (showing only "boot to firmware interface" in the boot menu).
 
 ## Steps to fix

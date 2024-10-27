@@ -4,7 +4,7 @@ author: "Edmund Goodman"
 date: 2024-10-27T11:08:46Z
 ---
 
-`uv` is great! But it is not supported by Dependabot yet. I built a
+`uv` is great! Unfortunately, it is not supported by Dependabot yet. I built a
 simple GitHub Actions workflow to act as a stop-gap until support is added.
 
 <!--more-->
