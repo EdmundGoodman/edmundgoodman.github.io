@@ -42,7 +42,8 @@ weight = 1
 
 # Links format
 [permalinks]
-posts = "/posts/:year/:month/:title/"
+posts = "/posts/:year/:title/"
+gelato = "/gelato/:year/:month/:day/"
 
 
 # Meta

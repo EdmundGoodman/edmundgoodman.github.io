@@ -1,0 +1,21 @@
+<!-- Make the list page the most recent post -->
+{{ define "main" }}
+{{ with (index (where site.RegularPages "Type" "gelato").ByDate.Reverse 0) }}
+
+<header>
+    {{ if (not (eq .Params.hide_title true))}}
+    <h1>{{- .Title | markdownify -}}</h1>
+    {{ end }}
+
+    {{ if (not (eq .Params.hide_post_meta true))}}
+        {{ partial "post_meta.html" . }}
+        <br>
+    {{ end }}
+</header>
+
+<article>
+{{ .Content }}
+</article>
+
+{{ end }}
+{{ end }}
