@@ -21,10 +21,14 @@ author: "Edmund Goodman"
 date: {NOW}
 ---
 
-All menu information is property of Jack's Gelato. See my [blog post]({{{{< ref "/posts/a_faster_gelato" >}}}}) for why
-I made this website.
-
 """
+
+FOOTER = (
+    "All menu information is property of Jack's Gelato."
+    " See my [blog post]({{< ref \"/posts/a_faster_gelato\" >}}) for why"
+    " I made this website.\n"
+)
+
 MENU_LOCATIONS: dict[str, str] = {
     "Bene't Street": "https://docs.google.com/uc?id=1dVYB7lnBgWE0bPhc9SFz0aLrkDfSCulrMctW1gDfCA8",
     "All Saints": "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
@@ -131,3 +135,4 @@ if __name__ == "__main__":
         file_handle.write(HEADER)
         for values in MENU_LOCATIONS.items():
             file_handle.write(menu_to_markdown(get_jacks_menu(*values)))
+        file_handle.write(FOOTER)
