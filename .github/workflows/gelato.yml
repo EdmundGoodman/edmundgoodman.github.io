@@ -3,7 +3,7 @@ name: Scrape Gelato menu
 on:
   workflow_dispatch:
   schedule:
-    - cron: 15 10 * * *
+    - cron: 40 */10 * * *
 
 permissions:
   contents: write

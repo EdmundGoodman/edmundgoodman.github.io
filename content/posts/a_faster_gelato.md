@@ -4,7 +4,8 @@ author: "Edmund Goodman"
 date: 2024-10-27T23:51:22Z
 ---
 
-I love Jack's Gelato. Unfortunately, their website's menu sucks. So I fixed it.
+I love Jack's Gelato. Unfortunately, their website's menu sucks.
+[So I fixed it.](https://edmundgoodman.co.uk/gelato/)
 
 <!--more-->
 
