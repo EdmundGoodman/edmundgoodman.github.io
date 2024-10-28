@@ -1,5 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Edmund Goodman</title><link>https://edmundgoodman.github.io/</link><description>Recent content on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Sun, 27 Oct 2024 11:08:46 +0000</lastBuildDate><atom:link href="https://edmundgoodman.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Update Bot</title><link>https://edmundgoodman.github.io/posts/2024/10/update-bot/</link><pubDate>Sun, 27 Oct 2024 11:08:46 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/10/update-bot/</guid><description>&lt;p>&lt;code>uv&lt;/code> is great! But it is not supported by Dependabot yet. I built a
-simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/p></description></item><item><title>Github Token Authentication</title><link>https://edmundgoodman.github.io/posts/2024/01/github-token-authentication/</link><pubDate>Wed, 31 Jan 2024 20:02:32 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/01/github-token-authentication/</guid><description>&lt;div class="admonition note">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Edmund Goodman</title><link>https://edmundgoodman.github.io/</link><description>Recent content on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Sun, 27 Oct 2024 23:59:42 +0000</lastBuildDate><atom:link href="https://edmundgoodman.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2024/10/27/</link><pubDate>Sun, 27 Oct 2024 23:59:42 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2024/10/27/</guid><description>&lt;p>All menu information is property of Jack&amp;rsquo;s Gelato. See my &lt;a href="https://edmundgoodman.github.io/posts/2024/a-faster-gelato/">blog post&lt;/a> for why
+I made this website.&lt;/p>
+&lt;h2 id="benet-street-sunday-27102024">Bene&amp;rsquo;t Street (Sunday, 27/10/2024)&lt;/h2>
+&lt;ul>
+&lt;li>Vanilla&lt;/li>
+&lt;li>Roasted Hazelnut&lt;/li>
+&lt;li>House Mascarpone &amp;amp; Marsala Wine&lt;/li>
+&lt;li>Almond Friand, Raspberry Ripple&lt;/li>
+&lt;li>Girton Apple Sorbet (vegan)&lt;/li>
+&lt;li>Parsnip Cake&lt;/li>
+&lt;li>Coconut &amp;amp; Ube (vegan)&lt;/li>
+&lt;li>Strawberries &amp;amp; Cream&lt;/li>
+&lt;li>Blueberry &amp;amp; Thyme Sorbet (vegan)&lt;/li>
+&lt;li>Chocolate, Raspberry Ripple&lt;/li>
+&lt;li>Chai Masala&lt;/li>
+&lt;li>Sherry; Palo Cortado 30yr old (+£3)&lt;/li>
+&lt;li>Dark Chocolate &amp;amp; Sea Salt (vegan)&lt;/li>
+&lt;/ul>
+&lt;h2 id="all-saints-sunday-27102024">All Saints (Sunday, 27/10/2024)&lt;/h2>
+&lt;ul>
+&lt;li>Banoffee&lt;/li>
+&lt;li>Milk &amp;amp; Manuka Honey&lt;/li>
+&lt;li>Canele de Bordeaux&lt;/li>
+&lt;li>Chocolate Chip Cookie Dough&lt;/li>
+&lt;li>Grilled Milk Chocolate&lt;/li>
+&lt;li>Lemon &amp;amp; Mint Sorbet (vegan)&lt;/li>
+&lt;li>Gooseberry (textured; skin and seed included)(vegan)&lt;/li>
+&lt;li>Coconut Ube (vegan)&lt;/li>
+&lt;li>Vanilla&lt;/li>
+&lt;li>Dark Chocolate &amp;amp; Sea Salt (vegan)&lt;/li>
+&lt;li>Strawberries &amp;amp; Aged Balsamic&lt;/li>
+&lt;/ul></description></item><item><title>A Faster Gelato</title><link>https://edmundgoodman.github.io/posts/2024/a-faster-gelato/</link><pubDate>Sun, 27 Oct 2024 23:51:22 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/a-faster-gelato/</guid><description>&lt;p>I love Jack&amp;rsquo;s Gelato. Unfortunately, their website&amp;rsquo;s menu sucks. So I fixed it.&lt;/p></description></item><item><title>Update Bot</title><link>https://edmundgoodman.github.io/posts/2024/update-bot/</link><pubDate>Sun, 27 Oct 2024 11:08:46 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/update-bot/</guid><description>&lt;p>&lt;code>uv&lt;/code> is great! Unfortunately, it is not supported by Dependabot yet. I built a
+simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/p></description></item><item><title>Github Token Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</link><pubDate>Wed, 31 Jan 2024 20:02:32 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</guid><description>&lt;div class="admonition note">
  &lt;div class="admonition-title">
  A note on provenance:
  &lt;/div>
@@ -22,8 +53,7 @@ when using the command line to interact with github.com
 
 
 &lt;a href="#footnote--1">&lt;sup>[1]&lt;/sup>&lt;/a>
-.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/01/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/01/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p>
-&lt;p>Specifically, this set of steps fixed the boot process on a HP-Envy laptop running EndeavourOS with an ext4 file system. The issue normally occurs after an interrupted update using &lt;code>pacman -Syu&lt;/code>, which then causes the system to be unable to boot after the next restart (showing only &amp;ldquo;boot to firmware interface&amp;rdquo; in the boot menu).&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/11/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/11/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
+.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
 &lt;p>You can watch the recording of the full lecture on YouTube:&lt;/p>
 
 
@@ -31,7 +61,7 @@ when using the command line to interact with github.com
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/o1bSND4SSLM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
  >&lt;/iframe>
- &lt;/div></description></item><item><title>The Mathematics of Lasagne</title><link>https://edmundgoodman.github.io/posts/2023/11/the-mathematics-of-lasagne/</link><pubDate>Fri, 10 Nov 2023 16:35:00 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/11/the-mathematics-of-lasagne/</guid><description>&lt;p>&lt;em>Lasagne. What is it? Why is it? This talk seeks to obfuscate the answer to these questions.&lt;/em>&lt;/p>
+ &lt;/div></description></item><item><title>The Mathematics of Lasagne</title><link>https://edmundgoodman.github.io/posts/2023/the-mathematics-of-lasagne/</link><pubDate>Fri, 10 Nov 2023 16:35:00 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/the-mathematics-of-lasagne/</guid><description>&lt;p>&lt;em>Lasagne. What is it? Why is it? This talk seeks to obfuscate the answer to these questions.&lt;/em>&lt;/p>
 &lt;h2 id="watch-it-on-youtube">Watch it on YouTube&lt;/h2>
 
 
@@ -47,7 +77,7 @@ CAD Design Verification intern at &lt;a href="https://www.apple.com/">Apple&lt;/
 &lt;p>In my free time, I sing in the &lt;a href="https://www.pet.cam.ac.uk/chapel-choir">Peterhouse Chapel Choir&lt;/a>,
 always try to commute by bicycle instead of walking (irrespective of how short the journey is),
 and occasionally rock climb. When I have the time and opportunity, I also work on various side
-projects &amp;ndash; some of which I finish!&lt;/p></description></item><item><title>Blog Canary</title><link>https://edmundgoodman.github.io/posts/2023/01/blog-canary/</link><pubDate>Sun, 08 Jan 2023 14:12:29 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/01/blog-canary/</guid><description>&lt;p>In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
+projects &amp;ndash; some of which I finish!&lt;/p></description></item><item><title>Blog Canary</title><link>https://edmundgoodman.github.io/posts/2023/blog-canary/</link><pubDate>Sun, 08 Jan 2023 14:12:29 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/blog-canary/</guid><description>&lt;p>In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
 commonly canaries, into mines to detect high levels of carbon monoxide
 
 
@@ -62,5 +92,5 @@ something which warns people of danger.&lt;/p>
 &lt;p>This blog post is (in a very convoluted sense) a canary for my website, as it
 exercises the elements which can be embedded in a blog post. If I broke
 something in the server side rendering it will be messed up here, like a canary
-in a coal mine.&lt;/p></description></item><item><title>Hello There</title><link>https://edmundgoodman.github.io/posts/2022/07/hello-there/</link><pubDate>Sat, 16 Jul 2022 19:01:24 +0100</pubDate><guid>https://edmundgoodman.github.io/posts/2022/07/hello-there/</guid><description>&lt;p>For quite a while, I&amp;rsquo;ve been &amp;ldquo;working on&amp;rdquo; a personal website, letting perfect be
+in a coal mine.&lt;/p></description></item><item><title>Hello There</title><link>https://edmundgoodman.github.io/posts/2022/hello-there/</link><pubDate>Sat, 16 Jul 2022 19:01:24 +0100</pubDate><guid>https://edmundgoodman.github.io/posts/2022/hello-there/</guid><description>&lt;p>For quite a while, I&amp;rsquo;ve been &amp;ldquo;working on&amp;rdquo; a personal website, letting perfect be
 the enemy of good and having nothing to show for it, but no more!&lt;/p></description></item><item><title>Atlas</title><link>https://edmundgoodman.github.io/atlas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://edmundgoodman.github.io/atlas/</guid><description/></item></channel></rss>
