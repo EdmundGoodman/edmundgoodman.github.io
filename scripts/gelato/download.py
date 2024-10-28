@@ -23,15 +23,22 @@ date: {NOW}
 
 """
 
-FOOTER = (
-    "All menu information is property of Jack's Gelato."
-    " See my [blog post]({{< ref \"/posts/a_faster_gelato\" >}}) for why"
-    " I made this website.\n"
-)
+FOOTER = """All menu information is property of Jack's Gelato.
+This page is updated daily at 10:20am.
 
-MENU_LOCATIONS: dict[str, str] = {
-    "Bene't Street": "https://docs.google.com/uc?id=1dVYB7lnBgWE0bPhc9SFz0aLrkDfSCulrMctW1gDfCA8",
-    "All Saints": "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
+See my [blog post]({{< ref '/posts/a_faster_gelato' >}})
+for why I made this website.
+"""
+
+MENU_LOCATIONS: dict[str, tuple[str, str]] = {
+    "Bene't Street": (
+        "https://docs.google.com/uc?id=1dVYB7lnBgWE0bPhc9SFz0aLrkDfSCulrMctW1gDfCA8",
+        "https://www.jacksgelato.com/bene-t-street-menu"
+    ),
+    "All Saints": (
+        "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
+        "https://www.jacksgelato.com/all-saints-menu"
+    ),
 }
 
 
@@ -40,6 +47,7 @@ class Menu:
     """Dataclass containing the menu date and items."""
 
     location: str
+    web: str
     date: datetime
     items: list[str]
 
@@ -52,12 +60,13 @@ class MenuParseState(Enum):
     Done = auto()
 
 
-def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> Menu:
+def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None = None) -> Menu:
     """Get the Jack's Gelato menu from the Google Docs url.
 
     Args:
         location: The name of the menu's restaurant.
-        url: The URL of the Google doc containing the menu.
+        doc: The URL of the Google doc containing the menu.
+        web: The URL of the Jack's website with the canonical menu.
         output_file: The file path to cache the downloaded text menu to.
 
     Returns:
@@ -68,7 +77,7 @@ def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> 
         output_file = BASE_RAW_DIRECTORY / f"{DATE}__{location_sanitised}.txt"
 
     if not output_file.exists():
-        gdown.download(url, str(output_file), quiet=False, format="txt")
+        gdown.download(doc, str(output_file), quiet=False, format="txt")
 
     with output_file.open() as menu:
         lines = [line.strip() for line in menu]
@@ -95,7 +104,7 @@ def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> 
     assert date is not None
     # `assert date.day == NOW.day
     assert len(items) > 0
-    return Menu(location, date, items)
+    return Menu(location, web, date, items)
 
 
 def menu_to_markdown(menu: Menu) -> str:
@@ -108,31 +117,15 @@ def menu_to_markdown(menu: Menu) -> str:
         A markdown representation of the menu.
     """
     date_string = datetime.strftime(menu.date, "%A, %d/%m/%Y")
-    title = f"## {menu.location} ({date_string})\n\n"
+    title = f"## [{menu.location}]({menu.web}) ({date_string})\n\n"
     contents = "\n".join(f"- {item}" for item in menu.items)
     return title + contents + "\n\n"
-
-
-def get_markdown_doc(header: str, menu_locations: dict[str, str]) -> str:
-    """Get the markdown document containing the menus.
-
-    Args:
-        header: The header for the markdown file.
-        menu_locations: The restaurant locations and their respective menu URLs.
-
-    Returns:
-        The markdown document containing the scraped menus.
-    """
-    menu_markdowns = [
-        menu_to_markdown(get_jacks_menu(*values)) for values in menu_locations.items()
-    ]
-    return header + "\n\n".join(menu_markdowns)
 
 
 if __name__ == "__main__":
     output_file = BASE_MARKDOWN_DIRECTORY / f"{DATE}.md"
     with output_file.open("w+") as file_handle:
         file_handle.write(HEADER)
-        for values in MENU_LOCATIONS.items():
-            file_handle.write(menu_to_markdown(get_jacks_menu(*values)))
+        for (name, (doc, web)) in MENU_LOCATIONS.items():
+            file_handle.write(menu_to_markdown(get_jacks_menu(name, doc, web)))
         file_handle.write(FOOTER)
