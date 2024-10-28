@@ -18,8 +18,8 @@ dev-dependencies = [
 
 
 [tool.ruff]
-select = ["ALL"]
-ignore = [
+lint.select = ["ALL"]
+lint.ignore = [
     ### From https://github.com/jerry-git/pytest-split/blob/master/pyproject.toml
     "ANN",      # Type hints related, let mypy handle these.
     "COM812",   # "Trailing comma missing". If black is happy, I'm happy.
@@ -35,6 +35,7 @@ ignore = [
     "D212",     #  "
     "D213",     #  "
     "D413",     #  "
+    "ISC001",   # Conflicts with autoformatter
     ### Edmund's preferences
     "UP009",    # "UTF-8 encoding declaration is unnecessary". Adding UTF-8 prag»
     "T201",     # Allow print statements!

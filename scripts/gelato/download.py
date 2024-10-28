@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""A script to download and markdownify the Jack's Gelato menu."""
+
 from enum import Enum, auto
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -25,7 +27,7 @@ I made this website.
 """
 MENU_LOCATIONS: dict[str, str] = {
     "Bene't Street": "https://docs.google.com/uc?id=1dVYB7lnBgWE0bPhc9SFz0aLrkDfSCulrMctW1gDfCA8",
-    "All Saints": "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc"
+    "All Saints": "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
 }
 
 
@@ -59,9 +61,7 @@ def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> 
     """
     if output_file is None:
         location_sanitised = location.replace(" ", "_").replace("'", "").lower()
-        output_file = (
-            BASE_RAW_DIRECTORY / f"{DATE}__{location_sanitised}.txt"
-        )
+        output_file = BASE_RAW_DIRECTORY / f"{DATE}__{location_sanitised}.txt"
 
     if not output_file.exists():
         gdown.download(url, str(output_file), quiet=False, format="txt")
@@ -78,7 +78,7 @@ def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> 
             try:
                 date = dateutil.parser.parse(line)
                 menu_parse_state = MenuParseState.Items
-            except dateutil.parser._parser.ParserError: # noqa: SLF001
+            except dateutil.parser._parser.ParserError:  # noqa: SLF001
                 pass
         elif menu_parse_state == MenuParseState.Items:
             if line in {"-", ""}:
@@ -89,7 +89,7 @@ def get_jacks_menu(location: str, url: str, output_file: Path | None = None) -> 
             items.append(line)
 
     assert date is not None
-    # assert date.day == NOW.day
+    # `assert date.day == NOW.day
     assert len(items) > 0
     return Menu(location, date, items)
 
@@ -108,6 +108,7 @@ def menu_to_markdown(menu: Menu) -> str:
     contents = "\n".join(f"- {item}" for item in menu.items)
     return title + contents + "\n\n"
 
+
 def get_markdown_doc(header: str, menu_locations: dict[str, str]) -> str:
     """Get the markdown document containing the menus.
 
@@ -119,18 +120,14 @@ def get_markdown_doc(header: str, menu_locations: dict[str, str]) -> str:
         The markdown document containing the scraped menus.
     """
     menu_markdowns = [
-        menu_to_markdown(get_jacks_menu(*values))
-        for values in menu_locations.items()
+        menu_to_markdown(get_jacks_menu(*values)) for values in menu_locations.items()
     ]
     return header + "\n\n".join(menu_markdowns)
 
+
 if __name__ == "__main__":
-    output_file = (
-        BASE_MARKDOWN_DIRECTORY / f"{DATE}.md"
-    )
+    output_file = BASE_MARKDOWN_DIRECTORY / f"{DATE}.md"
     with output_file.open("w+") as file_handle:
         file_handle.write(HEADER)
         for values in MENU_LOCATIONS.items():
-            file_handle.write(
-                menu_to_markdown(get_jacks_menu(*values))
-            )
+            file_handle.write(menu_to_markdown(get_jacks_menu(*values)))
