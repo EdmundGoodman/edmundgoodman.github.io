@@ -13,10 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+            token: ${{ secrets.PAT }}
+
       - uses: astral-sh/setup-uv@v3
       - run: |
           cd scripts/gelato
           make run
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Add new Jack's Gelato menu"
