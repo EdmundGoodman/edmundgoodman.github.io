@@ -1,6 +1,5 @@
-<!-- Make the list page the most recent post -->
 {{ define "main" }}
-{{ with (index (where site.RegularPages "Type" "gelato").ByDate.Reverse 0) }}
+{{ with (index (where .Site.RegularPages "Type" "in" (slice .Section)).ByDate.Reverse 0) }}
 
 <header>
     {{ if (not (eq .Params.hide_title true))}}
