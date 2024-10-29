@@ -16,6 +16,11 @@
                 <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
             </li>
             {{ end }}
+            {{- range .Site.Menus.footer.Reverse -}}
+            <li>
+                <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
+            </li>
+            {{ end }}
         </ul>
     </main>
 
