@@ -23,11 +23,9 @@ date: {NOW}
 
 """
 
-FOOTER = """All menu information is property of Jack's Gelato.
-This page is updated daily at 10:20am.
-
-See my [blog post]({{< ref "/posts/a_faster_gelato" >}})
-for why I made this website.
+FOOTER = """All menu information is property of Jack's Gelato. This page is
+updated daily at 10:20am -- see my
+[blog post]({{< ref "/posts/a_faster_gelato" >}}) for why I made it.
 """
 
 MENU_LOCATIONS: dict[str, tuple[str, str]] = {
