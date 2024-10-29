@@ -26,7 +26,7 @@ date: {NOW}
 FOOTER = """All menu information is property of Jack's Gelato.
 This page is updated daily at 10:20am.
 
-See my [blog post]({{< ref '/posts/a_faster_gelato' >}})
+See my [blog post]({{< ref "/posts/a_faster_gelato" >}})
 for why I made this website.
 """
 
