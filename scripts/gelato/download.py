@@ -44,6 +44,29 @@ NAMED_DATES: set[str] = {
 }
 
 
+def get_location_markdown(
+    location: str, web: str, date: datetime | str, contents: str
+) -> str:
+    """Convert menu data to its markdown representation.
+
+    Args:
+        location: The location of the menu.
+        web: The link back to the real menu site.
+        date: The date of the menu.
+        contents: The contents of the menu text (items or error message).
+
+    Returns:
+        A markdown representation of the menu data.
+    """
+    date_string = (
+        date if isinstance(date, str)
+        else datetime.strftime(date, "%A, %d/%m/%Y")
+    )
+    title = f"## [{location}]({web}) ({date_string})\n\n"
+    return title + contents + "\n\n"
+
+
+
 @dataclass
 class Menu:
     """Dataclass containing the menu date and items."""
@@ -59,13 +82,8 @@ class Menu:
         Returns:
             A markdown representation of the menu.
         """
-        date_string = (
-            self.date if isinstance(self.date, str)
-            else datetime.strftime(self.date, "%A, %d/%m/%Y")
-        )
-        title = f"## [{self.location}]({self.web}) ({date_string})\n\n"
         contents = "\n".join(f"- {item}" for item in self.items)
-        return title + contents + "\n\n"
+        return get_location_markdown(self.location, self.web, self.date, contents)
 
 
 class MenuParseState(Enum):
@@ -74,6 +92,10 @@ class MenuParseState(Enum):
     Date = auto()
     Items = auto()
     Done = auto()
+
+
+class MenuParseError(Exception):
+    """Custom error for parsing logic failing on the menu data."""
 
 
 def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None = None) -> Menu:
@@ -103,7 +125,6 @@ def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None =
     menu_parse_state = MenuParseState.Date
 
     for line in lines:
-        print(line, date)
         if menu_parse_state == MenuParseState.Date:
             try:
                 date = (
@@ -121,16 +142,53 @@ def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None =
                 break
             items.append(line)
 
-    if not isinstance(date, str):
-        assert date.day == NOW.day
-    assert len(items) > 0
+    if date is None:
+        raise MenuParseError("Could not extract menu date!")
+    if len(items) == 0:
+        raise MenuParseError("Could not extract menu items!")
+    if not isinstance(date, str) and date.day != NOW.day:
+         raise MenuParseError(
+            f"Menu date {date.day} doesn't match current date {NOW.day}!"
+        )
+
     return Menu(location, web, date, items)
+
+
+def get_parse_error_markdown(location: str, web: str) -> str:
+    """Get the markdown representation of the parsing error.
+
+    Args:
+        location: The location which couldn't be parsed.
+        web: The link to the menu which couldn't be parsed.
+
+    Returns:
+        A markdown representation of the parsing error.
+    """
+    contents = (
+        "Oops! The menu is a different shape today so my parsing logic fell"
+        " over. I should've got an email and will try to fix it promptly-ish."
+        " It may also magically fix itself tomorrow.\n\n"
+        "In the meantime, you can click on the heading link to go to the real menu."
+    )
+    return get_location_markdown(
+        location, web, NOW, contents
+    )
 
 
 if __name__ == "__main__":
     output_file = BASE_MARKDOWN_DIRECTORY / f"{DATE}.md"
+    parse_error: MenuParseError | None = None
+
     with output_file.open("w+") as file_handle:
         file_handle.write(HEADER)
         for (name, (doc, web)) in MENU_LOCATIONS.items():
-            file_handle.write(str(get_jacks_menu(name, doc, web)))
+            try:
+                menu = str(get_jacks_menu(name, doc, web))
+            except MenuParseError as exc:
+                parse_error = exc
+                menu = get_parse_error_markdown(name, web)
+            file_handle.write(menu)
         file_handle.write(FOOTER)
+
+    if parse_error is not None:
+        raise parse_error
