@@ -39,6 +39,10 @@ MENU_LOCATIONS: dict[str, tuple[str, str]] = {
     ),
 }
 
+NAMED_DATES: set[str] = {
+    "Halloween",
+}
+
 
 @dataclass
 class Menu:
@@ -46,8 +50,22 @@ class Menu:
 
     location: str
     web: str
-    date: datetime
+    date: datetime | str
     items: list[str]
+
+    def __repr__(self) -> str:
+        """Convert a menu dataclass to its markdown representation.
+
+        Returns:
+            A markdown representation of the menu.
+        """
+        date_string = (
+            self.date if isinstance(self.date, str)
+            else datetime.strftime(self.date, "%A, %d/%m/%Y")
+        )
+        title = f"## [{self.location}]({self.web}) ({date_string})\n\n"
+        contents = "\n".join(f"- {item}" for item in self.items)
+        return title + contents + "\n\n"
 
 
 class MenuParseState(Enum):
@@ -80,14 +98,18 @@ def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None =
     with output_file.open() as menu:
         lines = [line.strip() for line in menu]
 
-    date: datetime | None = None
+    date: datetime | str | None = None
     items: list[str] = []
     menu_parse_state = MenuParseState.Date
 
     for line in lines:
+        print(line, date)
         if menu_parse_state == MenuParseState.Date:
             try:
-                date = dateutil.parser.parse(line)
+                date = (
+                    line if line.split(",")[0] in NAMED_DATES else
+                    dateutil.parser.parse(line)
+                )
                 menu_parse_state = MenuParseState.Items
             except dateutil.parser._parser.ParserError:  # noqa: SLF001
                 pass
@@ -99,25 +121,10 @@ def get_jacks_menu(location: str, doc: str, web: str, output_file: Path | None =
                 break
             items.append(line)
 
-    assert date is not None
-    # `assert date.day == NOW.day
+    if not isinstance(date, str):
+        assert date.day == NOW.day
     assert len(items) > 0
     return Menu(location, web, date, items)
-
-
-def menu_to_markdown(menu: Menu) -> str:
-    """Convert a menu dataclass to its markdown representation.
-
-    Args:
-        menu: The parse menu dataclass.
-
-    Returns:
-        A markdown representation of the menu.
-    """
-    date_string = datetime.strftime(menu.date, "%A, %d/%m/%Y")
-    title = f"## [{menu.location}]({menu.web}) ({date_string})\n\n"
-    contents = "\n".join(f"- {item}" for item in menu.items)
-    return title + contents + "\n\n"
 
 
 if __name__ == "__main__":
@@ -125,5 +132,5 @@ if __name__ == "__main__":
     with output_file.open("w+") as file_handle:
         file_handle.write(HEADER)
         for (name, (doc, web)) in MENU_LOCATIONS.items():
-            file_handle.write(menu_to_markdown(get_jacks_menu(name, doc, web)))
+            file_handle.write(str(get_jacks_menu(name, doc, web)))
         file_handle.write(FOOTER)
