@@ -41,6 +41,7 @@ MENU_LOCATIONS: dict[str, tuple[str, str]] = {
 
 NAMED_DATES: set[str] = {
     "Halloween",
+    "All Saints Day",
 }
 
 
