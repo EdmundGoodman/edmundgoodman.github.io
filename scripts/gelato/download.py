@@ -33,10 +33,10 @@ MENU_LOCATIONS: dict[str, tuple[str, str]] = {
         "https://docs.google.com/uc?id=1dVYB7lnBgWE0bPhc9SFz0aLrkDfSCulrMctW1gDfCA8",
         "https://www.jacksgelato.com/bene-t-street-menu"
     ),
-    "All Saints": (
-        "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
-        "https://www.jacksgelato.com/all-saints-menu"
-    ),
+#    "All Saints": (
+#        "https://docs.google.com/uc?id=1kDBSxPb8X4L2TKXWUmm2A-VGuPVTyxmfbq9iwUQQ2nc",
+#        "https://www.jacksgelato.com/all-saints-menu"
+#    ),
 }
 
 NAMED_DATES: set[str] = {
