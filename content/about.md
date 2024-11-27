@@ -16,5 +16,5 @@ CAD Design Verification intern at [Apple](https://www.apple.com/).
 
 In my free time, I sing in the [Peterhouse Chapel Choir](https://www.pet.cam.ac.uk/chapel-choir),
 always try to commute by bicycle instead of walking (irrespective of how short the journey is),
-and occasionally rock climb. When I have the time and opportunity, I also work on various side
+and occasionally rock climb and reel. When I have the time and opportunity, I also work on various side
 projects -- some of which I finish!
