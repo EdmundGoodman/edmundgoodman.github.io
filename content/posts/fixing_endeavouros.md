@@ -145,5 +145,3 @@ reboot
 [^9]: <https://wiki.archlinux.org/title/GRUB>
 [^10]: <https://forum.endeavouros.com/t/multiple-issues-including-booting-problem-seemingly-broken-file-and-fatal-library-error/51906/3>
 [^11]: <https://linux.fernandocejas.com/docs/guides/mount-luks-partition-for-system-recovery#4---unmount-and-exit>
-
-{{< footnote_list >}}

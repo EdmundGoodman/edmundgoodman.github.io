@@ -39,10 +39,10 @@ weight = 2
 url = "atlas/"
 name = "Atlas"
 weight = 1
-[[menu.footer]]
-url = "gelato/"
-name = "Gelato"
-weight = 2
+# [[menu.footer]]
+# url = "gelato/"
+# name = "Gelato"
+# weight = 2
 
 
 # Links format
