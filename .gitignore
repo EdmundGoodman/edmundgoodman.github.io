@@ -1,4 +1,15 @@
-# Hugo default output directory
+# Project-specific files
+uv-x86_64-unknown-linux-gnu.tar.gz
+
+# Generated files by hugo
 public/
 resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
 .hugo_build.lock
+
+# Editor config
+.vscode/
+.idea/
