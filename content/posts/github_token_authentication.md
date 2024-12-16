@@ -21,7 +21,7 @@ each time.
 For ✨security✨...
 
 From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line to interact with github.com {{< footnote "1" "<https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/>" >}}.
+when using the command line to interact with github.com [^1].
 
 <!--more-->
 
@@ -34,7 +34,7 @@ create an "authentication token".
 > identity of a user to a website, server, or anyone requesting verification of the
 > user’s identity.
 >
-> -- Twilio {{< footnote "2" "<https://www.twilio.com/docs/glossary/what-is-an-authentication-token>" >}}
+> -- Twilio [^2]
 
 There are a number of different types of authentication tokens, including personal access tokens and SSH keys.
 
@@ -43,7 +43,7 @@ There are a number of different types of authentication tokens, including person
 ### How do I create and use SSH keys
 
 The process for creating and using SSH keys is enumerated in the [GitHub
-documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) {{< footnote "3" "<https://docs.github.com/en/authentication/connecting-to-github-with-ssh>" >}}.
+documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) [^3].
 
 ### Tips and gotchas
 
@@ -156,7 +156,7 @@ it if anyone sees it**. To revoke a token, click the delete button on the tokens
     caption="Screenshot of the screen to delete a token." >}}
 
 You can also read a different set of instructions for this process
-[on the GitHub website](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) {{< footnote "4" "<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic>" >}}.
+[on the GitHub website](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) [^4].
 
 ### How do I use it on my computer?
 
@@ -169,7 +169,7 @@ probably an acceptable amount of risk for personal systems. Depending on your th
 vectors and the type of system being used, this may be an unacceptable level of risk,
 in which case you should investigate a different storage strategy.
 
-To store your token, in a terminal type {{< footnote "5" "<https://stackoverflow.com/a/64632086>" >}}:
+To store your token, in a terminal type [^5]:
 
 ```bash
 git config --global credential.helper store
@@ -207,4 +207,8 @@ Which should print something similar to:
 
 ## References
 
-{{< footnote_list >}}
+[^1]: <https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/>
+[^2]: <https://www.twilio.com/docs/glossary/what-is-an-authentication-token>
+[^3]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
+[^4]: <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic>
+[^5]: <https://stackoverflow.com/a/64632086>

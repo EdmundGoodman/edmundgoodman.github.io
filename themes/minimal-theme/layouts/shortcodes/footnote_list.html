@@ -1,9 +1,0 @@
-<!--Derived from: https://github.com/gj52/HugoSample/blob/master/themes/photon/layouts/shortcodes/footnotelist.html -->
-{{ $list := .Page.Store.Get "footnotes"}}
-<ul>
-    {{ range $key, $value := $list }}
-        <!-- TODO: Add back-link to the footnote in the text -->
-        <li><span id="footnote--{{ $key }}">[{{ $key }}]</span>: {{ $value | markdownify }}</li>
-    {{end}}
-</ul>
-{{ .Page.Scratch.Delete "footnotes" }}

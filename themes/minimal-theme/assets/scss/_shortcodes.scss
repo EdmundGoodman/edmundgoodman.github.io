@@ -20,6 +20,23 @@ figure > img {
 }
 
 
+// https://geekthis.net/post/hugo-footnotes-and-citations/
+a.footnote-ref::before {
+    content: '[';
+}
+
+a.footnote-ref::after {
+    content: ']';
+}
+
+.footnotes > ol {
+    counter-reset: list;
+    > li::marker {
+        content: "[" counter(list-item) "] ";
+    }
+}
+
+
 // https: //www.madcapsoftware.com/blog/css-tip-creating-styled-boxes-notes-warnings-examples-tips/
 // https://boundedinfinity.github.io/2017/09/admonitions-in-css/
 // https://pinetools.com/darken-color

@@ -1,6 +1,0 @@
-<!--Derived from: https://github.com/gj52/HugoSample/blob/master/themes/photon/layouts/shortcodes/footnoteset.html -->
-{{ $id := .Get 0 }}
-{{ $val := .Get 1}}
-<!-- TODO: Add auto-incrementing number for unnamed footnotes -->
-{{ .Page.Store.SetInMap "footnotes" $id $val }}
-<a href="#footnote--{{ $id }}"><sup>[{{ $id }}]</sup></a>

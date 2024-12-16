@@ -6,8 +6,7 @@ draft: false
 ---
 
 In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
-commonly canaries, into mines to detect high levels of carbon monoxide
-{{< footnote "1" "Haldane J. The Action of Carbonic Oxide on Man. The Journal of Physiology. 1895 Nov 16; 18(5-6):430-62." >}}.
+commonly canaries, into mines to detect high levels of carbon monoxide [^1].
 This worked because they would become sick (and stop singing) before the miners did.
 Because of this, "Canary in a coal mine" is commonly used as an idiom for
 something which warns people of danger.
@@ -71,4 +70,4 @@ This is an error admonition.
 
 ## References
 
-{{< footnote_list >}}
+[^1]: Haldane J. The Action of Carbonic Oxide on Man. The Journal of Physiology. 1895 Nov 16; 18(5-6):430-62.

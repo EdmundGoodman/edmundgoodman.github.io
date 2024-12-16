@@ -128,5 +128,3 @@ optimised piece of code
 <!-- -->
 
 ## References
-
-{{< footnote_list >}}
