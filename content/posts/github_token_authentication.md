@@ -10,9 +10,9 @@ Since I wrote the guide, I have switched from using personal access tokens to
 SSH keys for authentication. This avoids the requirement of storing plaintext
 tokens locally -- instead using a password-protected SSH key. Additionally, on
 MacOS, the password can be stored in the user keychain, so is not prompted
-each time. This process is documented
-[in later blog post]({{< ref "/posts/github_ssh_authentication" >}}).
+each time.
 {{< /warning >}}
+<!-- This process is documented [in later blog post]({{< ref "/posts/github_ssh_authentication" >}}). -->
 
 {{< note title="A note on provenance" >}}
 I originally wrote [this guide](https://uwcs.co.uk/resources/github-token-authentication/) for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as [Git Good](https://uwcs.co.uk/resources/git-good/).

@@ -71,3 +71,8 @@ url = "https://github.com/EdmundGoodman"
 [[params.social]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/edmundgoodman/"
+
+
+# Allow raw html (required for markdown comments)
+ignoreLogs = ["warning-goldmark-raw-html"]
+
