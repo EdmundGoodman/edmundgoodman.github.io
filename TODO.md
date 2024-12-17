@@ -2,7 +2,9 @@
 - [x] Blog posts are slightly wider?!?!?! (something in the content, hello there is fine)
   - As a result of scrollbar appearing/disappearing
 - [x] Switch from bootstrap to tablr icons
+- [x] gelato scraper
 
+- [ ] Block comments better
 - [ ] Formatting for hook lines and show in post list?
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
@@ -12,8 +14,6 @@
 
 - [ ] Choose whether to load shortcode css/js dependent on whether page type uses it (or better specific page uses it)
 - [ ] Gwern-style sidenote admonitions
-- [ ] Write up paper reviews as content for website?
-- [ ] gelato scraper
 
 - [ ] aria attributes
 - [ ] search engine optimisation

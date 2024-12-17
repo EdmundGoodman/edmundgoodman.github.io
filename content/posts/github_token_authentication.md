@@ -5,15 +5,17 @@ date: 2024-01-31T20:02:32Z
 draft: false
 ---
 
-{{< note title="A note on provenance" >}}
-I originally wrote [this guide](https://uwcs.co.uk/resources/github-token-authentication/) for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as [Git Good](https://uwcs.co.uk/resources/git-good/).
-
+{{< warning title="Better approaches to credential management" >}}
 Since I wrote the guide, I have switched from using personal access tokens to
-SSH keys for authentication. This incurs the slight annoyance of requiring SSH
-rather than HTTPS remotes, but avoids the requirement of storing plaintext
+SSH keys for authentication. This avoids the requirement of storing plaintext
 tokens locally -- instead using a password-protected SSH key. Additionally, on
 MacOS, the password can be stored in the user keychain, so is not prompted
-each time.
+each time. This process is documented
+[in later blog post]({{< ref "/posts/github_ssh_authentication" >}}).
+{{< /warning >}}
+
+{{< note title="A note on provenance" >}}
+I originally wrote [this guide](https://uwcs.co.uk/resources/github-token-authentication/) for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as [Git Good](https://uwcs.co.uk/resources/git-good/).
 {{< /note >}}
 
 ## Why do I need to do this?
@@ -21,7 +23,7 @@ each time.
 For ✨security✨...
 
 From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line to interact with github.com [^1].
+when using the command line [^1].
 
 <!--more-->
 
@@ -38,60 +40,6 @@ create an "authentication token".
 
 There are a number of different types of authentication tokens, including personal access tokens and SSH keys.
 
-##  Using SSH keys
-
-### How do I create and use SSH keys
-
-The process for creating and using SSH keys is enumerated in the [GitHub
-documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) [^3].
-
-### Tips and gotchas
-
-When using SSH keys, there are a couple of things which can make your life easier/harder. Some of them I have encountered are enumerated below.
-
-#### Avoiding password prompts on MacOS
-
-On MacOS, the SSH key password can be added to the user keychain, significantly
-reducing the friction when interacting with the remote. This step is listed in
-the GitHub docs for MacOS, first updating the SSH config file as follows:
-
-```text
-Host github.com
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_ed25519
-```
-
-Then, using the following command when adding the SSH key:
-
-```bash
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-```
-
-#### Correctly configuring remotes
-
-An easy point of confusion when using SSH keys is that different remotes are
-required than when authenticating over HTTPS. For HTTPS, remotes tend to look
-like:
-
-```text
-https://github.com/<USERNAME>/<REPOSITORY>
-```
-
-But when using SSH keys, remotes must be of the following format:
-
-```text
-git@github.com:<USERNAME>/<REPOSITORY>
-```
-
-As such, you may need to modify some repository remotes if switching from HTTPS
-to SSH authentication. This can be done as follows, for the example of the `origin` remote:
-
-```bash
-git remote remove origin
-git remote add origin git@github.com:<USERNAME>/<REPOSITORY>
-```
-
 ## Using personal access tokens
 
 Personal access tokens are randomly generated strings which can be used in
@@ -100,7 +48,10 @@ exposed, and can have restricted scope.
 
 ### How do I create an personal access token?
 
-Visit <https://github.com/settings/tokens>. This can also be found by navigating
+The process for creating and using SSH keys is enumerated in the [GitHub documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic),
+and summarised below.
+
+First, visit <https://github.com/settings/tokens>. This can also be found by navigating
 to "Settings>Developer Settings>Personal access tokens>Tokens (classic)"
 
 You can then create a new token with the "Generate new token (classic)" button. You can
@@ -155,8 +106,6 @@ it if anyone sees it**. To revoke a token, click the delete button on the tokens
     alt="Screenshot of the screen to delete a token."
     caption="Screenshot of the screen to delete a token." >}}
 
-You can also read a different set of instructions for this process
-[on the GitHub website](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) [^4].
 
 ### How do I use it on my computer?
 
@@ -169,7 +118,7 @@ probably an acceptable amount of risk for personal systems. Depending on your th
 vectors and the type of system being used, this may be an unacceptable level of risk,
 in which case you should investigate a different storage strategy.
 
-To store your token, in a terminal type [^5]:
+To store your token, in a terminal type [^3]:
 
 ```bash
 git config --global credential.helper store
@@ -209,6 +158,4 @@ Which should print something similar to:
 
 [^1]: <https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/>
 [^2]: <https://www.twilio.com/docs/glossary/what-is-an-authentication-token>
-[^3]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
-[^4]: <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic>
-[^5]: <https://stackoverflow.com/a/64632086>
+[^3]: <https://stackoverflow.com/a/64632086>

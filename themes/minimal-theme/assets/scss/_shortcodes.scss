@@ -29,12 +29,13 @@ a.footnote-ref::after {
     content: ']';
 }
 
-.footnotes > ol {
-    counter-reset: list;
-    > li::marker {
-        content: "[" counter(list-item) "] ";
-    }
-}
+// TODO: Make footnotes wrapped in square brackets, with correct numbering...
+// .footnotes > ol {
+//     counter-reset: list;
+//     > li::marker {
+//         content: "[" counter(list-item) "] ";
+//     }
+// }
 
 
 // https: //www.madcapsoftware.com/blog/css-tip-creating-styled-boxes-notes-warnings-examples-tips/
