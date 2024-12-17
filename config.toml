@@ -54,7 +54,7 @@ gelato = "/gelato/:year/:month/:day/"
 # Meta
 [params]
 author = "Edmund Goodman"
-# author_image = ""
+email = "hello@edmundgoodman.co.uk"
 description = "The personal website for Edmund Goodman"
 
 [params.home]

@@ -1,5 +1,5 @@
 ---
-title: "Dcs Innovation Day"
+title: "DCS Innovation Day"
 author: "Edmund Goodman"
 date: 2024-10-04T16:15:05+01:00
 draft: true
