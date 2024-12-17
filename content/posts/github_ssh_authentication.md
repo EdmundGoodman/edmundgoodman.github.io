@@ -15,6 +15,11 @@ when using the command line [^1].
 This means that in order to interact with GitHub from the command line you have
 to use another authentication method.
 
+This blog post enumerates the process of
+configuring `git` and GitHub to use SSH keys, and some tips to streamline their
+day-to-day usage. It is also available as a
+[gist](https://gist.github.com/EdmundGoodman/e8faa0b3c2dddf350a00fb23dab48a59).
+
 ##  Using SSH keys
 
 SSH keys are one of the authentication methods that can be used instead of
