@@ -1269,24 +1269,29 @@ updated daily at 10:20am &amp;ndash; see my
 updated daily at 10:20am &amp;ndash; see my
 &lt;a href="https://edmundgoodman.github.io/posts/2024/a-faster-gelato/">blog post&lt;/a> for why I made it.&lt;/p></description></item><item><title>A Faster Gelato</title><link>https://edmundgoodman.github.io/posts/2024/a-faster-gelato/</link><pubDate>Sun, 27 Oct 2024 23:51:22 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/a-faster-gelato/</guid><description>&lt;p>I love Jack&amp;rsquo;s Gelato. Unfortunately, their website&amp;rsquo;s menu sucks.
 &lt;a href="https://edmundgoodman.co.uk/gelato/">So I fixed it.&lt;/a>&lt;/p></description></item><item><title>Update Bot</title><link>https://edmundgoodman.github.io/posts/2024/update-bot/</link><pubDate>Sun, 27 Oct 2024 11:08:46 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/update-bot/</guid><description>&lt;p>&lt;code>uv&lt;/code> is great! Unfortunately, it is not supported by Dependabot yet. I built a
-simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/p></description></item><item><title>Github Token Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</link><pubDate>Wed, 31 Jan 2024 20:02:32 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</guid><description>&lt;div class="admonition note">
+simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/p></description></item><item><title>Github Token Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</link><pubDate>Wed, 31 Jan 2024 20:02:32 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</guid><description>&lt;div class="admonition warning">
+ &lt;div class="admonition-title">
+ Better approaches to credential management:
+ &lt;/div>
+ &lt;div class="admonition-content">Since I wrote the guide, I have switched from using personal access tokens to
+SSH keys for authentication. This avoids the requirement of storing plaintext
+tokens locally &amp;ndash; instead using a password-protected SSH key. Additionally, on
+MacOS, the password can be stored in the user keychain, so is not prompted
+each time.&lt;/div>
+&lt;/div>
+
+&lt;!-- raw HTML omitted -->
+&lt;div class="admonition note">
  &lt;div class="admonition-title">
  A note on provenance:
  &lt;/div>
- &lt;div class="admonition-content">&lt;p>I originally wrote &lt;a href="https://uwcs.co.uk/resources/github-token-authentication/">this guide&lt;/a> for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as &lt;a href="https://uwcs.co.uk/resources/git-good/">Git Good&lt;/a>.&lt;/p>
-&lt;p>Since I wrote the guide, I have switched from using personal access tokens to
-SSH keys for authentication. This incurs the slight annoyance of requiring SSH
-rather than HTTPS remotes, but avoids the requirement of storing plaintext
-tokens locally &amp;ndash; instead using a password-protected SSH key. Additionally, on
-MacOS, the password can be stored in the user keychain, so is not prompted
-each time.&lt;/p>
-&lt;/div>
+ &lt;div class="admonition-content">I originally wrote &lt;a href="https://uwcs.co.uk/resources/github-token-authentication/">this guide&lt;/a> for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as &lt;a href="https://uwcs.co.uk/resources/git-good/">Git Good&lt;/a>.&lt;/div>
 &lt;/div>
 
 &lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
 &lt;p>For ✨security✨&amp;hellip;&lt;/p>
 &lt;p>From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line to interact with github.com &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
+when using the command line &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
 &lt;p>You can watch the recording of the full lecture on YouTube:&lt;/p>
 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
