@@ -115,7 +115,11 @@ choir singing Scandinavian choral repertoire.&lt;/p>
 &lt;li>House Cashew, Sour Cherry Ripple (vegan)&lt;/li>
 &lt;/ul>
 &lt;h2 id="all-saintshttpswwwjacksgelatocomall-saints-menu-24_12_18">&lt;a href="https://www.jacksgelato.com/all-saints-menu">All Saints&lt;/a> (24_12_18)&lt;/h2>
-&lt;p>Oops! Something went wrong with either retrieving or parsing the menu. This will probably magically fix itself tomorrow.&lt;/p></description></item><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2024/12/17/</link><pubDate>Tue, 17 Dec 2024 10:41:13 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2024/12/17/</guid><description>&lt;h2 id="benet-streethttpswwwjacksgelatocombene-t-street-menu-december-17th-2024">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (December 17th, 2024)&lt;/h2>
+&lt;p>Oops! Something went wrong with either retrieving or parsing the menu. This will probably magically fix itself tomorrow.&lt;/p></description></item><item><title>Github SSH Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</link><pubDate>Tue, 17 Dec 2024 19:28:56 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</guid><description>&lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
+&lt;p>From August 2021, GitHub announced they would not be allowing password
+authentication when using the command line &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. This means that in order to
+interact with GitHub from the command line you have to use another
+authentication method.&lt;/p></description></item><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2024/12/17/</link><pubDate>Tue, 17 Dec 2024 10:41:13 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2024/12/17/</guid><description>&lt;h2 id="benet-streethttpswwwjacksgelatocombene-t-street-menu-december-17th-2024">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (December 17th, 2024)&lt;/h2>
 &lt;ul>
 &lt;li>Vanilla Mascarpone&lt;/li>
 &lt;li>House Mincemeat&lt;/li>
@@ -1388,23 +1392,23 @@ updated daily at 10:20am &amp;ndash; see my
 &lt;a href="https://edmundgoodman.co.uk/gelato/">So I fixed it.&lt;/a>&lt;/p></description></item><item><title>Update Bot</title><link>https://edmundgoodman.github.io/posts/2024/update-bot/</link><pubDate>Sun, 27 Oct 2024 11:08:46 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/update-bot/</guid><description>&lt;p>&lt;code>uv&lt;/code> is great! Unfortunately, it is not supported by Dependabot yet. I built a
 simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/p></description></item><item><title>Github Token Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</link><pubDate>Wed, 31 Jan 2024 20:02:32 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-token-authentication/</guid><description>&lt;div class="admonition warning">
  &lt;div class="admonition-title">
- Better approaches to credential management:
+ Better approaches to credential management
  &lt;/div>
  &lt;div class="admonition-content">
  
  &lt;p>Since I wrote the guide, I have switched from using personal access tokens to
 SSH keys for authentication. This avoids the requirement of storing plaintext
-tokens locally &amp;ndash; instead using a password-protected SSH key. Additionally, on
-MacOS, the password can be stored in the user keychain, so is not prompted
-each time.&lt;/p>
+tokens locally &amp;ndash; instead using a revocable password-protected SSH key.
+Additionally, on MacOS, the password can be stored in the user keychain, so is
+not prompted each time. This process is documented
+&lt;a href="https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/">in later blog post&lt;/a>.&lt;/p>
  
  &lt;/div>
 &lt;/div>
 
-&lt;!-- raw HTML omitted -->
 &lt;div class="admonition note">
  &lt;div class="admonition-title">
- A note on provenance:
+ A note on provenance
  &lt;/div>
  &lt;div class="admonition-content">
  
@@ -1414,9 +1418,7 @@ each time.&lt;/p>
 &lt;/div>
 
 &lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
-&lt;p>For ✨security✨&amp;hellip;&lt;/p>
-&lt;p>From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
+&lt;p>For ✨security✨&amp;hellip;&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
 &lt;p>You can watch the recording of the full lecture on YouTube:&lt;/p>
 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
