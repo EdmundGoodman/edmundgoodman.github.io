@@ -23,7 +23,7 @@ jobs:
 
       - name: Run the tool to generate the menu
         run: |
-          jacks-menu --raw raw_menus --markdown markdown --verbose
+          jacks-menu --raw raw --markdown markdown --verbose
 
       - name: Commit the generated menu
         uses: stefanzweifel/git-auto-commit-action@v5
