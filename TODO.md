@@ -9,16 +9,14 @@
 - [x] gelato scraper
 - [x] Fix linenos in highlight blocks
 - [x] Block comments better
+- [x] Improve gelato (probably submodule markdown out into separate repo?)
 
 - [ ] Add post tags and show in post list
-- [ ] Improve gelato (probably submodule markdown out into separate repo?)
-  - [ ] Consider moving submodule to not expose raw menus statically?
+- [ ] Look at fonts/colour schemes
 - [ ] Fix svg icons to re-use from single load rather than many inline
 - [ ] Formatting for hook lines and show in post list?
-- [ ] Wrap long links on narrow screens
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
-- [ ] Look at fonts/colour schemes
 - [ ] Tag selector on blog page, defaulting to "best of"?
 - [ ] Gwern-style/better typography sidenote admonitions
 - [ ] Make all font sizes rem?

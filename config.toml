@@ -6,10 +6,6 @@ languageCode = "en-gb"
 theme = "minimal-theme"
 enableEmoji = true
 
-# Allow raw html (required for markdown comments)
-# <https://discourse.gohugo.io/t/ignorelogs-warning-goldmark-raw-html/52469/2>
-ignoreLogs = ["warning-goldmark-raw-html"]
-
 # Pagination
 [pagination]
 pagerSize = 7

@@ -21,13 +21,7 @@ We introduce a system for categorising foodstuffs based on the location of their
 
 As part of my role as an academic officer for the [University of Warwick Computing Society](https://uwcs.co.uk/) in the 2023-24 academic year, I helped organise "Lightning Talks", which are "short (~20 minute) talks about anything and everything to do with computer science".
 
-I wrote and delivered this talk as one of the Lightning Talks in the Michaelmas term of 2023. The slides and source code for this talk are available on GitHub [^2].
-
-<!-- ## Slides
-
-{{< raw_html >}}
-<object data="/files/posts/the_mathematics_of_lasagne/The_Mathematics_of_Lasagne.pdf" width="100%" height="500vh"></object>
-{{< /raw_html >}} -->
+I wrote and delivered this talk as one of the Lightning Talks in the Michaelmas term of 2023. The [slides](https://github.com/EdmundGoodman/The-Mathematics-of-Lasagne/files/13572864/The_Mathematics_of_Lasagne.pdf) and source code for this talk are available on GitHub [^2].
 
 ## References
 
