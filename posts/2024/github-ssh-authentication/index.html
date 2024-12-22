@@ -18,12 +18,12 @@ public key can be derived from the private key but the private key cannot be
 derived from the public key.</p><p>&ndash; <em>Atlassian</em> <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p></blockquote><h3 id=why-should-i-use-ssh-keys>Why should I use SSH keys?</h3><p>SSH keys provide a number of benefits over traditional password authentication,
 which motivated its disablement for the command line. These include being
 unique, revocable, limited, and random <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p><p>Another alternative to authenticate to GitHub is token authentication, as
-discussed in <a href=https://edmundgoodman.github.io/posts/2024/github-token-authentication/>an earlier blog post</a>.
+discussed in <a href=https://edmundgoodman.github.io/posts/2023/github-token-authentication/>an earlier blog post</a>.
 However, this approach comes with a number of drawbacks including only
 providing access to the repositories rather than account settings and having
-the option of password protection, making them much more secure even if leaked <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><h3 id=how-do-i-use-ssh-keys>How do I use SSH keys?</h3><p>The process for creating and using SSH keys is enumerated in the
+the option of password protection, making them much more secure even if leaked <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><h3 id=how-do-i-use-ssh-keys>How do I use SSH keys?</h3><p>The process for creating and using SSH keys is described in the
 <a href=https://docs.github.com/en/authentication/connecting-to-github-with-ssh>GitHub documentation</a>,
-and summarised below:</p><ol><li><p>Check if any SSH keys already exist with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ls -al ~/.ssh
+and enumerated below:</p><ol><li><p>Check if any SSH keys already exist with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ls -al ~/.ssh
 </span></span></code></pre></div><p>If the directory exists and contains a pair of public and private key files
 (look for files called <code>id_rsa.pub</code>, <code>id_ecdsa.pub</code>, <code>id_ed25519.pub</code> or similar),
 you may choose to re-use these in step 3.</p></li><li><p>If not, generate a new key with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh-keygen -t ed25519 -C <span style=color:#e6db74>&#34;your_email@example.com&#34;</span>
