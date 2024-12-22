@@ -28,6 +28,7 @@ jobs:
       - name: Point to most recent menu site
         run: |
           cd static/files/jacks-menu-history
+          git checkout main
           git pull
           ls -alFh markdown/
 
