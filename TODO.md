@@ -10,15 +10,18 @@
 - [x] Fix linenos in highlight blocks
 - [x] Block comments better
 
-- [ ] Make all font sizes rem?
+- [ ] Add post tags and show in post list
+- [ ] Improve gelato (probably submodule markdown out into separate repo?)
+- [ ] Fix svg icons to re-use from single load rather than many inline
 - [ ] Formatting for hook lines and show in post list?
+- [ ] Wrap long links on narrow screens
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
 - [ ] Look at fonts/colour schemes
-- [ ] Wrap long links on narrow screens
-
-- [ ] Choose whether to load shortcode css/js dependent on whether page type uses it (or better specific page uses it)
+- [ ] Tag selector on blog page, defaulting to "best of"?
 - [ ] Gwern-style/better typography sidenote admonitions
+- [ ] Make all font sizes rem?
+- [ ] Choose whether to load shortcode css/js + favicon dependent on whether page type uses it (or better specific page uses it)
 
 - [ ] aria attributes
 - [ ] search engine optimisation
@@ -28,14 +31,20 @@
   - robots.txt
   - compress images/remove big splash screen? and fonts?
 
-
 ## Post ideas
 
+- [ ] Jacks gelato
+- [ ] Git Good
+- [ ] Retrospectives on uni modules
+- [ ] Uni cws, separated in taxonomy
 - [ ] DCS innovation day
 - [ ] Git bisect
 - [ ] Ordering of zsh config
-- [ ] P3HPC
+- [ ] P3HPC (https://web.archive.org/web/20241113005459/https://p3hpc.org/workshop/2024/program/)
 - [ ] Profiling with perf
-- [ ]
-- [ ]
-- [ ]
+- [ ] Dotfiles config with chezmoi
+- [ ] Vscode config
+- [ ] Vscode for latex
+- [ ] Advanced Makefiles
+
+- [ ] Roofline models

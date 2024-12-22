@@ -46,9 +46,9 @@ the option of password protection, making them much more secure even if leaked [
 
 ### How do I use SSH keys?
 
-The process for creating and using SSH keys is enumerated in the
+The process for creating and using SSH keys is described in the
 [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh),
-and summarised below:
+and enumerated below:
 
 1. Check if any SSH keys already exist with
 
