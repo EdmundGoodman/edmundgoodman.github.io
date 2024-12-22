@@ -4,11 +4,15 @@ simple GitHub Actions workflow to act as a stop-gap until support is added.&lt;/
  &lt;div class="admonition-title">
  Better approaches to credential management:
  &lt;/div>
- &lt;div class="admonition-content">Since I wrote the guide, I have switched from using personal access tokens to
+ &lt;div class="admonition-content">
+ 
+ &lt;p>Since I wrote the guide, I have switched from using personal access tokens to
 SSH keys for authentication. This avoids the requirement of storing plaintext
 tokens locally &amp;ndash; instead using a password-protected SSH key. Additionally, on
 MacOS, the password can be stored in the user keychain, so is not prompted
-each time.&lt;/div>
+each time.&lt;/p>
+ 
+ &lt;/div>
 &lt;/div>
 
 &lt;!-- raw HTML omitted -->
@@ -16,7 +20,11 @@ each time.&lt;/div>
  &lt;div class="admonition-title">
  A note on provenance:
  &lt;/div>
- &lt;div class="admonition-content">I originally wrote &lt;a href="https://uwcs.co.uk/resources/github-token-authentication/">this guide&lt;/a> for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as &lt;a href="https://uwcs.co.uk/resources/git-good/">Git Good&lt;/a>.&lt;/div>
+ &lt;div class="admonition-content">
+ 
+ &lt;p>I originally wrote &lt;a href="https://uwcs.co.uk/resources/github-token-authentication/">this guide&lt;/a> for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as &lt;a href="https://uwcs.co.uk/resources/git-good/">Git Good&lt;/a>.&lt;/p>
+ 
+ &lt;/div>
 &lt;/div>
 
 &lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
