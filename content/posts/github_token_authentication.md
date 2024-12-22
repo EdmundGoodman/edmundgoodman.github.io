@@ -1,7 +1,7 @@
 ---
 title: "Github Token Authentication"
 author: "Edmund Goodman"
-date: 2024-01-31T20:02:32Z
+date: 2023-10-03T20:02:32Z
 draft: false
 ---
 

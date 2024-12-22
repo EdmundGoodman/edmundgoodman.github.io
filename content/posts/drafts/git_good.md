@@ -1,7 +1,7 @@
 ---
 title: "Git Good"
 author: "Edmund Goodman"
-date: 2024-02-10T18:24:17Z
+date: 2023-09-27T18:24:17Z
 draft: true 
 ---
 
