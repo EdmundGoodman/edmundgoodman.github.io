@@ -12,6 +12,7 @@
 
 - [ ] Add post tags and show in post list
 - [ ] Improve gelato (probably submodule markdown out into separate repo?)
+  - [ ] Consider moving submodule to not expose raw menus statically?
 - [ ] Fix svg icons to re-use from single load rather than many inline
 - [ ] Formatting for hook lines and show in post list?
 - [ ] Wrap long links on narrow screens

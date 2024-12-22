@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main  # Set a branch to deploy
-  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: 25 10 * * *
 
 jobs:
   deploy:
@@ -23,8 +25,15 @@ jobs:
           hugo-version: "latest"
           extended: true
 
+      - name: Point to most recent menu site
+        run: |
+          cd static/files/jacks-menu-history
+          git pull
+          ls -alFh markdown/
+
       - name: Build site with Hugo
         run: |
+          pwd
           hugo --minify
           cp ./CNAME ./public/CNAME
 
