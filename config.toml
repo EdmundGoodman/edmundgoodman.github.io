@@ -6,22 +6,28 @@ languageCode = "en-gb"
 theme = "minimal-theme"
 enableEmoji = true
 
+# Allow raw html (required for markdown comments)
+# <https://discourse.gohugo.io/t/ignorelogs-warning-goldmark-raw-html/52469/2>
+ignoreLogs = ["warning-goldmark-raw-html"]
+
 # Pagination
 [pagination]
 pagerSize = 7
 path = "page"
 
 # Highlighting
-pygmentsCodefences = true
-pygmentsCodeFencesGuessSyntax = true
-pygmentsoptions = "linenos=inline"
-pygmentsStyle = "monokai"
+[markup]
+  # <https://gohugo.io/getting-started/configuration-markup/#highlight>
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = false
 
 # Taxonomies
 # [taxonomies]
 # tag = "tags"
 # category = "categories"
-
 
 # Menu
 [menu]
@@ -44,12 +50,10 @@ weight = 1
 # name = "Gelato"
 # weight = 2
 
-
 # Links format
 [permalinks]
 posts = "/posts/:year/:title/"
 gelato = "/gelato/:year/:month/:day/"
-
 
 # Meta
 [params]
@@ -71,8 +75,3 @@ url = "https://github.com/EdmundGoodman"
 [[params.social]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/edmundgoodman/"
-
-
-# Allow raw html (required for markdown comments)
-ignoreLogs = ["warning-goldmark-raw-html"]
-
