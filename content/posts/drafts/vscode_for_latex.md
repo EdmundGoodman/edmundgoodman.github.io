@@ -1,7 +1,7 @@
 ---
-title: "DCS Innovation Day"
+title: "Vscode for Latex"
 author: "Edmund Goodman"
-date: 2024-10-04T16:15:05+01:00
+date: 2024-12-21T22:26:07Z
 draft: true
 ---
 
@@ -21,3 +21,8 @@ Proin interdum placerat elit, et consectetur lectus feugiat non. In iaculis eros
 sit amet dui lobortis, eu consectetur sapien vestibulum. In urna elit, semper
 non maximus ut, tempor non diam. Nulla sodales lacus non dui mollis, vitae
 imperdiet magna pellentesque. Pellentesque non hendrerit nisl.
+
+
+- Different profiles for different things - share settings/keybindings.json,
+  but have different extensions (+tasks/snippets)
+- https://www.roboleary.net/2021/08/10/vscode-how-many-extensions-should-i-use.html

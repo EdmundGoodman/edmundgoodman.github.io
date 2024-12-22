@@ -1,3 +1,7 @@
+# Website todo list
+
+## Web design
+
 - [x] flex boxes for footers/navbar
 - [x] Blog posts are slightly wider?!?!?! (something in the content, hello there is fine)
   - As a result of scrollbar appearing/disappearing
@@ -23,3 +27,15 @@
   - <https://www.webpagetest.org/>
   - robots.txt
   - compress images/remove big splash screen? and fonts?
+
+
+## Post ideas
+
+- [ ] DCS innovation day
+- [ ] Git bisect
+- [ ] Ordering of zsh config
+- [ ] P3HPC
+- [ ] Profiling with perf
+- [ ]
+- [ ]
+- [ ]
