@@ -1,0 +1,35 @@
+name: Scrape Gelato menu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 20 10 * * *
+
+permissions:
+  contents: write
+
+jobs:
+  get-menu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+            token: ${{ secrets.PAT }}
+      - uses: astral-sh/setup-uv@v3
+      - name: Set up Python 3.10
+        run: uv python install 3.10
+      - name: Install the tool
+        run: uv tool install jacks-menu
+
+      - name: Run the tool to generate the menu
+        run: |
+          jacks-menu --raw raw_menus --markdown markdown --verbose
+
+      - name: Commit the generated menu
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Add new Jack's Gelato menu"
+
+      - name: Run the tool to fail the pipeline if something broke
+        run: |
+          jacks-menu --fail-on-error --verbose
