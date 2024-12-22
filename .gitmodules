@@ -1,0 +1,3 @@
+[submodule "static/files/jacks-menu-history"]
+	path = static/files/jacks-menu-history
+	url = git@github.com:EdmundGoodman/jacks-menu-history
