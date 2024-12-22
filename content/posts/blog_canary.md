@@ -54,10 +54,22 @@ This is some more text, after a line break.
 <span style="color: red;">This is some text styled through raw HTML.</span>
 {{< /raw_html >}}
 
+## Block comment
+
+> The chief aim of the present investigation has been to determine
+> experimentally the causes of the symptoms produced in man by carbonic oxide,
+> and particularly the relation of the changes in the blood to the symptoms, to
+> the percentage of carbonic oxide breathed, and to the period during which the
+> inhalation is continued.
+>
+> -- *John Scott Haldane*
+
 ## Admonitions
 
 {{< note >}}
 This is a note admonition.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {{< /note >}}
 
 {{< warning title="Custom warning title" >}}

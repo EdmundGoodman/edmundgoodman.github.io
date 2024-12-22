@@ -120,7 +120,7 @@ in which case you should investigate a different storage strategy.
 
 To store your token, in a terminal type [^3]:
 
-```bash
+```bash{linenos=false}
 git config --global credential.helper store
 ```
 
@@ -135,7 +135,7 @@ credentials again.
 
 To see where your credentials are stored, in a terminal type:
 
-```bash
+```bash{linenos=false}
 vim ~/.git-credentials
 ```
 
@@ -144,13 +144,13 @@ This will open the file, and you should be able to see your email and token in t
 You can also confirm the file permissions for this file as readable only by you by
 typing in a terminal:
 
-```bash
+```bash{linenos=false}
 ls -alFh | grep credentials
 ```
 
 Which should print something similar to:
 
-```text
+```text{linenos=false}
 -rw-------  1 <username> <username>   85 <date> .git-credentials
 ```
 

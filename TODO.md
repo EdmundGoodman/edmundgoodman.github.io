@@ -4,8 +4,9 @@
 - [x] Switch from bootstrap to tablr icons
 - [x] gelato scraper
 - [x] Fix linenos in highlight blocks
+- [x] Block comments better
 
-- [ ] Block comments better
+- [ ] Make all font sizes rem?
 - [ ] Formatting for hook lines and show in post list?
 - [ ] Think about splash page lightweight designs
   - monochrome gradient?
@@ -13,7 +14,7 @@
 - [ ] Wrap long links on narrow screens
 
 - [ ] Choose whether to load shortcode css/js dependent on whether page type uses it (or better specific page uses it)
-- [ ] Gwern-style sidenote admonitions
+- [ ] Gwern-style/better typography sidenote admonitions
 
 - [ ] aria attributes
 - [ ] search engine optimisation
