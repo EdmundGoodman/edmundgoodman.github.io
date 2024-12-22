@@ -13,3 +13,7 @@ draft:
 .PHONY: run
 run:
 	hugo server run
+
+.PHONY: site
+site:
+	hugo --minify

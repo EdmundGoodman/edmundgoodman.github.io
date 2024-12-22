@@ -25,11 +25,13 @@ jobs:
           hugo-version: "latest"
           extended: true
 
-      - name: Point to most recent menu site
+      - name: Include up-to-date menus
         run: |
-          cd static/files/jacks-menu-history
+          cd artifacts/jacks-menu-history
           git checkout main
           git pull
+          rm ../../content/gelato
+          mv markdown ../../content/gelato
 
       - name: Build site with Hugo
         run: |
