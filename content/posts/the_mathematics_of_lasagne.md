@@ -15,7 +15,7 @@ draft: false
 
 ## Abstract
 
-We introduce a system for categorising foodstuffs based on the location of their starch content (The Cube Rule of Food Identification [^2]), give a brief introduction to Group Theory, then combine this knowledge to mathematically define Lasagne, and write a representation of it in Haskell.
+We introduce a system for categorising foodstuffs based on the location of their starch content (The Cube Rule of Food Identification [^1]), give a brief introduction to Group Theory, then combine this knowledge to mathematically define Lasagne, and write a representation of it in Haskell.
 
 ## Why does this exist?
 

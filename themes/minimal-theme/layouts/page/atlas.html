@@ -11,12 +11,12 @@
             <li>
                 <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
             </li>
-            {{- range .Site.Menus.main -}}
+            {{- range (first (sub (len .Site.Menus.main) 1) .Site.Menus.main ) -}}
             <li>
                 <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
             </li>
             {{ end }}
-            {{- range .Site.Menus.footer.Reverse -}}
+            {{- range .Site.Menus.footer -}}
             <li>
                 <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
             </li>

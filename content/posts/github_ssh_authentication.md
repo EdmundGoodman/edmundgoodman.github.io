@@ -2,18 +2,16 @@
 title: "Github SSH Authentication"
 author: "Edmund Goodman"
 date: 2024-12-17T19:28:56Z
-draft: true
 ---
 
 ## Why do I need to do this?
 
-From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line [^1].
+From August 2021, GitHub announced they would not be allowing password
+authentication when using the command line [^1]. This means that in order to
+interact with GitHub from the command line you have to use another
+authentication method.
 
 <!--more-->
-
-This means that in order to interact with GitHub from the command line you have
-to use another authentication method.
 
 This blog post enumerates the process of
 configuring `git` and GitHub to use SSH keys, and some tips to streamline their
@@ -32,7 +30,7 @@ passwords. Atlassian defines them as follows:
 > public key can be derived from the private key but the private key cannot be
 > derived from the public key.
 >
-> -- Atlassian [^2]
+> -- *Atlassian* [^2]
 
 ### Why should I use SSH keys?
 
@@ -54,7 +52,7 @@ and summarised below:
 
 1. Check if any SSH keys already exist with
 
-   ```bash
+   ```bash{linenos=false}
    ls -al ~/.ssh
    ```
 
@@ -64,7 +62,7 @@ and summarised below:
 
 2. If not, generate a new key with
 
-    ```bash
+    ```bash{linenos=false}
     ssh-keygen -t ed25519 -C "your_email@example.com"
     ```
 
@@ -75,7 +73,7 @@ and summarised below:
 
 3. Add the key to `ssh-agent`
 
-    ```bash
+    ```bash{linenos=false}
     eval "$(ssh-agent -s)"
     ```
 
@@ -83,12 +81,12 @@ and summarised below:
 
 4. Update your `~/.ssh/config` file with `vi` [^5] 
 
-    ```bash
+    ```bash{linenos=false}
     vi ~/.ssh/config
     ```
    to contain the following entry
 
-   ```
+   ```text
    Host github.com
        AddKeysToAgent yes
        IdentityFile ~/.ssh/id_ed25519
@@ -100,7 +98,7 @@ and summarised below:
 5. Add the key as an authentication method to GitHub, by copying the public key
    file
 
-   ```bash
+   ```bash{linenos=false}
    cat ~/.ssh/id_ed25519.pub
    ```
 
@@ -140,7 +138,7 @@ Host github.com
 
 Then, using the following command when adding the SSH key:
 
-```bash
+```bash{linenos=false}
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 
@@ -150,20 +148,20 @@ An easy point of confusion when using SSH keys is that different remotes are
 required than when authenticating over HTTPS. For HTTPS, remotes tend to look
 like:
 
-```text
+```text{linenos=false}
 https://github.com/<USERNAME>/<REPOSITORY>
 ```
 
 But when using SSH keys, remotes must be of the following format:
 
-```text
+```text{linenos=false}
 git@github.com:<USERNAME>/<REPOSITORY>
 ```
 
 As such, you may need to modify some repository remotes if switching from HTTPS
 to SSH authentication. This can be done as follows, for the example of the `origin` remote:
 
-```bash
+```bash{linenos=false}
 git remote remove origin
 git remote add origin git@github.com:<USERNAME>/<REPOSITORY>
 ```
@@ -173,7 +171,7 @@ git remote add origin git@github.com:<USERNAME>/<REPOSITORY>
 To address [the above issue]({{<ref "#correctly-configuring-remotes" >}}), you
 can configure `git` to rewrite HTTPS to SSH remote sources as follows [^7].
 
-```bash
+```bash{linenos=false}
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 ```
 
@@ -199,7 +197,7 @@ show on the [GitHub SSH keys page](https://github.com/settings/keys).
 
 Then, you can configure `git` to use the SSH key for signing all commits and tags.
 
-```bash
+```bash{linenos=false}
 git config --global gpg.format ssh
 git config --global user.signingkey ~/.ssh/id_ed25519
 git config --global commit.gpgsign true

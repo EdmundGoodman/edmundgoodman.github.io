@@ -8,11 +8,11 @@ draft: false
 {{< warning title="Better approaches to credential management" >}}
 Since I wrote the guide, I have switched from using personal access tokens to
 SSH keys for authentication. This avoids the requirement of storing plaintext
-tokens locally -- instead using a password-protected SSH key. Additionally, on
-MacOS, the password can be stored in the user keychain, so is not prompted
-each time.
+tokens locally -- instead using a revocable password-protected SSH key.
+Additionally, on MacOS, the password can be stored in the user keychain, so is
+not prompted each time. This process is documented
+[in later blog post]({{< ref "/posts/github_ssh_authentication" >}}).
 {{< /warning >}}
-<!-- This process is documented [in later blog post]({{< ref "/posts/github_ssh_authentication" >}}). -->
 
 {{< note title="A note on provenance" >}}
 I originally wrote [this guide](https://uwcs.co.uk/resources/github-token-authentication/) for the University of Warwick Computing Society to pre-empt common issues when authenticating to GitHub from the command line during academic workshops, such as [Git Good](https://uwcs.co.uk/resources/git-good/).
@@ -22,13 +22,12 @@ I originally wrote [this guide](https://uwcs.co.uk/resources/github-token-authen
 
 For ✨security✨...
 
-From August 2021, GitHub announced they would not be allowing password authentication
-when using the command line [^1].
-
 <!--more-->
 
-This means that in order to interact with GitHub from the command line you have to
-create an "authentication token".
+From August 2021, GitHub announced they would not be allowing password
+authentication when using the command line [^1]. This means that in order to
+interact with GitHub from the command line you have to create an "authentication
+token".
 
 ## What are authentication tokens?
 
@@ -36,7 +35,7 @@ create an "authentication token".
 > identity of a user to a website, server, or anyone requesting verification of the
 > user’s identity.
 >
-> -- Twilio [^2]
+> -- *Twilio* [^2]
 
 There are a number of different types of authentication tokens, including personal access tokens and SSH keys.
 

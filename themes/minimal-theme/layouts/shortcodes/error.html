@@ -1,6 +1,6 @@
 <div class="admonition error">
   <div class="admonition-title">
-    {{ .Get "title" | default "Error" | markdownify }}:
+    {{ .Get "title" | default "Error" | markdownify }}
   </div>
   <div class="admonition-content">
     {{ if in (string .Inner) "\n\n" }}

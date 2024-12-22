@@ -3,16 +3,14 @@
         <a href="{{ .Site.BaseURL | relLangURL }}">Home</a>
     </li>
 
-    {{- range .Site.Menus.main -}}
-        {{ if (le .Weight 2)}}
+    {{- range (first (sub (len .Site.Menus.main) 1) .Site.Menus.main ) -}}
             <li class="nav-item nav-elided">
                 <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
             </li>
-        {{ end }}
     {{ end }}
 
     <li class="nav-item">
-        {{- with (index (.Site.Menus.footer) 0) -}}
+        {{- with (index (.Site.Menus.main.Reverse) 0) -}}
             <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
         {{ end }}
     </li>

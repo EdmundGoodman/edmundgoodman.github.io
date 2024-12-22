@@ -32,9 +32,8 @@ Additionally, you should connect to a WiFi network on the live boot, as this mak
 
 First, identify your boot and encrypted partitions [^1]:
 
-```bash
+```bash{linenos=false}
 lsblk -f
-
 ```
 
 This will list the available devices, from which you need to identify your boot and encrypted partitions. For my particular laptop:
@@ -44,13 +43,13 @@ This will list the available devices, from which you need to identify your boot 
 
 Next, use `cryptsetup` to decrypt the LUKS encrypted drive [^2]:
 
-```bash
+```bash{linenos=false}
 sudo cryptsetup open /dev/nvme0n1p2 luks_root
 ```
 
 Then, mount the newly decrypted partition and then the boot drive into the `/boot/` folder within it [^3]:
 
-```bash
+```bash{linenos=false}
 sudo mount /dev/mapper/luks_root /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot
 ```
@@ -61,7 +60,7 @@ sudo mount /dev/nvme0n1p1 /mnt/boot
 
 Next, use `arch-chroot` to root into the newly mounted broken system [^5]:
 
-```bash
+```bash{linenos=false}
 sudo arch-chroot /mnt
 ```
 
@@ -69,7 +68,7 @@ sudo arch-chroot /mnt
 
 You can check whether WiFi is working inside `arch-chroot` using the `ping` command:
 
-```bash
+```bash{linenos=false}
 ping google.com
 ```
 
@@ -77,7 +76,7 @@ If the WiFi doesn't work inside `arch-chroot` on the broken device, first check 
 
 If it still isn't working, the next most likely cause it DNS settings haven't been copied over. To fix this, exit the `arch-chroot` to unlock the `resolv.conf` file, add DNS settings, then rerun `arch-chroot` [^6]:
 
-```bash
+```bash{linenos=false}
 exit
 echo "nameserver 8.8.8.8" >> /mnt/etc/resolv.conf
 arch-chroot /mnt
@@ -94,7 +93,7 @@ The common issues I have found across two failures are as follows:
 
 These can be resolved as follows (inside `arch-chroot` on the broken device):
 
-```bash
+```bash{linenos=false}
 sudo rm /var/lib/pacman/db.lck
 sudo pacman -Syu
 sudo pacman -Syu linux-lts linux-lts-headers
@@ -104,7 +103,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 If `pacman` reports '"Failed to commit transaction (conflicting files)" error' whilst you re-attempt the update, a nuclear option is to reinstall all packages, overwriting existing installations in the file system [^9], with the following command:
 
-```bash
+```bash{linenos=false}
 pacman -Syu $(pacman -Qnq) --overwrite "*"
 ```
 
@@ -112,7 +111,7 @@ It is possible something else is wrong, but this time is when you should largely
 
 Then, disconnect from the `arch-chroot` as follows:
 
-```bash
+```bash{linenos=false}
 exit
 ```
 
@@ -120,7 +119,7 @@ exit
 
 Before restarting, it is good practice to unmount both the boot and decrypted partitions, then close the decrypted partition [^10].
 
-```bash
+```bash{linenos=false}
 sudo umount /mnt/boot/
 sudo umount /mnt
 sudo cryptsetup close luks_root
@@ -128,7 +127,7 @@ sudo cryptsetup close luks_root
 
 Finally, restart the computer, and hope that it boots correctly!
 
-```bash
+```bash{linenos=false}
 reboot
 ```
 

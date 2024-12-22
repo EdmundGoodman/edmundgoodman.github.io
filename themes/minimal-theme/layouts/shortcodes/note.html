@@ -1,6 +1,6 @@
 <div class="admonition note">
   <div class="admonition-title">
-    {{ .Get "title" | default "Note" | markdownify }}:
+    {{ .Get "title" | default "Note" | markdownify }}
   </div>
   <div class="admonition-content">
     {{ if in (string .Inner) "\n\n" }}
