@@ -72,7 +72,7 @@ jobs:
 
       - run: |
           echo "\`\`\`" > uv_output.md
-          uv lock &>> uv_output.md
+          uv lock --upgrade 2>&1 | tee -a uv_output.md
           echo "\`\`\`" >> uv_output.md
 
       - name: Create pull request
@@ -110,7 +110,7 @@ screenshot below:
 In combination with GitHub Actions running your test suite against PRs, you
 should be able to merge them with confidence!
 
-## Providence
+## Provenance 
 
 This workflow was created to fill the need identified in the
 [xDSL project when switching to uv](https://github.com/xdslproject/xdsl/pull/3294#pullrequestreview-2364817663).
