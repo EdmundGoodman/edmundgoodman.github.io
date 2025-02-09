@@ -1,5 +1,5 @@
 ---
-title: "Installing MLIR on Macos"
+title: "Installing MLIR on MacOS"
 author: "Edmund Goodman"
 date: 2025-01-07T15:35:10Z
 ---
