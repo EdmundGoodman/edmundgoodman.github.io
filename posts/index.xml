@@ -3,13 +3,7 @@ cutting-edge compiler development. However, as is notorious with LLVM&amp;rsquo;
 documentation, the instructions to install it are rather opaque.&lt;/p>
 &lt;p>This post aims to rectify this situation by enumerating how MLIR can be
 installed on MacOS. It is also available
-&lt;a href="https://gist.github.com/EdmundGoodman/1a2ab4171b67bad566045031b1861514">as a gist&lt;/a>.&lt;/p></description></item><item><title>Peterhouse Christmas Recording</title><link>https://edmundgoodman.github.io/posts/2024/peterhouse-christmas-recording/</link><pubDate>Wed, 18 Dec 2024 18:41:55 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/peterhouse-christmas-recording/</guid><description>&lt;p>Every year, Peterhouse Choir releases a recording of a carol for Christmas.
-For this year that I am in the choir, we sang &amp;ldquo;Eit barn er født i Betlehem&amp;rdquo;,
-a Norwegian traditional piece arranged by Ørjan Matre &amp;ndash; part of a trend of the
-choir singing Scandinavian choral repertoire.&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/m3ru3fSK_t4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
- &lt;/div></description></item><item><title>Github SSH Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</link><pubDate>Tue, 17 Dec 2024 19:28:56 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</guid><description>&lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
+&lt;a href="https://gist.github.com/EdmundGoodman/1a2ab4171b67bad566045031b1861514">as a gist&lt;/a>.&lt;/p></description></item><item><title>Github SSH Authentication</title><link>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</link><pubDate>Tue, 17 Dec 2024 19:28:56 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/github-ssh-authentication/</guid><description>&lt;h2 id="why-do-i-need-to-do-this">Why do I need to do this?&lt;/h2>
 &lt;p>From August 2021, GitHub announced they would not be allowing password
 authentication when using the command line &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. This means that in order to
 interact with GitHub from the command line you have to use another
