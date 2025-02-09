@@ -3,11 +3,26 @@
 <time datetime=2024-10-27>Oct 27, 2024</time>
 &nbsp;&bull;&nbsp;
 <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:-.3em"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1018 0A9 9 0 003 12"/><path d="M12 7v5l3 3"/></svg>
-1 minute</div><br></header><article><p>I love Jack&rsquo;s Gelato. Unfortunately, their website&rsquo;s menu sucks.
-<a href=https://edmundgoodman.co.uk/gelato/>So I fixed it.</a></p><h2 id=why-the-existing-menu-sucks>Why the existing menu sucks</h2><p>Coming soon&mldr;</p><h2 id=how-i-made-it-better>How I made it better</h2><p>Also coming soon&mldr;</p><h2 id=please-dont-sue-me-disclaimer>Please don&rsquo;t sue me disclaimer</h2><p>All copyright and intellectual property of the menu contents belongs to
+2 minutes</div><br></header><article><p>I love Jack&rsquo;s Gelato. Unfortunately, their website&rsquo;s menu sucks.
+<a href=https://edmundgoodman.co.uk/gelato/>So I fixed it.</a></p><h2 id=why-the-existing-menu-sucks>Why the existing menu sucks</h2><p>The most noticeable issue of the current website is that it takes <strong>4.5 seconds</strong>
+to display the menu. To add insult to injury, the text
+&ldquo;Can take a few seconds to Load.. [sic]&rdquo; is shown whilst you wait.</p><figure><img src=/images/posts/a_faster_gelato/offending_text.png alt="A screenshot of Jack's Gelato menu website."><figcaption><p>A screenshot of Jack&rsquo;s Gelato menu website.</p></figcaption></figure><p>Using FireFox&rsquo;s web inspector tools, we can trace the network requests made to
+load the website to attempt to diagnose the sluggish loading times.</p><figure><img src=/images/posts/a_faster_gelato/jacks_gelato_slow_load.png alt="A screenshot of the FireFox network inspector for the page load."><figcaption><p>A screenshot of the FireFox network inspector for the page load.</p></figcaption></figure><p>This shows that the dominant factor in menu latency is that it is served as an
+embedded Google Doc through a Wix plugin. This plugin spends 201ms retrieving a
+placeholder document to show before it starts retrieving the actual menu
+document. After this, it retrieves the menu twice sequentially before rendering
+it to the DOM, for a total of 4.5 seconds.</p><figure><img src=/images/posts/a_faster_gelato/wix_placeholder.png alt="A screenshot of the placeholder document, retrieved by blocking requestt."><figcaption><p>A screenshot of the placeholder document, retrieved by blocking request.</p></figcaption></figure><p>On top of the egregiously slow load times, the website transmits 9.5MB zipped of
+resources. In contrast, the gzipped text content of a
+<a href=https://raw.githubusercontent.com/EdmundGoodman/jacks-menu-history/refs/heads/main/raw/24_10_04__benet_street.txt>representative menu</a> is 570 bytes <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>. On my
+pay-as-you-go data plan charging 10p per MB <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, it costs nearly one pound to
+load the menu website. Whilst much of this blame can be attributed
+to price-gouging by mobile service providers, it does strongly motivate making
+a lighter and faster website.</p><h2 id=how-i-made-it-better>How I made it better</h2><p>Coming soon&mldr;</p><h2 id=please-dont-sue-me-disclaimer>Please don&rsquo;t sue me disclaimer</h2><p>All copyright and intellectual property of the menu contents belongs to
 <a href=https://www.jacksgelato.com/>Jack&rsquo;s Gelato</a>.</p><p>I will comply with any requests to take this website down, but I hope it never
 comes to that. For me, this is just a fun different way to access the menu,
 as it makes it a bit easier/faster to work out what the flavours are each day.</p><p>Additionally, their website runs no advertising so this is not depriving them of
-profit in that respect.</p></article></main><footer><p>© 2025 Edmund Goodman | 
+profit in that respect.</p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>This means the information a customer cares about, which icecream
+is available that day, is transmitted at approximately 890 bits per second,
+0.00356% of the <a href=https://simrush.com/fastest-4g-network-uk/>lower-bound average 4G bandwidth in the UK</a>.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><a href=https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/price-guides/latest-price-guides/paygplans-priceguide-12052023.pdf>Three Pay As You Go Price Guide</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article></main><footer><p>© 2025 Edmund Goodman | 
 <a href=https://github.com/EdmundGoodman/edmundgoodman.github.io>Source</a> | 
 <a href=https://creativecommons.org/licenses/by-nc/4.0/>License</a></p></footer></body></html>

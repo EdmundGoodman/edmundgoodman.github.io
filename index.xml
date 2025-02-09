@@ -845,7 +845,7 @@ updated daily at 10:20am &amp;ndash; see my
 &lt;/ul>
 &lt;h2 id="all-saintshttpswwwjacksgelatocomall-saints-menu-25_01_08">&lt;a href="https://www.jacksgelato.com/all-saints-menu">All Saints&lt;/a> (25_01_08)&lt;/h2>
 &lt;p>Oops! Something went wrong with either retrieving or parsing the menu. This will probably magically fix itself tomorrow.&lt;/p>
-&lt;p>In the meantime, you can click on the heading link to go to the real menu.&lt;/p></description></item><item><title>Installing MLIR on Macos</title><link>https://edmundgoodman.github.io/posts/2025/installing-mlir-on-macos/</link><pubDate>Tue, 07 Jan 2025 15:35:10 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2025/installing-mlir-on-macos/</guid><description>&lt;p>LLVM&amp;rsquo;s MLIR is a really exciting project, unlocking many possibilities for
+&lt;p>In the meantime, you can click on the heading link to go to the real menu.&lt;/p></description></item><item><title>Installing MLIR on MacOS</title><link>https://edmundgoodman.github.io/posts/2025/installing-mlir-on-macos/</link><pubDate>Tue, 07 Jan 2025 15:35:10 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2025/installing-mlir-on-macos/</guid><description>&lt;p>LLVM&amp;rsquo;s MLIR is a really exciting project, unlocking many possibilities for
 cutting-edge compiler development. However, as is notorious with LLVM&amp;rsquo;s
 documentation, the instructions to install it are rather opaque.&lt;/p>
 &lt;p>This post aims to rectify this situation by enumerating how MLIR can be
@@ -2727,7 +2727,7 @@ spent some time as an academic officer at the
 Design Verification intern at &lt;a href="https://www.apple.com/">Apple&lt;/a>.&lt;/p>
 &lt;p>In my free time, I sing in the
 &lt;a href="https://www.pet.cam.ac.uk/chapel-choir">Peterhouse Chapel Choir&lt;/a>, always try to
-commute by bicycle instead of walking (irrespective of how short the journey
+travel by bicycle instead of walking (irrespective of how short the journey
 is), and occasionally rock climb and reel. When I have the time and opportunity,
 I also work on various side projects &amp;ndash; some of which I finish!&lt;/p></description></item><item><title>Blog Canary</title><link>https://edmundgoodman.github.io/posts/2023/blog-canary/</link><pubDate>Sun, 08 Jan 2023 14:12:29 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/blog-canary/</guid><description>&lt;p>In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
 commonly canaries, into mines to detect high levels of carbon monoxide &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.
