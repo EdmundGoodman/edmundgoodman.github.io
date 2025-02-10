@@ -1,0 +1,47 @@
+<!-- Note `layouts/partials/reset-scratch.html` fixes live page reloads -->
+{{- if .Get "caption" -}}
+  {{- $figureNum := add ($.Page.Scratch.Get "figureCount" | default 0) 1 -}}
+  {{- $.Page.Scratch.Set "figureCount" $figureNum -}}
+{{- end -}}
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- if .Get "link" -}}
+    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+  {{- end -}}
+
+  {{- $u := urls.Parse (.Get "src") -}}
+  {{- $src := $u.String -}}
+  {{- if not $u.IsAbs -}}
+    {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}}
+      {{- $src = .RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+
+  <img src="{{ $src }}"
+    {{- if or (.Get "alt") (.Get "caption") }}
+    alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+    {{- end -}}
+    {{- if .Get "caption" }} id="figure-{{ $.Page.Scratch.Get "figureCount"}}"{{ end -}}
+    {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+    {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
+  ><!-- Closing img tag -->
+  {{- if .Get "link" }}</a>{{ end -}}
+  {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+    <figcaption>
+      {{ with (.Get "title") -}}
+        <h4>{{ . }}</h4>
+      {{- end -}}
+      {{- if or (.Get "caption") (.Get "attr") -}}<p>
+        {{- if .Get "caption" -}}
+          <strong>Figure {{ $.Page.Scratch.Get "figureCount" }}: </strong>
+          {{- .Get "caption" | markdownify -}}
+        {{- end -}}
+        {{- with .Get "attrlink" }}
+          <a href="{{ . }}">
+        {{- end -}}
+        {{- .Get "attr" | markdownify -}}
+        {{- if .Get "attrlink" }}</a>{{ end }}</p>
+      {{- end }}
+    </figcaption>
+  {{- end }}
+</figure>

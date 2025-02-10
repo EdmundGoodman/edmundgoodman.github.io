@@ -1,0 +1,4 @@
+{{- if .Page.Store.Get "scratchReset" | not -}}
+    {{- .Page.Scratch.Delete "figureCount" -}}
+    {{- .Page.Store.Set "scratchReset" true -}}
+{{- end -}}
