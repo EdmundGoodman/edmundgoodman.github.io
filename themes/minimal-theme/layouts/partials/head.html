@@ -14,3 +14,7 @@
     {{ $scss := resources.Get "scss/main.scss" }}
     {{ $style := $scss | css.Sass | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ if .Param "math" }}
+        {{ partialCached "math.html" . }}
+    {{ end }}

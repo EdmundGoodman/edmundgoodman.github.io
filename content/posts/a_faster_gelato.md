@@ -2,6 +2,7 @@
 title: "A Faster Gelato"
 author: "Edmund Goodman"
 date: 2024-10-27T23:51:22Z
+math: true
 ---
 
 I love Jack's Gelato. Unfortunately, their website's menu sucks.
@@ -11,9 +12,9 @@ I love Jack's Gelato. Unfortunately, their website's menu sucks.
 
 ## Why the existing menu sucks
 
-The most noticeable issue of the current website is that it takes **4.5 seconds**
-to display the menu. To add insult to injury, the text
-"Can take a few seconds to Load.. \[sic\]" is shown whilst you wait.
+The most noticeable issue of the current website is that it takes
+**5.8 seconds** to display the menu. To add insult to injury, the text
+"Can take a few seconds to load.." is shown whilst you wait.
 
 {{< figure
     src="/images/posts/a_faster_gelato/offending_text.png"
@@ -21,7 +22,8 @@ to display the menu. To add insult to injury, the text
     caption="A screenshot of Jack's Gelato menu website.">}}
 
 Using Firefox's web inspector tools, we can trace the network requests made to
-load the website HTML to attempt to diagnose the sluggish loading times.
+load the website HTML to attempt to diagnose the cause of the slow loading
+times.
 
 {{< figure
     src="/images/posts/a_faster_gelato/jacks_gelato_slow_load.png"
@@ -31,19 +33,19 @@ load the website HTML to attempt to diagnose the sluggish loading times.
 This shows that the dominant factor in menu latency is that it is served as an
 embedded Google Doc through a Wix plugin. This plugin spends over a second
 interacting with its [developer's website](https://www.mymobileapp.online), then
-201ms retrieving a placeholder document to show before it starts retrieving the
-actual menu document. After this, it finally retrieves the menu document for a
-total of 4.5 seconds menu latency.
+277ms retrieving a placeholder document to show before it starts retrieving the
+actual menu document. Finally, it retrieves the menu document for a total of 5.8
+seconds of menu latency.
 
 {{< figure
     src="/images/posts/a_faster_gelato/wix_placeholder.png"
-    alt="A screenshot of the placeholder document, retrieved by blocking requestt."
+    alt="A screenshot of the placeholder document, retrieved by blocking request."
     caption="A screenshot of the placeholder document, retrieved by blocking request.">}} 
 
-On top of the egregiously slow load times, the website transmits 9.5MB zipped of
-resources. In contrast, the gzipped text content of a
-[representative menu](https://raw.githubusercontent.com/EdmundGoodman/jacks-menu-history/refs/heads/main/raw/24_10_04__benet_street.txt) is 570 bytes [^1]. On my
-pay-as-you-go data plan charging 10p per MB [^2], it costs nearly one pound to
+On top of the slow load times, the website transmits 9.5MB zipped of resources
+[^1]. In contrast, the gzipped text content of a
+[representative menu](https://raw.githubusercontent.com/EdmundGoodman/jacks-menu-history/refs/heads/main/raw/24_10_04__benet_street.txt) is 570 bytes [^2]. On my
+pay-as-you-go data plan charging 10p per MB [^3], it costs nearly one pound to
 load the menu website. Whilst much of this blame can be attributed
 to price gouging by mobile service providers, it does strongly motivate making
 a lighter and faster website.
@@ -55,7 +57,7 @@ Tl;dr (full write-up coming soon):
 1. Wrote a [Python package](https://pypi.org/project/jacks-menu/) which:
    - Extracts the menu Google Doc URL using Selenium
    - Retrieves a text representation of the menu using the Google Docs API
-   - Parses the text representation with a finite-state machine [^3]
+   - Parses the text representation with a finite-state machine [^4]
    - Generates a markdown document from the parsed menu
 2. Wrote a [cron job](https://github.com/EdmundGoodman/jacks-menu-history/blob/main/.github/workflows/gelato.yml) in GitHub Actions which runs the package at 10:20am every
    day to retrieve the menu into an [artefact repository](https://github.com/EdmundGoodman/jacks-menu-history)
@@ -87,10 +89,11 @@ Additionally, their website runs no advertising so this is not depriving them of
 profit in that respect.
 
 
-[^1]: This means the information a customer cares about, which icecream
-is available that day, is transmitted at approximately 890 bits per second,
-0.00356% of the [lower-bound average 4G bandwidth in the UK](https://simrush.com/fastest-4g-network-uk/).
-[^2]: [Three Pay As You Go Price Guide](https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/price-guides/latest-price-guides/paygplans-priceguide-12052023.pdf)
-[^3]: This by identity could be expressed as a regular expression, but the
+[^1]: 1.02MB of HTML, 9.5MB total including JavaScript and other resources.
+[^2]: This means the information a customer cares about, which icecream
+is available that day, is transmitted at approximately \(\frac{570 \times 8}{5.8} \approx 786\) bits per second,
+0.00314% of the [lower-bound average 4G bandwidth in the UK](https://simrush.com/fastest-4g-network-uk/).
+[^3]: [Three Pay As You Go Price Guide](https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/price-guides/latest-price-guides/paygplans-priceguide-12052023.pdf)
+[^4]: This by identity could be expressed as a regular expression, but the
 finite-state machine is a little more readable and hence maintainable when
 the menu format inevitably changes

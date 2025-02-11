@@ -20,6 +20,14 @@ path = "page"
     lineNos = true
     lineNumbersInTable = false
 
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
 # Taxonomies
 # [taxonomies]
 # tag = "tags"
@@ -56,6 +64,7 @@ gelato = "/gelato/:year/:month/:day/"
 author = "Edmund Goodman"
 email = "hello@edmundgoodman.co.uk"
 description = "The personal website for Edmund Goodman"
+math = false
 
 [params.home]
 subtitles = ["Computer Scientist", "University of Cambridge"]
