@@ -2,6 +2,7 @@
 title: "Update Bot"
 author: "Edmund Goodman"
 date: 2024-10-27T11:08:46Z
+draft: true
 ---
 
 `uv` is great! Unfortunately, it is not supported by Dependabot yet. I built a

@@ -15,8 +15,8 @@ authentication method.
 
 This blog post enumerates the process of
 configuring `git` and GitHub to use SSH keys, and some tips to streamline their
-day-to-day usage. It is also available as a
-[gist](https://gist.github.com/EdmundGoodman/e8faa0b3c2dddf350a00fb23dab48a59).
+day-to-day usage.
+<!-- It is also available as a [gist](https://gist.github.com/EdmundGoodman/e8faa0b3c2dddf350a00fb23dab48a59). -->
 
 ##  Using SSH keys
 
@@ -38,8 +38,8 @@ SSH keys provide a number of benefits over traditional password authentication,
 which motivated its disablement for the command line. These include being
 unique, revocable, limited, and random [^3].
 
-Another alternative to authenticate to GitHub is token authentication, as
-discussed in [an earlier blog post]({{<ref "/posts/github_token_authentication" >}}).
+Another alternative to authenticate to GitHub is token authentication.
+<!-- , as discussed in [an earlier blog post]({{<ref "/posts/github_token_authentication" >}}). -->
 However, this approach comes with a number of drawbacks including only
 providing access to the repositories rather than account settings and having
 the option of password protection, making them much more secure even if leaked [^4].
@@ -140,6 +140,13 @@ Then, using the following command when adding the SSH key:
 
 ```bash{linenos=false}
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+
+On system reboot, you may need to ensure the agent and keychain are active.
+One way to do this is as follows:
+
+```bash{linenos=false}
+ssh -T git@github.com
 ```
 
 #### Correctly configuring remotes

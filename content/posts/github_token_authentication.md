@@ -2,7 +2,7 @@
 title: "Github Token Authentication"
 author: "Edmund Goodman"
 date: 2023-10-03T20:02:32Z
-draft: false
+draft: true
 ---
 
 {{< warning title="Better approaches to credential management" >}}
