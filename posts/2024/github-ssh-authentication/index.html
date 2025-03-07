@@ -8,8 +8,7 @@ authentication when using the command line <sup id=fnref:1><a href=#fn:1 class=f
 interact with GitHub from the command line you have to use another
 authentication method.</p><p>This blog post enumerates the process of
 configuring <code>git</code> and GitHub to use SSH keys, and some tips to streamline their
-day-to-day usage. It is also available as a
-<a href=https://gist.github.com/EdmundGoodman/e8faa0b3c2dddf350a00fb23dab48a59>gist</a>.</p><h2 id=using-ssh-keys> Using SSH keys</h2><p>SSH keys are one of the authentication methods that can be used instead of
+day-to-day usage.</p><h2 id=using-ssh-keys> Using SSH keys</h2><p>SSH keys are one of the authentication methods that can be used instead of
 passwords. Atlassian defines them as follows:</p><blockquote><p>SSH keys are generated through a public key cryptographic algorithm, the most
 common being RSA or DSA. At a very high level SSH keys are generated through a
 mathematical formula that takes 2 prime numbers and a random seed variable to
@@ -17,9 +16,7 @@ output the public and private key. This is a one-way formula that ensures the
 public key can be derived from the private key but the private key cannot be
 derived from the public key.</p><p>&ndash; <em>Atlassian</em> <sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p></blockquote><h3 id=why-should-i-use-ssh-keys>Why should I use SSH keys?</h3><p>SSH keys provide a number of benefits over traditional password authentication,
 which motivated its disablement for the command line. These include being
-unique, revocable, limited, and random <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p><p>Another alternative to authenticate to GitHub is token authentication, as
-discussed in <a href=https://edmundgoodman.github.io/posts/2023/github-token-authentication/>an earlier blog post</a>.
-However, this approach comes with a number of drawbacks including only
+unique, revocable, limited, and random <sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>.</p><p>Another alternative to authenticate to GitHub is token authentication.</p><p>However, this approach comes with a number of drawbacks including only
 providing access to the repositories rather than account settings and having
 the option of password protection, making them much more secure even if leaked <sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><h3 id=how-do-i-use-ssh-keys>How do I use SSH keys?</h3><p>The process for creating and using SSH keys is described in the
 <a href=https://docs.github.com/en/authentication/connecting-to-github-with-ssh>GitHub documentation</a>,
@@ -48,6 +45,8 @@ the GitHub docs for MacOS, first updating the SSH config file as follows <sup id
 </span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f" id=hl-6-3><a style=outline:none;text-decoration:none;color:inherit href=#hl-6-3>3</a></span><span>  UseKeychain yes
 </span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f" id=hl-6-4><a style=outline:none;text-decoration:none;color:inherit href=#hl-6-4>4</a></span><span>  IdentityFile ~/.ssh/id_ed25519
 </span></span></code></pre></div><p>Then, using the following command when adding the SSH key:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+</span></span></code></pre></div><p>On system reboot, you may need to ensure the agent and keychain are active.
+One way to do this is as follows:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh -T git@github.com
 </span></span></code></pre></div><h4 id=correctly-configuring-remotes>Correctly configuring remotes</h4><p>An easy point of confusion when using SSH keys is that different remotes are
 required than when authenticating over HTTPS. For HTTPS, remotes tend to look
 like:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>https://github.com/&lt;USERNAME&gt;/&lt;REPOSITORY&gt;
