@@ -1,7 +1,7 @@
 ---
 title: "Github SSH Authentication"
 author: "Edmund Goodman"
-date: 2024-12-17T19:28:56Z
+date: 2024-08-17T19:28:56Z
 ---
 
 ## Why do I need to do this?
@@ -16,7 +16,6 @@ authentication method.
 This blog post enumerates the process of
 configuring `git` and GitHub to use SSH keys, and some tips to streamline their
 day-to-day usage.
-<!-- It is also available as a [gist](https://gist.github.com/EdmundGoodman/e8faa0b3c2dddf350a00fb23dab48a59). -->
 
 ##  Using SSH keys
 
@@ -39,7 +38,6 @@ which motivated its disablement for the command line. These include being
 unique, revocable, limited, and random [^3].
 
 Another alternative to authenticate to GitHub is token authentication.
-<!-- , as discussed in [an earlier blog post]({{<ref "/posts/github_token_authentication" >}}). -->
 However, this approach comes with a number of drawbacks including only
 providing access to the repositories rather than account settings and having
 the option of password protection, making them much more secure even if leaked [^4].
