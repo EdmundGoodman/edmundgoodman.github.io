@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Edmund Goodman</title><link>https://edmundgoodman.github.io/</link><description>Recent content on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Fri, 25 Apr 2025 10:39:12 +0000</lastBuildDate><atom:link href="https://edmundgoodman.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2025/04/25/</link><pubDate>Fri, 25 Apr 2025 10:39:12 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2025/04/25/</guid><description>&lt;h2 id="bene-25th-april-2025">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (25th April, 2025)&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Edmund Goodman</title><link>https://edmundgoodman.github.io/</link><description>Recent content on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Sat, 26 Apr 2025 10:35:00 +0000</lastBuildDate><atom:link href="https://edmundgoodman.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2025/04/26/</link><pubDate>Sat, 26 Apr 2025 10:35:00 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2025/04/26/</guid><description>&lt;h2 id="bene-26th-april-2025">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (26th April, 2025)&lt;/h2>
+&lt;ul>
+&lt;li>Nickolai’s Pecan Pie&lt;/li>
+&lt;li>King’s College Lavender and Local Honey&lt;/li>
+&lt;li>Cardamom &amp;amp; Rose&lt;/li>
+&lt;li>Alphonso Mango Sorbet (vegan)&lt;/li>
+&lt;li>Madagascan Vanilla&lt;/li>
+&lt;li>Double Pistachio (+£2)&lt;/li>
+&lt;li>Dark Chocolate &amp;amp; Sea Salt (vegan)&lt;/li>
+&lt;li>Salted Caramel&lt;/li>
+&lt;li>Japanese Whisky; Nikka, Pure Malt (+£2)&lt;/li>
+&lt;li>Pink Guava Sorbet (vegan)&lt;/li>
+&lt;li>Strawberry &amp;amp; Cream&lt;/li>
+&lt;li>Cabernet Sauvignon Sorbet (+£1)&lt;/li>
+&lt;li>Coconut &amp;amp; Treacle (vegan)&lt;/li>
+&lt;/ul>
+&lt;h2 id="all-saints-april-26th-2025">&lt;a href="https://www.jacksgelato.com/all-saints-menu">All Saints&lt;/a> (April 26th, 2025)&lt;/h2>
+&lt;ul>
+&lt;li>Hazelnut Shortbread&lt;/li>
+&lt;li>Chocolate &amp;amp; Sour Cherry&lt;/li>
+&lt;li>Blackcurrants &amp;amp; Cream&lt;/li>
+&lt;li>Sea Buckthorn Sorbet (vegan)&lt;/li>
+&lt;li>House Yoghurt&lt;/li>
+&lt;li>PBJ (vegan)&lt;/li>
+&lt;li>Mascarpone &amp;amp; Raspberry Cake&lt;/li>
+&lt;li>Coconut, Ube &amp;amp; Rose (vegan)&lt;/li>
+&lt;li>Strawberry&lt;/li>
+&lt;li>Pink Grapefruit Sorbet (vegan)&lt;/li>
+&lt;li>Dark Chocolate &amp;amp; Sea Salt (vegan)&lt;/li>
+&lt;/ul>
+&lt;p>All menu information is property of Jack&amp;rsquo;s Gelato. This page is
+updated daily at 10:20am &amp;ndash; see my
+&lt;a href="https://edmundgoodman.github.io/posts/2024/a-faster-gelato/">blog post&lt;/a> for why I made it.&lt;/p></description></item><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.github.io/gelato/2025/04/25/</link><pubDate>Fri, 25 Apr 2025 10:39:12 +0000</pubDate><guid>https://edmundgoodman.github.io/gelato/2025/04/25/</guid><description>&lt;h2 id="bene-25th-april-2025">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (25th April, 2025)&lt;/h2>
 &lt;ul>
 &lt;li>Double Dulce&lt;/li>
 &lt;li>Cardamom &amp;amp; Rose&lt;/li>
@@ -4921,11 +4953,11 @@ interact with GitHub from the command line you have to use another
 authentication method.&lt;/p></description></item><item><title>Fixing EndeavourOS Boot Failures</title><link>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</link><pubDate>Sat, 13 Jan 2024 15:07:51 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2024/fixing-endeavouros-boot-failures/</guid><description>&lt;p>This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available &lt;a href="https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f">as a gist&lt;/a>.&lt;/p></description></item><item><title>CS260 Algorithms Revision Lecture</title><link>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</link><pubDate>Sun, 26 Nov 2023 17:15:07 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/cs260-algorithms-revision-lecture/</guid><description>&lt;h2 id="where-can-i-find-the-lecture">Where can I find the lecture?&lt;/h2>
 &lt;p>You can watch the recording of the full lecture on YouTube:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/o1bSND4SSLM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/o1bSND4SSLM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>The Mathematics of Lasagne</title><link>https://edmundgoodman.github.io/posts/2023/the-mathematics-of-lasagne/</link><pubDate>Fri, 10 Nov 2023 16:35:00 +0000</pubDate><guid>https://edmundgoodman.github.io/posts/2023/the-mathematics-of-lasagne/</guid><description>&lt;p>&lt;em>Lasagne. What is it? Why is it? This talk seeks to obfuscate the answer to these questions.&lt;/em>&lt;/p>
 &lt;h2 id="watch-it-on-youtube">Watch it on YouTube&lt;/h2>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9l9hcSIAAtM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9l9hcSIAAtM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>About</title><link>https://edmundgoodman.github.io/about/</link><pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate><guid>https://edmundgoodman.github.io/about/</guid><description>&lt;p>Hello there &amp;#x1f44b; ! Welcome to my corner of the internet.&lt;/p>
 &lt;p>I&amp;rsquo;m currently studying at the University of Cambridge for an MPhil in Advanced
 Computer Science. I previously studied at the University of Warwick, and have
