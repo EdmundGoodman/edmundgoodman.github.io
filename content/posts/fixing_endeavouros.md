@@ -2,7 +2,6 @@
 title: "Fixing EndeavourOS Boot Failures"
 author: "Edmund Goodman"
 date: 2024-01-13T15:07:51Z
-draft: false
 ---
 
 This post enumerates a process which worked for me to repair an installation of EndeavourOS with full-disk encryption when it is unable to boot. It is also available [as a gist](https://gist.github.com/EdmundGoodman/c057ce0c826fd0edde7917d15b709f4f).

@@ -2,7 +2,6 @@
 title: "Blog Canary"
 author: "Edmund Goodman"
 date: 2023-01-08T14:12:29Z
-draft: false
 ---
 
 In 1895, John Scott Haldane proposed bringing warm-blooded animals, most

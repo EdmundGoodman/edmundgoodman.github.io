@@ -2,7 +2,6 @@
 title: "The Mathematics of Lasagne"
 author: "Edmund Goodman"
 date: 2023-11-10T16:35:00Z
-draft: false
 ---
 
 *Lasagne. What is it? Why is it? This talk seeks to obfuscate the answer to these questions.*

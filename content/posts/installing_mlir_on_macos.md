@@ -2,14 +2,13 @@
 title: "Installing MLIR on MacOS"
 author: "Edmund Goodman"
 date: 2025-01-07T15:35:10Z
-draft: true
 ---
 
 LLVM's MLIR is a really exciting project, unlocking many possibilities for
 cutting-edge compiler development. However, as is notorious with LLVM's
 documentation, the instructions to install it are rather opaque.
 
-This post aims to rectify this situation by enumerating how MLIR can be
+This post aims to help rectify this situation by enumerating how MLIR can be
 installed on MacOS. It is also available
 [as a gist](https://gist.github.com/EdmundGoodman/1a2ab4171b67bad566045031b1861514).
 

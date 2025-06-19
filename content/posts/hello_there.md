@@ -2,7 +2,6 @@
 title: "Hello There"
 author: "Edmund Goodman"
 date: 2022-07-16T19:01:24+01:00
-draft: false
 ---
 
 For quite a while, I've been "working on" a personal website, letting perfect be

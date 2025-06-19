@@ -2,7 +2,6 @@
 title: "CS260 Algorithms Revision Lecture"
 author: "Edmund Goodman"
 date: 2023-11-26T17:15:07Z
-draft: false
 ---
 
 ## Where can I find the lecture?
