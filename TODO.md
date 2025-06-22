@@ -11,6 +11,13 @@
 - [x] Block comments better
 - [x] Improve gelato (probably submodule markdown out into separate repo?)
 
+- [ ] search engine optimisation
+  - [ ] <https://moonbooth.com/hugo/seo/>
+  - [ ] <https://djangocas.dev/blog/hugo/tips-on-hugo-seo/>
+  - [ ] <https://www.webpagetest.org/>
+  - [x] robots.txt
+  - [ ] compress images/remove big splash screen? and fonts?
+- [ ] Fix atlas and inherited content
 - [ ] Add post tags and show in post list
 - [ ] Look at fonts/colour schemes
 - [ ] Fix svg icons to re-use from single load rather than many inline
@@ -23,16 +30,10 @@
 - [ ] Choose whether to load shortcode css/js + favicon dependent on whether page type uses it (or better specific page uses it)
 
 - [ ] aria attributes
-- [ ] search engine optimisation
-  - <https://moonbooth.com/hugo/seo/>
-  - <https://djangocas.dev/blog/hugo/tips-on-hugo-seo/>
-  - <https://www.webpagetest.org/>
-  - robots.txt
-  - compress images/remove big splash screen? and fonts?
 
 ## Post ideas
 
-- [ ] Jacks gelato
+- [x] Jacks gelato
 - [ ] Git Good
 - [ ] Retrospectives on uni modules
 - [ ] Uni cws, separated in taxonomy

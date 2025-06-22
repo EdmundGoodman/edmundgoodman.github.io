@@ -1,6 +1,7 @@
 baseurl = "https://edmundgoodman.co.uk"
 title = "Edmund Goodman"
 languageCode = "en-gb"
+enableRobotsTXT = true
 
 # Theme to use
 theme = "minimal-theme"
