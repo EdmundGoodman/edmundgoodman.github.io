@@ -2,7 +2,18 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-    {{ partial "head.html" .}}
+    <meta charset="utf-8">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {{- block "title" . -}}
+            {{ .Title}} {{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+        {{- end -}}
+    </title>
+
+    {{ $scss := resources.Get "scss/main.scss" }}
+    {{ $style := $scss | css.Sass | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 
 <body>

@@ -67,9 +67,7 @@ Tl;dr (full write-up coming soon):
 
 My version of the website takes 147ms to load (3% of the original time), and
 transmits only 9.52kB of data (0.8% of the original size, 0.7p cost in
-pay-as-you-go data). By omitting the favicon, inlining the CSS, and eliding
-the inlined SVG icons this could likely be reduced to ~2kB and 40ms -- but for
-now I am happy with the performance.
+pay-as-you-go data).
 
 {{< figure
     src="/images/posts/a_faster_gelato/mine_trace.png"

@@ -15,6 +15,7 @@
   - [ ] <https://moonbooth.com/hugo/seo/>
   - [ ] <https://djangocas.dev/blog/hugo/tips-on-hugo-seo/>
   - [ ] <https://www.webpagetest.org/>
+  - [x] Google search console
   - [x] robots.txt
   - [ ] compress images/remove big splash screen? and fonts?
 - [ ] Fix atlas and inherited content
