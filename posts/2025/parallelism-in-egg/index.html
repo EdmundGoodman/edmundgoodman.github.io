@@ -9,13 +9,12 @@ the reading group, which introduced me to a wide variety of interesting topics
 including e-graphs for compiler rewrites discussed below.</p></div></div><p>The core of the egg (&ldquo;e-graphs good&rdquo;) project is a library providing a flexible
 and performant implementation of the equality graph (e-graph) data structure,
 providing a re-usable basis for leveraging equality saturation in program
-optimisers to address the phase-ordering problem of compilers. This mini-project
-explores the performance characteristics of the egg library through benchmarking
-and profiling techniques, and uses this information to guide the design and
-assess the suitability of data parallelism for its applications. We conclude
-that Rust&rsquo;s rich support for multithreading allows data parallelism to be
-leveraged in egg, but many portions of the algorithm rely on shared mutable
-state, so the approach can only provide incremental performance gains as a
-corollary of Amdahl&rsquo;s law.</p><h2 id=full-report>Full report</h2><style>.iframe-container{position:relative;overflow:hidden;width:100%;padding-top:100%}.responsive-iframe{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%}</style><div class=iframe-container><iframe class=responsive-iframe src=/files/posts/parallelism_in_egg/R244_edjg2_project.pdf></iframe></div></article></main><footer><p>© 2025 Edmund Goodman | 
+optimisers to address the phase-ordering problem of compilers.</p><p>This mini-project explores the performance characteristics of the egg library
+through benchmarking and profiling techniques, and uses this information to
+guide the design and assess the suitability of data parallelism for its
+applications.</p><p>We conclude that Rust&rsquo;s rich support for multithreading allows data parallelism
+to be leveraged in egg, but many portions of the algorithm rely on shared
+mutable state, so the approach can only provide incremental performance gains as
+a corollary of Amdahl&rsquo;s law.</p><h2 id=full-report>Full report</h2><style>.iframe-container{position:relative;overflow:hidden;width:100%;padding-top:100%}.responsive-iframe{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%}</style><div class=iframe-container><iframe class=responsive-iframe src=/files/posts/parallelism_in_egg/R244_edjg2_project.pdf></iframe></div></article></main><footer><p>© 2025 Edmund Goodman | 
 <a href=https://github.com/EdmundGoodman/edmundgoodman.github.io>Source</a> | 
 <a href=https://creativecommons.org/licenses/by-nc/4.0/>License</a></p></footer></body></html>

@@ -18,14 +18,15 @@ including e-graphs for compiler rewrites discussed below.&lt;/p>
 &lt;p>The core of the egg (&amp;ldquo;e-graphs good&amp;rdquo;) project is a library providing a flexible
 and performant implementation of the equality graph (e-graph) data structure,
 providing a re-usable basis for leveraging equality saturation in program
-optimisers to address the phase-ordering problem of compilers. This mini-project
-explores the performance characteristics of the egg library through benchmarking
-and profiling techniques, and uses this information to guide the design and
-assess the suitability of data parallelism for its applications. We conclude
-that Rust&amp;rsquo;s rich support for multithreading allows data parallelism to be
-leveraged in egg, but many portions of the algorithm rely on shared mutable
-state, so the approach can only provide incremental performance gains as a
-corollary of Amdahl&amp;rsquo;s law.&lt;/p></description></item><item><title>Benchmarking LLVM MLIR</title><link>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</link><pubDate>Wed, 09 Apr 2025 17:01:44 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</guid><description>&lt;p>At the 2024 European LLVM Developers&amp;rsquo; Meeting, Mehdi Amini and Jeff Nui
+optimisers to address the phase-ordering problem of compilers.&lt;/p>
+&lt;p>This mini-project explores the performance characteristics of the egg library
+through benchmarking and profiling techniques, and uses this information to
+guide the design and assess the suitability of data parallelism for its
+applications.&lt;/p>
+&lt;p>We conclude that Rust&amp;rsquo;s rich support for multithreading allows data parallelism
+to be leveraged in egg, but many portions of the algorithm rely on shared
+mutable state, so the approach can only provide incremental performance gains as
+a corollary of Amdahl&amp;rsquo;s law.&lt;/p></description></item><item><title>Benchmarking LLVM MLIR</title><link>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</link><pubDate>Wed, 09 Apr 2025 17:01:44 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</guid><description>&lt;p>At the 2024 European LLVM Developers&amp;rsquo; Meeting, Mehdi Amini and Jeff Nui
 presented their keynote talk &amp;ldquo;How Slow is MLIR&amp;rdquo; &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. This presented
 micro-benchmarks for key operations in the MLIR compiler, such as traversing the
 IR and creating operations. However, the code for the benchmarks and
