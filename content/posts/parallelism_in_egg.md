@@ -17,14 +17,17 @@ including e-graphs for compiler rewrites discussed below.
 The core of the egg ("e-graphs good") project is a library providing a flexible
 and performant implementation of the equality graph (e-graph) data structure,
 providing a re-usable basis for leveraging equality saturation in program
-optimisers to address the phase-ordering problem of compilers. This mini-project
-explores the performance characteristics of the egg library through benchmarking
-and profiling techniques, and uses this information to guide the design and
-assess the suitability of data parallelism for its applications. We conclude
-that Rust's rich support for multithreading allows data parallelism to be
-leveraged in egg, but many portions of the algorithm rely on shared mutable
-state, so the approach can only provide incremental performance gains as a
-corollary of Amdahl's law.
+optimisers to address the phase-ordering problem of compilers.
+
+This mini-project explores the performance characteristics of the egg library
+through benchmarking and profiling techniques, and uses this information to
+guide the design and assess the suitability of data parallelism for its
+applications.
+
+We conclude that Rust's rich support for multithreading allows data parallelism
+to be leveraged in egg, but many portions of the algorithm rely on shared
+mutable state, so the approach can only provide incremental performance gains as
+a corollary of Amdahl's law.
 
 <!--more-->
 
