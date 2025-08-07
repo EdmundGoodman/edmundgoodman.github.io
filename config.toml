@@ -68,7 +68,7 @@ description = "The personal website for Edmund Goodman"
 math = false
 
 [params.home]
-subtitles = ["Computer Scientist", "University of Cambridge"]
+subtitles = ["Computer Scientist", "Hardware Design & Compilers"]
 
 [params.footer]
 repository_url = "https://github.com/EdmundGoodman/edmundgoodman.github.io"
