@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Edmund Goodman</title><link>https://edmundgoodman.co.uk/posts/</link><description>Recent content in Posts on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Wed, 09 Apr 2025 17:01:44 +0100</lastBuildDate><atom:link href="https://edmundgoodman.co.uk/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Benchmarking LLVM MLIR</title><link>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</link><pubDate>Wed, 09 Apr 2025 17:01:44 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</guid><description>&lt;p>At the 2024 European LLVM Developers&amp;rsquo; Meeting, Mehdi Amini and Jeff Nui
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Edmund Goodman</title><link>https://edmundgoodman.co.uk/posts/</link><description>Recent content in Posts on Edmund Goodman</description><generator>Hugo</generator><language>en-gb</language><lastBuildDate>Thu, 07 Aug 2025 11:43:19 +0100</lastBuildDate><atom:link href="https://edmundgoodman.co.uk/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Parallelism in Egg</title><link>https://edmundgoodman.co.uk/posts/2025/parallelism-in-egg/</link><pubDate>Thu, 07 Aug 2025 11:43:19 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/parallelism-in-egg/</guid><description>&lt;div class="admonition note">
+ &lt;div class="admonition-title">
+ A note on provenance
+ &lt;/div>
+ &lt;div class="admonition-content">
+ 
+ &lt;p>I performed the work described in this blog post as my mini-project for the
+&lt;a href="https://www.cl.cam.ac.uk/~ey204/teaching/ACS/R244_2024_2025/index.html">R244 Large-Scale Data Processing and Optimisation&lt;/a>
+reading group during my MPhil.&lt;/p>
+&lt;p>I&amp;rsquo;d like to thank &lt;a href="https://www.cl.cam.ac.uk/~ey204/">Dr Eiko Yoneki&lt;/a> for leading
+the reading group, which introduced me to a wide variety of interesting topics
+including e-graphs for compiler rewrites discussed below.&lt;/p>
+
+ 
+ &lt;/div>
+&lt;/div>
+
+&lt;p>The core of the egg (&amp;ldquo;e-graphs good&amp;rdquo;) project is a library providing a flexible
+and performant implementation of the equality graph (e-graph) data structure,
+providing a re-usable basis for leveraging equality saturation in program
+optimisers to address the phase-ordering problem of compilers. This mini-project
+explores the performance characteristics of the egg library through benchmarking
+and profiling techniques, and uses this information to guide the design and
+assess the suitability of data parallelism for its applications. We conclude
+that Rust&amp;rsquo;s rich support for multithreading allows data parallelism to be
+leveraged in egg, but many portions of the algorithm rely on shared mutable
+state, so the approach can only provide incremental performance gains as a
+corollary of Amdahl&amp;rsquo;s law.&lt;/p></description></item><item><title>Benchmarking LLVM MLIR</title><link>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</link><pubDate>Wed, 09 Apr 2025 17:01:44 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/benchmarking-llvm-mlir/</guid><description>&lt;p>At the 2024 European LLVM Developers&amp;rsquo; Meeting, Mehdi Amini and Jeff Nui
 presented their keynote talk &amp;ldquo;How Slow is MLIR&amp;rdquo; &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. This presented
 micro-benchmarks for key operations in the MLIR compiler, such as traversing the
 IR and creating operations. However, the code for the benchmarks and

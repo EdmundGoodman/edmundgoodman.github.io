@@ -31,7 +31,34 @@
 &lt;/ul>
 &lt;p>All menu information is property of Jack&amp;rsquo;s Gelato. This page is
 updated daily at 10:20am &amp;ndash; see my
-&lt;a href="https://edmundgoodman.co.uk/posts/2024/a-faster-gelato/">blog post&lt;/a> for why I made it.&lt;/p></description></item><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.co.uk/gelato/2025/08/06/</link><pubDate>Wed, 06 Aug 2025 10:44:51 +0000</pubDate><guid>https://edmundgoodman.co.uk/gelato/2025/08/06/</guid><description>&lt;h2 id="bene-august-6th-2025">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (August 6th, 2025)&lt;/h2>
+&lt;a href="https://edmundgoodman.co.uk/posts/2024/a-faster-gelato/">blog post&lt;/a> for why I made it.&lt;/p></description></item><item><title>Parallelism in Egg</title><link>https://edmundgoodman.co.uk/posts/2025/parallelism-in-egg/</link><pubDate>Thu, 07 Aug 2025 11:43:19 +0100</pubDate><guid>https://edmundgoodman.co.uk/posts/2025/parallelism-in-egg/</guid><description>&lt;div class="admonition note">
+ &lt;div class="admonition-title">
+ A note on provenance
+ &lt;/div>
+ &lt;div class="admonition-content">
+ 
+ &lt;p>I performed the work described in this blog post as my mini-project for the
+&lt;a href="https://www.cl.cam.ac.uk/~ey204/teaching/ACS/R244_2024_2025/index.html">R244 Large-Scale Data Processing and Optimisation&lt;/a>
+reading group during my MPhil.&lt;/p>
+&lt;p>I&amp;rsquo;d like to thank &lt;a href="https://www.cl.cam.ac.uk/~ey204/">Dr Eiko Yoneki&lt;/a> for leading
+the reading group, which introduced me to a wide variety of interesting topics
+including e-graphs for compiler rewrites discussed below.&lt;/p>
+
+ 
+ &lt;/div>
+&lt;/div>
+
+&lt;p>The core of the egg (&amp;ldquo;e-graphs good&amp;rdquo;) project is a library providing a flexible
+and performant implementation of the equality graph (e-graph) data structure,
+providing a re-usable basis for leveraging equality saturation in program
+optimisers to address the phase-ordering problem of compilers. This mini-project
+explores the performance characteristics of the egg library through benchmarking
+and profiling techniques, and uses this information to guide the design and
+assess the suitability of data parallelism for its applications. We conclude
+that Rust&amp;rsquo;s rich support for multithreading allows data parallelism to be
+leveraged in egg, but many portions of the algorithm rely on shared mutable
+state, so the approach can only provide incremental performance gains as a
+corollary of Amdahl&amp;rsquo;s law.&lt;/p></description></item><item><title>Jack's Gelato Menus</title><link>https://edmundgoodman.co.uk/gelato/2025/08/06/</link><pubDate>Wed, 06 Aug 2025 10:44:51 +0000</pubDate><guid>https://edmundgoodman.co.uk/gelato/2025/08/06/</guid><description>&lt;h2 id="bene-august-6th-2025">&lt;a href="https://www.jacksgelato.com/bene-t-street-menu">Bene&amp;rsquo;t Street&lt;/a> (August 6th, 2025)&lt;/h2>
 &lt;ul>
 &lt;li>Caramelised Vanilla&lt;/li>
 &lt;li>Strawberry&lt;/li>

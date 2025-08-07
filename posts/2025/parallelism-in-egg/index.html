@@ -1,0 +1,21 @@
+<!doctype html><html lang=en-gb><head><meta charset=utf-8><meta name=author content="Edmund Goodman"><meta name=description content="The personal website for Edmund Goodman"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/images/favicon.ico sizes=any type=image/x-icon><title>Parallelism in Egg | Edmund Goodman</title><link rel=stylesheet href=https://edmundgoodman.co.uk/scss/main.min.css></head><body><nav><ul class=nav-menu><li class="nav-item nav-home"><a href=/>Home</a></li><li class="nav-item nav-elided"><a href=/about/>About</a></li><li class="nav-item nav-elided"><a href=/posts/>Blog</a></li><li class=nav-item><a href=/atlas/>Atlas</a></li></ul></nav><main><header><h1>Parallelism in Egg</h1><div class=post-meta><svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:-.3em"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M7 14h.013"/><path d="M10.01 14h.005"/><path d="M13.01 14h.005"/><path d="M16.015 14h.005"/><path d="M13.015 17h.005"/><path d="M7.01 17h.005"/><path d="M10.01 17h.005"/></svg>
+<time datetime=2025-08-07>Aug 7, 2025</time>
+&nbsp;&bull;&nbsp;
+<svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:-.3em"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1018 0A9 9 0 003 12"/><path d="M12 7v5l3 3"/></svg>
+1 minute</div><br></header><article><div class="admonition note"><div class=admonition-title>A note on provenance</div><div class=admonition-content><p>I performed the work described in this blog post as my mini-project for the
+<a href=https://www.cl.cam.ac.uk/~ey204/teaching/ACS/R244_2024_2025/index.html>R244 Large-Scale Data Processing and Optimisation</a>
+reading group during my MPhil.</p><p>I&rsquo;d like to thank <a href=https://www.cl.cam.ac.uk/~ey204/>Dr Eiko Yoneki</a> for leading
+the reading group, which introduced me to a wide variety of interesting topics
+including e-graphs for compiler rewrites discussed below.</p></div></div><p>The core of the egg (&ldquo;e-graphs good&rdquo;) project is a library providing a flexible
+and performant implementation of the equality graph (e-graph) data structure,
+providing a re-usable basis for leveraging equality saturation in program
+optimisers to address the phase-ordering problem of compilers. This mini-project
+explores the performance characteristics of the egg library through benchmarking
+and profiling techniques, and uses this information to guide the design and
+assess the suitability of data parallelism for its applications. We conclude
+that Rust&rsquo;s rich support for multithreading allows data parallelism to be
+leveraged in egg, but many portions of the algorithm rely on shared mutable
+state, so the approach can only provide incremental performance gains as a
+corollary of Amdahl&rsquo;s law.</p><h2 id=full-report>Full report</h2><style>.iframe-container{position:relative;overflow:hidden;width:100%;padding-top:100%}.responsive-iframe{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%}</style><div class=iframe-container><iframe class=responsive-iframe src=/files/posts/parallelism_in_egg/R244_edjg2_project.pdf></iframe></div></article></main><footer><p>© 2025 Edmund Goodman | 
+<a href=https://github.com/EdmundGoodman/edmundgoodman.github.io>Source</a> | 
+<a href=https://creativecommons.org/licenses/by-nc/4.0/>License</a></p></footer></body></html>
