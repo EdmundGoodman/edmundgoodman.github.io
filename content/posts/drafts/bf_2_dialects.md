@@ -1,5 +1,5 @@
 ---
-title: "Bf 2 Dialects"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 2: Designing dialects"
 author: "Edmund Goodman"
 date: 2025-06-19T14:35:33+01:00
 draft: true

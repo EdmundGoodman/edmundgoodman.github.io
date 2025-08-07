@@ -1,5 +1,5 @@
 ---
-title: "Bf 4 Interpreter"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 4: Writing an interpreter"
 author: "Edmund Goodman"
 date: 2025-06-19T14:35:51+01:00
 draft: true

@@ -1,5 +1,5 @@
 ---
-title: "Compiling BrainF with Python and LLVM (i) -- Introduction"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 1: Introduction"
 author: "Edmund Goodman"
 date: 2025-06-19T14:35:19+01:00
 draft: true

@@ -1,5 +1,5 @@
 ---
-title: "Bf 3 Parser"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 3: Lexing and parsing"
 author: "Edmund Goodman"
 date: 2025-06-19T14:35:46+01:00
 draft: true

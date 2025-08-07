@@ -1,5 +1,5 @@
 ---
-title: "Bf 5 Lowering"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 5: Lowering across dialects"
 author: "Edmund Goodman"
 date: 2025-06-19T14:36:00+01:00
 draft: true

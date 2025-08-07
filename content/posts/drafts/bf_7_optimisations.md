@@ -1,5 +1,5 @@
 ---
-title: "Bf 7 Optimisations"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 7: Optimising BrainF"
 author: "Edmund Goodman"
 date: 2025-06-19T14:36:19+01:00
 draft: true

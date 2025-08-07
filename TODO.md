@@ -18,7 +18,8 @@
   - [x] Google search console
   - [x] robots.txt
   - [ ] compress images/remove big splash screen? and fonts?
-- [ ] Fix atlas and inherited content
+- [x] Fix atlas and inherited content
+- [ ] Add permalinks for gelato markdown
 - [ ] Add post tags and show in post list
 - [ ] Look at fonts/colour schemes
 - [ ] Fix svg icons to re-use from single load rather than many inline

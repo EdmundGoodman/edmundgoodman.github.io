@@ -2,6 +2,7 @@
 title: "Blog Canary"
 author: "Edmund Goodman"
 date: 2023-01-08T14:12:29Z
+math: true
 ---
 
 In 1895, John Scott Haldane proposed bringing warm-blooded animals, most
@@ -63,6 +64,14 @@ This is some more text, after a line break.
 >
 > -- *John Scott Haldane*
 
+## Mathematics
+
+Amdahl's law [^2] can be expressed as:
+
+\begin{equation}
+    S = \frac{1}{f + \frac{1-f}{P}}
+\end{equation}
+
 ## Admonitions
 
 {{< note >}}
@@ -82,3 +91,4 @@ This is an error admonition.
 ## References
 
 [^1]: Haldane J. The Action of Carbonic Oxide on Man. The Journal of Physiology. 1895 Nov 16; 18(5-6):430-62.
+[^2]: G. M. Amdahl, "Validity of the single processor approach to achieving large scale computing capabilities," *Proceedings of the April 1820, 1967, Spring Joint Computer Conference*, pp. 483–485, 1967. Publisher: Association for Computing Machinery.

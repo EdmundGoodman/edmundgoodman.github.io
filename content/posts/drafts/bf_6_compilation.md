@@ -1,5 +1,5 @@
 ---
-title: "Bf 6 Better Dialects"
+title: "Compiling BrainF with Python and LLVM, Fast -- Part 6: Compiling to a binary"
 author: "Edmund Goodman"
 date: 2025-06-19T14:36:13+01:00
 draft: true
